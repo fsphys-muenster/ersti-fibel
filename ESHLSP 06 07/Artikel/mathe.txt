@@ -1,0 +1,23 @@
+"Oh nein, bloß kein Mathe!", als Physiker kommt man nicht um die Mathematik herum. Obwohl diese oft als trocken und reiner Selbstzweck gesehen wird, ist 
+sie gar nicht so uninteressant, im Gegenteil! Wenn ihr das auch so seht, so vertieft euch doch ein wenig mehr in mathematische Tiefen als für Physiker vorgesehen. Normalerweise hört man als Physiker in den ersten vier Semestern "Mathe für Physiker I - IV", wo man mindestens zwei Scheine erwerben muss. Hierfür erforderlich sind Teilnahme an den Übungen, Bearbeiten der Aufgabenblätter und Bestehen der jeweiligen Klausur. Allerdings unterscheiden sich diese Vorlesungen nicht wesentlich von einigen Pflichtveranstaltungen für Mathestudierende: Mathe für Physiker I und III entspricht im wesentlichen Analysis I und II, Mathe für Physiker II und IV den Vorlesungen Lineare Algebra I und teilweise II. Das macht es möglich die Vorlesungen für Mathematiker zu besuchen und sich die Scheine für den jeweiligen Mathe für Physiker Teil anrechnen zu lassen. Wer Lust hat, kann sich zudem für Mathematik als zweites Fach einschreiben und auch dort eine Vordiplomsprüfung ablegen. Damit geht natürlich ein wenig mehr Arbeit einher, aber der Aufwand ist geringer, als viele denken. Für die Vordiplomsprüfungen bedeutet dies, dass eine Prüfung mehr abgelegt werden muss: Statt der Prüfung über Mathe für Physiker die in reiner sowie die in angewandter Mathematik. Wer Physik und Mathematik im Grundstudium parallel studieren will, hört halt statt einer Vorlesung Mathe für Physiker die Vorlesungen Analysis und Lineare Algebra (bzw. später die entsprechenden in angewandter Mathe), auch hier gibt es Übungen und Aufgabenblätter. Das Gute jedoch ist, dass Physik als Nebenfach für Mathematik belegt werden kann (für Physik müsst ihr aber trotzdem Chemie oder Informatik als Nebenfach besuchen), so dass darüber hinaus kein Mehraufwand notwendig ist.
+
+Physiker:
+  Mathematik für Physiker I - IV
+Stoffgebiete:
+- Analysis der reellen Zahlen
+- Analysis in n-dimensionalen Räumen
+- Lineare Algebra
+- Funktionentheorie
+Benötigte Scheine: Mathe für Physiker I oder II und III oder IV
+
+Mathematiker:
+- Erstes Semester: Analysis (Ana) I und Lineare Algebra (LinA) I (reine Mathematik)
+    (entspricht in etwa Mathe für Physiker I und II)
+- Zweites Semester: Analysis II und Lineare Algebra II (reine)
+    (entspricht in etwa Mathe für Physiker III und teilweise IV) 
+- Drittes Semester: Analysis III (reine) und Numerik I und/oder Stochastik (angewandte)
+- Viertes Semester: Numerik II und/oder Wahrscheinlichkeitstheorie (angewandte)
+Benötigte Scheine: Insgesamt 5, mindestens: 1 angewandte Mathe, 1 Ana, 1 LinA, mindestens einen aus Ana II, III, LinA II
+
+Vorteil dieses Doppelstudiums ist, neben einem einem tieferen Einblick in die Mathematik, was auch als Physiker nicht schaden kann, dass man die Prüfungstermine ein wenig entzerren kann: Die für Mathe können vorgezogen werden, zwischen denen für Physik und denen für Mathe dürfen sieben Monate liegen. Zudem kann sich nach dem Vordiplom immer noch für eines von den beiden Fächern entscheiden, es gibt sogar Leute, die in beiden Fächern ihr Diplom schreiben. Habt ihr doch zuviel, könnt ihr das Mathestudium jederzeit abbrechen und nur die Mathe für Physiker Vordiplomsprüfung machen. Die bereits erworbenen Scheine können für Mathe für Physiker anerkannt werden, auch wenn man nicht die Absicht das Mathevordiplom abzulegen. Andersherum können Mathe-Lehrämtler statt der Vorlesung für Hauptfach-Mathematiker die für Physiker hören, hier sind dann allerdings alle vier Scheine erforderlich. Setzt euch am besten mit den entsprechenden Profs rechtzeitig in Verbindung. Zum Glück verpflichtet euch eine Einschreibung auch für Mathe zu nichts. Und falls ihr die BAföG-Bedingungen für Mathe eher als für Physik erfüllt, akzeptiert das BAföG-Amt wahrscheinlich noch einen Fach- oder Schwerpunktswechsel. 
+Weiter erkundigen könnt ihr euch auch beim Prüfungsamt für Mathe oder bei der Physik- oder Mathe-Fachschaft.

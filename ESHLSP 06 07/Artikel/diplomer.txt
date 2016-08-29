@@ -1,0 +1,6 @@
+Hier nun ein paar änderungen:
+
+S.6 1. Spalte über dem Bild: "oder Mathe für Physiker IV" => streichen
+S.6 2. Spalte Zeile 11: "das chemische Praktikum" => streichen
+S.8 1. Spalte 8. Zeile von unten: "Hinrichs" => ersetzen durch "Clausius"
+S.8 Taballe "Mathe für Physiker IV" => streichen
