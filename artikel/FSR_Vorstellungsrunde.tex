@@ -1,0 +1,170 @@
+% Autor: Simon May
+% Datum: 2014-09-17
+
+% Befehl "\fibelvorstellung": Erstellt die Vorstellung eines FSlers mit Bild
+%	Parameter #1: Bild (wrapfigure)
+%	Parameter #2: Text
+\newcommand{\fibelvorstellung}[2]{
+\vspace{1cm}
+\begin{minipage}{\columnwidth}
+% Kein Abstand vor bzw. nach Bildern bei wrapfigure
+\setlength{\intextsep}{0cm}
+% geringfügiger Abstand zwischen Paragraphen
+\setlength{\parskip}{0.15cm}
+#1
+#2
+\end{minipage}
+
+}
+
+\section{Der Fachschaftsrat (FSR) Physik stellt sich vor}
+\begin{multicols*}{2}
+
+\fibelvorstellung{
+\begin{wrapfigure}{l}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/jan_honermann_cropped.jpg}
+\end{wrapfigure}
+}
+{Hi, ich bin Jan und studiere jetzt Physik im 5.\ Semester und bin seit einem Jahr in der Fachschaft tätig. Falls ihr fragen habt könnt ihr euch gerne an mich wenden, ich bin auch meistens netter als ich aussehe ;)}
+
+\fibelvorstellung{
+\begin{wrapfigure}{r}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/fabian_breitschwerdt_neu_cropped.jpg}
+\end{wrapfigure}
+}
+{Hi, ich bin der Fabian und fand die letzte O-Woche so gut, dass ich dachte, es wäre eine gute Idee in dieser Fachschaft mitzumachen, folglich studiere ich hier seit zwei Semestern bzw. einem Jahr.
+
+Ich spreche aus eurer Sicht wahrscheinlich etwas komisch aber dafür mehr. Von Lutz wurde ich als "verzettelnd" beschrieben, die Interpretation dessen sei dem geneigten Leser überlassen.}
+
+\fibelvorstellung{
+\begin{wrapfigure}{l}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/raffaela_busse.jpg}
+\end{wrapfigure}
+}
+{Das ist Raffi ausm Ruhrpott. Sie ist mehr oder weniger im 7.\ Semester und von Anfang an in der Fachschaft dabei, in der ihre wichtigste Aufgabe darin besteht, an Nikolaus das Engelchen zu spielen. Mit Fragen zum Nebenfach Philosophie oder zur besten Currywurst der Stadt seid ihr bei Raffi genau richtig.}
+
+\fibelvorstellung{
+\begin{wrapfigure}{r}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/judith_beier.jpg}
+\end{wrapfigure}
+}
+{Hi, ich bin Judith und studiere jetzt im 7.\ Semester. Ich gestalte mein Studium ein wenig kreativer und kann euch daher viele Tipps zum Anrechnen verschiedener Veranstaltungen geben. In diesem Jahr schreibe ich meine Bachelorarbeit. Ich habe für euch die O-Woche organisiert und hoffe, dass sie euch viel Spaß macht.}
+
+\fibelvorstellung{
+\begin{wrapfigure}{l}{0cm}
+\centering
+\includegraphicscompressed[width=4.8cm]{res/vorstellungsfotos/simon_may_alex_everwand.jpg}
+\end{wrapfigure}
+}
+{% LaTeX-Warnung deaktivieren
+\hbadness=10000
+Hi, wir sind Simon (r.) und Alex (l.), das "Fachschaftspärchen". Da man uns eigentlich nie getrennt antreffen kann, stellen wir uns hier gemeinsam vor -- das kommt der Realität näher ;-)
+
+Wir sind beide im 5.\ 1FB-Semester. Ich (Simon) kann euch bei technischen und Computer-bezogenen Fragen weiterhelfen; ich (Alex) organisiere z.B.\ den Buchmarkt in der zweiten Vorlesungswoche. Fragt aber auch sonst ruhig nach, wenn ihr Hilfe braucht :-)}
+
+\fibelvorstellung{
+\begin{wrapfigure}{r}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/lutz_althueser.jpg}
+\end{wrapfigure}
+}
+{Haii! Ich bin Lutz und studiere jetzt im 5.\ Semester und sehr häufig in der Fachschaft anzutreffen. Es könnte auch der Eindruck entstehen, dass ich im FS-Raum wohnen würde\dots\ Also fühlt euch bei mir wie Zuhause! In allen anderen Fällen bin Ich wahrscheinlich am Studieren oder führe die Evaluation der Lehre durch.}
+
+\fibelvorstellung{
+\begin{wrapfigure}{l}{0cm}
+\centering
+\includegraphicscompressed[width=3.2cm]{res/vorstellungsfotos/lukas_eschmann.jpg}
+\end{wrapfigure}
+}
+{Hallo, ich bin Lukas und mittlerweile im 5.\ Semester (Physik 1-Fach-Bachelor). Man nennt mich auch das Fachschaftstaxi.
+
+Ich bin seit dem 1.\ Semester in der Fachschaft. Wenn ihr irgendwelche Fragen zum Studium habt, dann fragt einfach drauf los. Ansonsten: Viel Glück, Erfolg und Spaß bei eurem Studium.}
+
+\fibelvorstellung{
+\begin{wrapfigure}{l}{0cm}
+\centering
+\includegraphicscompressed[width=3.4cm]{res/vorstellungsfotos/philip_render.jpg}
+\end{wrapfigure}
+}
+{Hi, ich bin der Philip. Bin schon ein bisschen länger an Uni und oft an der charakteristischen Bierpulle zu erkennen ;) Als 2-FB kann ich euch auch übrigens immer gut von den schönen Seiten des Physikstudiums berichten.}
+
+\fibelvorstellung{
+\begin{wrapfigure}{r}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/valentin_kunz_cropped.jpg}
+\end{wrapfigure}
+}
+{Hi, und willkommen in der Physik!
+
+Ich bin Valentin und studiere jetzt Physik und Mathematik 1-Fach Bachelor im dritten Semester, und kann es nur jedem empfehlen. Das Studium ist hart, aber es mach wirklich sehr viel Spaß, wenn man bereit ist sich darauf einzulassen. Bei Fragen zum Nebenfach Philosophie stehe ich euch gerne mit Rat zur Seite, ebenso natürlich zu organisatorischen (oder sonstigen) Fragen bezüglich der Mathematik.
+
+Das Studium ist auf jeden Fall machbar, also gebt nicht auf!}
+
+\fibelvorstellung{
+\begin{wrapfigure}{l}{0cm}
+\centering
+\includegraphicscompressed[width=3.4cm]{res/vorstellungsfotos/bernd_hofschroeer.jpg}
+\end{wrapfigure}
+}
+{Ich bin Bernd, bin im 7.\ Semester und studiere Zweifachbachelor Physik-Chemie, werde also Lehrer. Wenn ihr dazu Fragen habt, fragt! Ansonsten bin ich seit meinem 3.\ Semester in der Fachschaft!
+\vspace{2\baselineskip}}
+
+\fibelvorstellung{
+\begin{wrapfigure}{r}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/maik_stappers.jpg}
+\end{wrapfigure}
+}
+{Aloha, ich bin Maik. Ich studiere im 5.\ Semester und bin seit Studienbeginn bei der Fachschaft. Ich wohne praktisch in der Fachschaft, zumindest behaupten das alle. Wenn ihr also mal in der Fachschaft vorbei schaut werde ich wahrscheinlich da sein.}
+
+\fibelvorstellung{
+\begin{wrapfigure}{l}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/dennis_lehn_neu_cropped.jpg}
+\end{wrapfigure}
+}
+{Moin ich bin Dennis, 2FB und im 3.\ Semester. Das nette Bild von mir ist aus dem letzten Ersti-Wochenende (war gut, kommt mit!). Ansonsten bin ich ein eher ruhiger Typ und offen für Fragen zum Studium -- oder auch dazu, ein Bier zu trinken\dots\  ;)}
+
+
+\fibelvorstellung{
+\begin{wrapfigure}{r}{0cm}
+\centering
+\includegraphicscompressed[width=2.6cm]{res/vorstellungsfotos/axel_buss.jpg}
+\end{wrapfigure}
+}
+{Axel wurde am Anfang immer als Alex vorgestellt, bis sich Alex mal als Axel vorgestellt hat und ab diesem Tag hieß Alex dann Axel. Stimmt's, Alex?
+\vspace{2\baselineskip}}
+
+\fibelvorstellung{
+\begin{wrapfigure}{l}{0cm}
+\centering
+\includegraphicscompressed[width=3cm]{res/vorstellungsfotos/adriana_roettger.jpg}
+\end{wrapfigure}
+}
+{Hi, ich bin Adriana und eine der wenigen, die man in der O-Woche nüchtern antreffen wird.
+
+Wenn ich nicht gerade studiere, verbringe ich meine Zeit mit Skyrim-Zocken.
+\vspace{2\baselineskip}}
+
+\fibelvorstellung{
+\begin{wrapfigure}{r}{0cm}
+\centering
+\includegraphicscompressed[width=3.2cm]{res/vorstellungsfotos/rene_ross.png}
+\end{wrapfigure}
+}
+{Rene ist unser Doppelagent. Durch seinen Kontakt mit den Geophysikern ist es manchmal schwer, seine Loyalität gegenüber den Physikern einzuschätzen.
+\vspace{2\baselineskip}}
+
+\vspace{3cm minus 3cm}
+\fibelvorstellung{
+\begin{wrapfigure}{r}{0cm}
+\centering
+\includegraphicscompressed[width=3.7cm]{res/vorstellungsfotos/fritz.png}
+\end{wrapfigure}
+}
+{Hallo, ich bin Fritz und bin neu in der Fachschaft Physik. Die Mannschaft hier ist echt genial aufgestellt, sodass es richtigen Spaß macht, ein aktiver Teil der Universität Münster zu sein. Ich kann dir nur empfehlen: Mach' mit und verändere die Uni!}
+\end{multicols*}

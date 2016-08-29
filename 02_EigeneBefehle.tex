@@ -1,0 +1,146 @@
+% Autor: Simon May
+% Datum: 2014-09-22
+
+% Variablen für Titelseite/Seitenvorlage
+% Jahr und Semester gegebenenfalls ändern!
+\newcommand{\fibeltitel}{Erstsemester-Informationszeitung des Fachbereichs Physik der Westfälischen Wilhelms-Universität Münster}
+\newcommand{\fibeljahr}{2014/2015}
+\newcommand{\fibelsemester}{Wintersemester}
+\newcommand{\fibelautor}{Fachschaft Physik der WWU Münster, Simon May}
+
+% Befehl "\fibelsig": Für Unterschriften unter Artikeln
+% 	Parameter #1: Name des Autors
+\newcommand{\fibelsig}[1]{\par\hfill(#1)\par}
+
+% Befehl "\fibelwerbung": Für eine Seite mit Werbung
+% 	Optionaler Parameter #1: Erstellt eine Seite mit dem Parameter als Inhalt;
+%	falls leer: Verwendet das Wort "Werbung" in groß und zentriert
+\NewDocumentCommand{\fibelwerbung}{O{\centering\vspace*{10cm}\Huge\bfseries Werbung\par}}
+{\begin{center}#1\end{center}\clearpage}
+
+% Befehl "\email": E-Mail-Adresse mit mailto-Link (anklickbar in der PDF-Datei)
+% 	Parameter #1: Gewünscht E-Mail-Adresse
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+% Befehl "\includegraphicscompressed": Wenn es einen Ordner "compressed" mit
+% einer Datei der Form (z.B.) <name>_scaled.jpg gibt, wird diese statt der
+% angegebenen Datei eingebunden.
+% Befehl "\includegraphicscompressed": Wenn es einen Ordner "compressed" mit
+% einer Datei der Form <name>_scaled.jpg oder <name>.jpg gibt, wird diese statt
+% der angegebenen Datei eingebunden.
+\newcommand{\includegraphicscompressed}[2][]{%
+\reversestring[e]{#2}%
+\let\rstring\thestring%
+\whereisword[q]{\rstring}{.}%
+\let\rdotpos\theresult%
+\whereisword[q]{\rstring}{/}%
+\let\rslashpos\theresult%
+\stringlength[q]{#2}%
+\let\len\theresult%
+\def\dotpos{\numexpr\len - \rdotpos + 1}%
+\def\slashpos{\numexpr\len - \rslashpos + 1}%
+%
+\substring[q]{#2}{1}{\slashpos}%
+\let\temp\thestring%
+\substring[q]{#2}{\slashpos}{\numexpr\dotpos-1}%
+\def\namenoextension{\temp compressed\thestring}%
+%
+\IfFileExists{\namenoextension_scaled.jpg}%
+{\includegraphics[#1]{\namenoextension_scaled.jpg}}%
+{\IfFileExists{\namenoextension.jpg}%
+{\includegraphics[#1]{\namenoextension.jpg}}%
+{\includegraphics[#1]{#2}}}%
+}
+
+% Zähler für Umgebung fibelurl (wird mit jeder \section zurückgesetzt)
+\newcounter{fibelurlctr}[section]
+\crefformat{fibelurlctr}{#2[#1]#3}
+
+% Umgebung "fibelurl": Für nummerierte Linklisten mit Verweisen wie z.B. im
+% Artikel Geld/BAföG
+\newenvironment{fibelurl}
+{\refstepcounter{fibelurlctr}[\arabic{fibelurlctr}]~}
+{\par}
+
+% Befehl "\pullquotenl": Leerzeile für die pullquote-Umgebung (Bild in der Mitte,
+% von Text umflossen)
+\newcommand{\pullquotenl}{\par~}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !!! Die Befehle ab hier sind nicht zur direkten Verwendung durch den gemeinen
+% !!! Fibel-Schreiberling gedacht ;-)
+
+% Temporäre Variable
+\newlength{\temp}
+
+% Definition der Linie in der Kopfzeile
+\NewDocumentCommand{\fibelheadsepline}{O{even}}
+{\vspace{-0.6cm}%
+\ifthenelse{\equal{#1}{even}}{\Huge$\Phi$\hfill}{}%
+\rule[2.6mm]{0.96\linewidth}{0.5mm}%
+\ifthenelse{\equal{#1}{odd}}{\hfill\Huge$\Phi$}{}}
+
+% Definition des Textes an den Seitenrändern jeder Seite
+\newcommand{\fibelmargin}{\Large Ersti-$\Phi$bel \fibeljahr}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mathe-Definitionen
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\arsinh}{\operatorname{arsinh}}
+\newcommand{\arcosh}{\operatorname{arcosh}}
+\newcommand{\artanh}{\operatorname{artanh}}
+
+\makeatletter
+% Definition eines aufrechten "d" für Integrale (z.B. "\int x^2 \diff x")
+\newcommand*{\diff}%
+		{\@ifnextchar^{\DIfF}{\DIfF^{}}}
+\def\DIfF^#1{%
+		\mathop{\mathrm{\mathstrut d}}%
+			\nolimits^{#1}\gobblespace
+}
+\def\gobblespace{%
+        \futurelet\diffarg\opspace}
+\def\opspace{%
+        \let\DiffSpace\!%
+        \ifx\diffarg(%
+                \let\DiffSpace\relax
+        \else
+                \ifx\diffarg[%
+                        \let\DiffSpace\relax
+                \else
+                        \ifx\diffarg\{%
+                                \let\DiffSpace\relax
+                        \fi\fi\fi\DiffSpace}
+
+\makeatother
+
+\newcommand*{\pderiv}[3][]{\frac{\partial^{#1}#2}{\partial #3^{#1}}}
+\newcommand*{\deriv}[3][]{\frac{\diff^{#1}#2}{\diff #3^{#1}}}
+
+\NewDocumentCommand{\ceil}{s O{} m}{%
+	\IfBooleanTF{#1} % starred
+		{#2\lceil#3#2\rceil} % \ceil*[..]{..}
+		{\left\lceil#3\right\rceil} % \ceil[..]{..}
+}
+\NewDocumentCommand{\floor}{s O{} m}{%
+	\IfBooleanTF{#1} % starred
+		{#2\lfloor#3#2\rfloor} % \floor*[..]{..}
+		{\left\lfloor#3\right\rfloor} % \floor[..]{..}
+}
+
+% Redefinitionen
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
+

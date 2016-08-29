@@ -1,0 +1,524 @@
+%%
+%% This is file `pullquote.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% pullquote.dtx  (with options: `package')
+%% ----------------------------------------------------------------
+%% pullquote --- make pullquotes with LaTeX
+%% E-mail: Stephan.Lehmke@QuinScape.de
+%% Web: www.docscape.de
+%% Released under the LaTeX Project Public License v1.3c or later
+%% See http://www.latex-project.org/lppl.txt
+%% ----------------------------------------------------------------
+%% 
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{pullquote}[2012/09/12 v2.0 EXPERIMENTAL package for typesetting pullquotes]
+    \RequirePackage{etoolbox}
+    \RequirePackage{environ}
+    \RequirePackage{keyval}
+
+    \newif\ifmicrotype@pq
+    \microtype@pqtrue
+    \DeclareOption{nomicrotype}{\microtype@pqfalse}
+
+    \newif\ifimgshapes@pq
+    \imgshapes@pqtrue
+    \DeclareOption{noimageshapes}{\imgshapes@pqfalse}
+
+    \ProcessOptions\relax
+
+    \ifmicrotype@pq
+      \RequirePackage[expansion=alltext]{microtype}
+    \fi
+
+    \ifimgshapes@pq
+      \RequirePackage{graphicx}
+    \fi
+    \newdimen\textcoldist
+    \textcoldist4mm\relax
+    \newdimen\objdist
+    \objdist4mm\relax
+
+      \define@key{pq}{textcoldist}{\textcoldist=#1\relax}
+      \define@key{pq}{objdist}{\objdist=#1\relax}
+      \define@key{pq}{textcolwd}{\textcolwd=#1\relax}
+      \define@key{pq}{objvalign}
+      {%
+        \ifcsname do@valign@#1@pq\endcsname
+          \expandafter\let\expandafter\objvalign@pq\csname do@valign@#1@pq\endcsname
+         \else
+          \PackageError{pullquote}{Invalid valign}{Only the values
+            `top', `bottom', `center', or `middle' are valid for key
+            `valign'. The value you gave
+              was ignored.}
+        \fi
+      }
+      \define@key{pq}{objvoffset}{\def\objvoffset@pq{#1}}
+      \define@key{pq}{object}{\def\obj@pq{#1}}
+      \define@key{pq}{image}{\def\img@pq{#1}}
+      \define@key{pq}{imageopts}{\def\imgopts@pq{#1}}
+      \define@key{pq}{shape}{\def\shape@pq{#1}\expandafter\let\expandafter\shapefun@pq\csname#1shapefun\endcsname}
+      \define@key{pq}{shapefunction}{\def\shape@pq{fun}\let\shapefun@pq#1}
+
+      \def\constant@image@pq{image}
+      \def\constant@pullquote@pq{pullquote}
+
+      \newcommand\do@valign@middle@pq
+      {\numexpr(\pqlines@pq-\objlines@pq)/\tw@\relax}
+      \newcommand\do@valign@center@pq
+      {\numexpr(\pqlines@pq-\objlines@pq)/\tw@\relax}
+      \newcommand\do@valign@top@pq{\z@}
+      \newcommand\do@valign@bottom@pq
+      {\numexpr\pqlines@pq-\objlines@pq\relax}
+
+    \NewEnviron{pullquote}[1]
+    {%
+      \ifx\@currenvir\constant@pullquote@pq
+        \textcolwd\z@
+        \let\objvalign@pq\do@valign@middle@pq%
+        \let\objvoffset@pq\empty
+        \let\obj@pq\empty
+        \let\img@pq\empty
+        \let\imgopts@pq\empty
+        \let\shape@pq\empty
+        \let\shapefun@pq\rectangularshapefun
+        \setkeys{pq}{#1}%
+        \ifdim\textcolwd=\z@
+          \textcolwd\dimexpr.5\linewidth-.5\textcoldist\relax
+        \fi
+        \ifx\img@pq\empty
+         \else
+          \def\obj@pq
+          {\expandafter\includegraphics\expandafter[\imgopts@pq]{\img@pq}}%
+        \fi
+        \ifx\shape@pq\constant@image@pq
+          \ifimgshapes@pq
+            \ifx\img@pq\empty
+              \PackageError{pullquote}{No image given}{You need to
+                specify an image with the key "image". Your command
+                was ignored. No output will be generated.}
+             \else
+              \@pullquoteimgshape@pq
+            \fi
+           \else
+            \PackageError{pullquote}{Image shapes disabled}{Your command
+              was ignored. No output will be generated. Try again
+              without package option "noimageshapes".}
+          \fi
+         \else
+          \ifx\obj@pq\empty
+            \PackageError{pullquote}{No object given}{You need to give one of
+              the keys "object" or "image" to specify the object to
+              insert between columns. Your command
+              was ignored. No output will be generated.}
+           \else
+            \@pullquote@pq
+          \fi
+        \fi
+       \else
+        \PackageError{pullquote}{pullquote is an environment now}{The
+          macro \string\pullquote\space does not exist any
+          more. Please use
+          \string\begin{pullquote}...\string\end{pullquote}. Your command
+          was ignored. No output will be generated.}
+      \fi
+    }
+    \newcommand\@pullquote@pq
+    {%
+        \clubpenalty=\z@
+        \widowpenalty=\z@
+        \splittopskip\dimexpr\baselineskip-\dp\strutbox\relax
+        \vbadness\maxdimen
+        \vfuzz\maxdimen
+        \setbox\objbox@pq
+        =\hbox{%
+          \obj@pq%
+        }%
+        \typesettext@pq{\BODY}{}%
+        \pqlines@pq
+        =\numexpr
+          \dimexpr\ht\textbox@pq+\dp\textbox@pq\relax
+          /\baselineskip
+          /\tw@
+        \relax
+        \objlines@pq
+        =\numexpr
+          \dimexpr\ht\objbox@pq+\dp\objbox@pq+2\objdist\relax
+          /\baselineskip
+        \relax
+        \windowhextent=\dimexpr.5\wd\objbox@pq+\objdist\relax
+        \windowvextent=\objlines@pq\baselineskip
+        \windowqhextent=.5\windowvextent
+        \ifdim\windowhextent>\windowqhextent
+          \windowqhextent\windowhextent
+        \fi
+        \narrowhsize@pq
+        =\dimexpr\textcolwd-\windowhextent+.5\textcoldist\relax
+        \loop
+          \typeout{trying \the\pqlines@pq\space lines.}%
+          \objtopoffset@pq
+          =%
+          \ifx\empty\objvoffset@pq
+            \objvalign@pq
+           \else
+            \objvoffset@pq\relax
+          \fi
+          \global\parshapelines@pq=\numexpr2*\pqlines@pq+\@ne\relax
+          \xdef\parshape@pq
+          {%
+            \number\parshapelines@pq\space
+            \iterate@mkps@pq{1}{1}%
+            0pt\space\the\textcolwd\space
+          }%
+          \typesettext@pq{\BODY}
+          {%
+            \let\o@par@pq\par
+            \let\par\par@pq
+            \parshape\parshape@pq
+          }%
+          \setbox\columnabox@pq=\vsplit\textbox@pq to \pqlines@pq\baselineskip
+          \setbox\columnbbox@pq=\vsplit\textbox@pq to \pqlines@pq\baselineskip
+         \unless\ifvoid\textbox@pq
+          \@tempcnta
+          \numexpr
+            \dimexpr\ht\textbox@pq+\dp\textbox@pq\relax
+            /\baselineskip
+            /\tw@
+            -\@ne
+          \relax
+          \ifnum\@tempcnta<\@ne\@tempcnta\@ne\fi
+          \advance\pqlines@pq\@tempcnta
+        \repeat
+        \hbox
+        {%
+          \rlap
+          {%
+            \hskip
+            \dimexpr\narrowhsize@pq+\objdist\relax
+            \raise
+            \dimexpr
+              \numexpr\pqlines@pq-\objlines@pq-\objtopoffset@pq\relax
+              \baselineskip
+              +.5\dimexpr\windowvextent-\ht\objbox@pq\relax
+              +.5\dp\objbox@pq
+            \relax
+            \box\objbox@pq
+          }%
+          \rlap{\box\columnabox@pq}\hskip\textcolwd\hskip\textcoldist\box\columnbbox@pq%
+        }%
+    }
+    \newbox\textbox@pq
+    \newbox\columnabox@pq
+    \newbox\columnbbox@pq
+    \newbox\objbox@pq
+    \newcount\pqlines@pq
+    \newcount\parshapelines@pq
+    \newcount\objlines@pq
+    \newcount\objtopoffset@pq
+    \newdimen\textcolwd
+    \newdimen\windowhextent
+    \newdimen\windowqhextent
+    \newdimen\windowvextent
+    \newdimen\narrowhsize@pq
+    \newcommand*\parshape@pq{}
+    \newcommand\typesettext@pq[2]%
+    {%
+      \setbox\textbox@pq
+      =\vbox{%
+        \hsize\textcolwd
+        \tolerance9999\relax
+        \lineskiplimit-\maxdimen
+        \parskip\z@
+        #2%
+        \strut#1%
+      }%
+    }%
+    \newcommand\iterate@mkps@pq[2]%
+    {%
+      \ifnumgreater{#1*#2}{2*\pqlines@pq}
+      {}
+      {%
+        \ifnumgreater{#1}{\pqlines@pq}
+        {\iterate@mkps@pq{1}{2}}
+        {%
+          \ifnumgreater{#1}{\objtopoffset@pq}
+          {%
+            \ifnumgreater{#1}{\objtopoffset@pq+\objlines@pq}
+            {0pt\space\the\textcolwd\space}
+            {%
+              \ifnumequal{#2}{\@ne}
+              {%
+                0pt\space
+                \the
+                \dimexpr
+                  \textcolwd+
+                  .5\textcoldist-
+                  \shapefun@pq\@ne
+                  {%
+                    \the\dimexpr
+                      \numexpr#1-\objtopoffset@pq\relax\baselineskip-
+                      \baselineskip
+                    \relax
+                  }
+                  {\numexpr#1-\objtopoffset@pq\relax\baselineskip}%
+                  {\number\numexpr#1-\objtopoffset@pq\relax}%
+                \relax
+                \space
+              }
+              {%
+                \expandafter\right@psexpr@pq\expandafter
+                {%
+                  \the\dimexpr
+                    \shapefun@pq\tw@
+                    {%
+                      \the\dimexpr
+                        \numexpr#1-\objtopoffset@pq\relax\baselineskip-
+                        \baselineskip
+                      \relax
+                    }
+                    {\numexpr#1-\objtopoffset@pq\relax\baselineskip}%
+                    {\number\numexpr#1-\objtopoffset@pq\relax}%
+                    -.5\textcoldist
+                  \relax
+                }%
+              }%
+            }%
+          }%
+          {0pt\space\the\textcolwd\space}%
+          \expandafter\iterate@mkps@pq\expandafter
+          {\number\numexpr#1+\@ne\relax}{#2}%
+        }%
+      }%
+    }
+    \newcommand\right@psexpr@pq[1]
+    {%
+      #1\space
+      \the\dimexpr\textcolwd-#1\relax\space
+    }
+    \def\par@pq
+    {%
+      \o@par@pq
+      \ifnum\prevgraf<\parshapelines@pq
+        \global\advance\parshapelines@pq-\prevgraf
+        \xdef\parshape@pq{\expandafter\gobbleparshapeprefix@pq\parshape@pq}%
+        \parshape\parshape@pq
+       \else
+        \global\parshapelines@pq\z@
+      \fi
+    }
+    \def\gobbleparshapeprefix@pq#1 #2 #3 %
+    {%
+      \ifnumgreater{#1}{\parshapelines@pq}
+      {\expandafter\gobbleparshapeprefix@pq\number\numexpr#1-\@ne\expandafter\relax\space}
+      {#1 #2 #3 }%
+    }
+
+    \newcommand\rectangularshapefun[4]
+    {%
+      \the\windowhextent
+    }%
+    \newcommand\circularshapefun[4]
+    {%
+      \expandafter\dimmax@pq\expandafter
+      {%
+        \the\dimexpr
+          \expandafter\@circshapefun\expandafter
+          {%
+            \the\dimexpr
+              \ifdim #2>.5\windowvextent
+                #2-.5\windowvextent
+               \else
+                .5\windowvextent-#2%
+              \fi
+            \relax
+          }%
+          \expandafter
+        \relax
+        \expandafter
+      }%
+      \expandafter
+      {%
+        \the\dimexpr
+          \expandafter\@circshapefun\expandafter
+          {%
+            \the\dimexpr
+              \ifdim #3>.5\windowvextent
+                #3-.5\windowvextent
+               \else
+                .5\windowvextent-#3%
+              \fi
+            \relax
+          }%
+        \relax
+      }%
+    }
+    \newcommand\@circshapefun[1]
+    {%
+      \the\dimexpr
+        \windowqhextent-
+        .5\dimexpr#1\relax*\dimexpr#1\relax/\windowqhextent-
+        \dimexpr
+          \dimexpr0.125\dimexpr#1\relax*\dimexpr#1\relax/\windowqhextent\relax*
+          \dimexpr#1\relax/\windowqhextent
+        \relax*
+        \dimexpr#1\relax/\windowqhextent-
+        \dimexpr
+          \dimexpr
+            \dimexpr
+              \dimexpr0.0625\dimexpr#1\relax*\dimexpr#1\relax/\windowqhextent\relax*
+              \dimexpr#1\relax/\windowqhextent
+            \relax*
+            \dimexpr#1\relax/\windowqhextent
+          \relax*
+          \dimexpr#1\relax/\windowqhextent
+        \relax*
+        \dimexpr#1\relax/\windowqhextent-
+        \dimexpr
+          \dimexpr
+            \dimexpr
+              \dimexpr
+                \dimexpr
+                  \dimexpr0.0390625\dimexpr#1\relax*\dimexpr#1\relax/\windowqhextent\relax*
+                  \dimexpr#1\relax/\windowqhextent
+                \relax*
+                \dimexpr#1\relax/\windowqhextent
+              \relax*
+              \dimexpr#1\relax/\windowqhextent
+            \relax*
+            \dimexpr#1\relax/\windowqhextent
+          \relax*
+          \dimexpr#1\relax/\windowqhextent
+        \relax*
+        \dimexpr#1\relax/\windowqhextent
+      \relax
+    }%
+    \newcommand\dimmax@pq[2]
+    {%
+      \ifdim#1>#2
+        #1%
+       \else
+        #2%
+      \fi
+    }%
+    \newcount\objrows@pq
+    \newdimen\objrowwd@pq
+    \newread\@inputfile@pq
+    \def\white@pq{white}
+    \def\black@pq{black}
+    \newcommand\@pullquoteimgshape@pq
+    {%
+      \setbox\objbox@pq=\hbox{\obj@pq}%
+      \objlines@pq
+      =\numexpr
+        \dimexpr\ht\objbox@pq+\dp\objbox@pq+2\objdist\relax
+        /\baselineskip
+      \relax
+      \windowhextent=\dimexpr.5\wd\objbox@pq+\objdist\relax
+      \windowvextent=\objlines@pq\baselineskip
+      \@tempdima
+      \dimexpr
+        \p@*\wd\objbox@pq/\dimexpr.1\objdist\relax
+      \relax
+      \@tempdimb
+      \dimexpr
+        \p@*\ht\objbox@pq/\dimexpr(\windowvextent-\ht\objbox@pq)/20\relax
+      \relax
+      \objrows@pq\numexpr2*\objlines@pq\relax
+      \objrowwd@pq\dimexpr2\windowhextent/\objrows@pq\relax
+      \edef\@tmp
+      {%
+        convert \img@pq\space -resize \strip@pt\@tempdima x\strip@pt\@tempdimb! -bordercolor white -border 10x10 -morphology Erode Disk:10.3 -resize
+        \number\objrows@pq x\number\objlines@pq! -black-threshold
+        95\@percentchar\space-monochrome \img@pq.pqshape.txt
+      }%
+      \immediate\write18{\@tmp}%
+      \typeout{\@tmp}%
+      \begingroup
+        \global\expandafter\let\csname pqshapemin:0@pq\endcsname\relax
+        \global\expandafter\let\csname pqshapemax:0@pq\endcsname\relax
+        \openin\@inputfile@pq \img@pq.pqshape.txt
+        \loop
+         \unless\ifeof\@inputfile@pq
+          \read\@inputfile@pq to \@inputline@pq
+          \expandafter\expandafter\expandafter\analyse@gridline@pq
+          \expandafter\@inputline@pq\terminategridline@pq\@nil
+        \repeat
+        \closein\@inputfile@pq
+      \endgroup
+      \@pullquote@pq
+    }
+    \edef\terminategridline@pq{,:)\space\space\space}
+    \long\def\analyse@gridline@pq#1,#2:#3) #4 #5 #6\@nil%
+    {%
+      \ifx\empty#4\empty%
+       \else%
+        \def\@tmp{#5}%
+        \ifx\@tmp\white@pq
+         \else
+          \ifnum#1>\objlines@pq
+            \expandafter\gdef\csname pqshapemax:#2@pq\endcsname{#1}%
+           \else
+            \expandafter\ifx\csname pqshapemin:#2@pq\endcsname\relax
+              \expandafter\gdef\csname pqshapemin:#2@pq\endcsname{#1}%
+            \fi
+          \fi
+        \fi
+        \global\expandafter\let
+        \csname pqshapemin:\number\numexpr#2+\@ne @pq\endcsname\relax
+        \global\expandafter\let
+        \csname pqshapemax:\number\numexpr#2+\@ne @pq\endcsname\relax
+      \fi
+    }%
+    \newcommand\imageshapefun[4]
+    {%
+      \expandafter\@@imgshapefun\expandafter{\the\dimexpr\expandafter\@imgshapefun\expandafter{\number\numexpr#4-\@ne\relax}{#1}\relax}%
+    }
+    \newcommand\@imgshapefun[2]
+    {%
+      \ifnum#2=\@ne
+        \expandafter\ifx\csname pqshapemin:#1@pq\endcsname\relax
+          0pt
+         \else
+          \the\dimexpr
+            \windowhextent-
+            \csname pqshapemin:#1@pq\endcsname\objrowwd@pq
+          \relax
+        \fi
+       \else
+        \expandafter\ifx\csname pqshapemax:#1@pq\endcsname\relax
+          0pt
+         \else
+          \the\dimexpr
+            \numexpr\csname pqshapemax:#1@pq\endcsname+\@ne\relax\objrowwd@pq-
+            \windowhextent
+          \relax
+        \fi
+      \fi
+    }
+    \newcommand\@@imgshapefun[1]
+    {%
+      \ifdim#1<.5\textcoldist.5\textcoldist\else#1\fi
+    }
+
+%% 
+%% Copyright (C) 2012 by Stephan Lehmke <Stephan.Lehmke@QuinScape.de>
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License (LPPL), either
+%% version 1.3c of this license or (at your option) any later
+%% version.  The latest version of this license is in the file:
+%% 
+%% http://www.latex-project.org/lppl.txt
+%% 
+%% This work is "maintained" (as per LPPL maintenance status) by
+%% Stephan Lehmke.
+%% 
+%% This work consists of the file  pullquote.dtx
+%% and the derived files           pullquote.ins,
+%%                                 pullquote.pdf, and
+%%                                 pullquote.sty.
+%% 
+%%
+%% End of file `pullquote.sty'.

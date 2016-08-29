@@ -1,0 +1,65 @@
+% Autor: Simon May
+% Datum: 2014-09-14
+\documentclass[
+	% Sprache für z.B. Babel
+	ngerman,
+	% Papierformat
+	a4paper,
+	% Zweiseitig
+	twoside,
+	% Schriftgröße
+	12pt,
+	% schreibt die Papiergröße korrekt ins Ausgabedokument
+	pagesize=auto
+]{scrartcl}
+
+\input{01_PaketeEinstellungen.tex}
+
+\input{02_EigeneBefehle.tex}
+
+\begin{document}
+% Titelseite
+\input{03_Titelseite.tex}
+
+% Kopf- und Fußzeile konfigurieren (eckige Klammern: \pagestyle{scrplain},
+% geschwungene Klammern: \pagestyle{scrheadings})
+% Innenseite der Kopfzeile
+\ihead[]{}
+% Mitte der Kopfzeile
+% ... ungerade Seitenzahlen
+\cohead[]{{\large Fachschaft Physik}\\\fibelheadsepline[odd]}
+% ... gerade Seitenzahlen
+\cehead[]{{\large Universität Münster}\\\fibelheadsepline[even]}
+% Außenseite der Kopfzeile
+\ohead[]{}
+% Innnenseite der Fußzeile
+\ifoot[]{}
+% Mitte der Fußzeile
+\cfoot[]{\LARGE\pagemark}
+% Außenseite der Fußzeile
+\ofoot[]{}
+
+% Ab hier mit Kopf- und Fußzeile
+\pagestyle{scrheadings}
+
+% Text links/rechts an den Seitenrändern auf jeder Seite
+\AddEverypageHook{
+	\ifthispageodd{
+		% ungerade Seiten
+		\begin{tikzpicture}[remember picture, overlay]
+		\node [rotate=270] at ($(current page.center) + (9.9cm, -10.9cm)$) {\fibelmargin};
+		\end{tikzpicture}
+	}
+	{
+		% gerade Seiten
+		\begin{tikzpicture}[remember picture, overlay]
+		\node [rotate=90] at ($(current page.center) + (-9.9cm, -10.9cm)$) {\fibelmargin};
+		\end{tikzpicture}
+	}
+}
+
+% Inhalt (Artikel etc.)
+\input{10_Inhalt.tex}
+
+\end{document}
+
