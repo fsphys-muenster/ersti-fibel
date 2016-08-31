@@ -1,12 +1,12 @@
 % Autor: Simon May
-% Datum: 2014-09-22
+% Datum: 2015-07-28
 
 % Variablen für Titelseite/Seitenvorlage
 % Jahr und Semester gegebenenfalls ändern!
 \newcommand{\fibeltitel}{Erstsemester-Informationszeitung des Fachbereichs Physik der Westfälischen Wilhelms-Universität Münster}
-\newcommand{\fibeljahr}{2014/2015}
+\newcommand{\fibeljahr}{2015/2016}
 \newcommand{\fibelsemester}{Wintersemester}
-\newcommand{\fibelautor}{Fachschaft Physik der WWU Münster, Simon May}
+\newcommand{\fibelautor}{Fachschaft Physik der WWU Münster; Simon May, Benedikt Bieringer}
 
 % Befehl "\fibelsig": Für Unterschriften unter Artikeln
 % 	Parameter #1: Name des Autors
@@ -89,58 +89,27 @@
 \renewcommand{\Re}{\operatorname{Re}}
 \renewcommand{\Im}{\operatorname{Im}}
 
-\newcommand{\NN}{\mathbb{N}}
-\newcommand{\ZZ}{\mathbb{Z}}
-\newcommand{\QQ}{\mathbb{Q}}
-\newcommand{\RR}{\mathbb{R}}
-\newcommand{\CC}{\mathbb{C}}
-\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\arsinh}{\operatorname{arsinh}}
 \newcommand{\arcosh}{\operatorname{arcosh}}
 \newcommand{\artanh}{\operatorname{artanh}}
 
 \makeatletter
 % Definition eines aufrechten "d" für Integrale (z.B. "\int x^2 \diff x")
-\newcommand*{\diff}%
-		{\@ifnextchar^{\DIfF}{\DIfF^{}}}
-\def\DIfF^#1{%
-		\mathop{\mathrm{\mathstrut d}}%
-			\nolimits^{#1}\gobblespace
-}
-\def\gobblespace{%
-        \futurelet\diffarg\opspace}
-\def\opspace{%
-        \let\DiffSpace\!%
-        \ifx\diffarg(%
-                \let\DiffSpace\relax
-        \else
-                \ifx\diffarg[%
-                        \let\DiffSpace\relax
-                \else
-                        \ifx\diffarg\{%
-                                \let\DiffSpace\relax
-                        \fi\fi\fi\DiffSpace}
-
+\newcommand*{\diff}{\@ifnextchar^{\DIfF}{\DIfF^{}}}
 \makeatother
+\def\DIfF^#1{\mathop{\mathrm{\mathstrut d}}\nolimits^{#1}\gobblespace}
+\def\gobblespace{\futurelet\diffarg\opspace}
+\def\opspace{%
+	\let\DiffSpace\!%
+	\ifx\diffarg(%
+		\let\DiffSpace\relax
+	\else\ifx\diffarg[%
+		\let\DiffSpace\relax
+	\else\ifx\diffarg\{%
+		\let\DiffSpace\relax
+	\fi\fi\fi\DiffSpace}
 
 \newcommand*{\pderiv}[3][]{\frac{\partial^{#1}#2}{\partial #3^{#1}}}
 \newcommand*{\deriv}[3][]{\frac{\diff^{#1}#2}{\diff #3^{#1}}}
 
-\NewDocumentCommand{\ceil}{s O{} m}{%
-	\IfBooleanTF{#1} % starred
-		{#2\lceil#3#2\rceil} % \ceil*[..]{..}
-		{\left\lceil#3\right\rceil} % \ceil[..]{..}
-}
-\NewDocumentCommand{\floor}{s O{} m}{%
-	\IfBooleanTF{#1} % starred
-		{#2\lfloor#3#2\rfloor} % \floor*[..]{..}
-		{\left\lfloor#3\right\rfloor} % \floor[..]{..}
-}
-
-% Redefinitionen
-\let\originalleft\left
-\let\originalright\right
-\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
-\renewcommand{\right}{\aftergroup\egroup\originalright}
 

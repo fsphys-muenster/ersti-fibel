@@ -6,5 +6,6 @@ Die vollständige Version der Ersti-Φbel ist für Phsyik-Studierende der WWU (N
 
 ## Hinweis zum Submodul `private`
 In diesem Submodul sind alle Dateien enthalten, die aus rechtlichen (Urheberrecht) oder anderen Gründen nicht öffentlich verteilt werden können/sollen.
-Im Wesentlich handelt es sich dabei um Binärdateien wie Bilder.
+Im Wesentlichen handelt es sich dabei um Binärdateien wie Bilder.
 
+Siehe auch [private/README.md](private/README.md) für weitere Informationen.

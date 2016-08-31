@@ -1,61 +1,75 @@
 % Autor: Simon May
 % Datum: 2014-08-19
+% Download aktueller Karte: http://www.wms.nrw.de/geobasis/wms_nw_dop40?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=nw_dop40&STYLES=&SRS=EPSG:3857&WIDTH=1800&HEIGHT=1600&BBOX=845600,6793700,846500,6794500
 
 % 1. Teil der Überschrift rechtsbündig
 % (eckige Klammern: Eintrag im Inhaltsverzeichnis)
-\section[Lageplan des naturwissenschaftlichen Zentrums (NWZ)]{\raggedleft Lageplan des naturwissen-}
-% Lageplan (links) als Hintergrund auf der 1. Seite
-\begin{tikzpicture}[remember picture, overlay]
-\node[inner sep=0, xshift=0.9cm, yshift=-0.5cm] at (current page.center)
-{\includegraphics{res/lageplan_links.pdf}};
-\end{tikzpicture}
+\section{Lageplan des naturwissenschaftlichen Zentrums (NWZ)}
+\includegraphicscompressed[width=\textwidth]{res/physikvonoben.png}
 
-\vspace{\fill}
+\vspace{3\baselineskip}
+
 {\large
-\begin{enumerate}
-\hfill\begin{minipage}{8.7cm}
-\item Institutsgruppe~1~(IG~1) mit:
-	\begin{itemize}[leftmargin=0.4cm]
+\begin{wrapfigure}{r}{0cm}
+	\centering
+	\includegraphicscompressed[width=0.4\columnwidth]{res/lageplan/1_ig1.jpg}
+\end{wrapfigure}
+1. Institutsgruppe~1~(IG~1) mit:
+\begin{itemize}
 	\item Physikalisches Institut (PI)
 	\item Institut für Festkörpertheorie (FT)
 	\item Institut für Materialphysik (MP)
 	\item Institut für Didaktik der Physik~(DP)
 	\item Technik und Sachunterricht (TS)
-	\end{itemize}
-\item Kernphysik-Gebäude
-	\begin{itemize}[leftmargin=0.4cm]
-	\item Institut für Kernphysik (KP)
-	\item Institut für theoretische Physik (TP)
-	\end{itemize}
-\item Angewandte Physik (AP)
-\end{minipage}
-\end{enumerate}
+\end{itemize}
 
 \clearpage
-% 2. Teil der Überschrift linksbündig
-\section*{\raggedright schaftlichen Zentrums (NWZ)}
-% Lageplan (rechts) als Hintergrund auf der 2. Seite
-\begin{tikzpicture}[remember picture, overlay]
-\node[inner sep=0, xshift=-0.6cm, yshift=0.22cm] at (current page.center)
-{\includegraphics{res/lageplan_rechts.pdf}};
-\end{tikzpicture}
+	
+\begin{wrapfigure}{r}{0cm}
+	\centering
+	\includegraphicscompressed[width=0.4\columnwidth]{res/lageplan/2_KP_TP.jpg}
+\end{wrapfigure}
+2. Kernphysik-Gebäude
+\begin{itemize}
+	\item Institut für Kernphysik (KP)
+	\item Institut für theoretische Physik (TP)
+\end{itemize}
 
+3. Angewandte Physik (AP)
 
-\vspace{\fill}
-% "resume": Nummerierung fortsetzen
-\begin{enumerate}[resume]
-\begin{minipage}{8.2cm}
-\item Mensa + Viva-Café
-\item Parkhaus
-\item Mathematische Institute
-	\begin{itemize}[leftmargin=0.4cm]
+4. Mensa + Viva-Café
+
+5. Parkhaus (im Neubau)
+
+6. Mathematische Institute
+\begin{itemize}
 	\item Institut für angewandte Mathematik
 	\item Institut für reine Mathematik
 	\item Institut für Logik
 	\item Zentrum für Informationsverarbeitung (ZIV)
-	\end{itemize}
-\item Chemie
-\item Institut für Geophysik
-\end{minipage}
-\end{enumerate}
+	\item Seminarraumzentrum (SRZ)
+\end{itemize}
+
+7. Chemie
+
+8. Institut für Geophysik
+
+\begin{figure}[htbp]
+	\begin{minipage}[hbt]{0.4\columnwidth}
+		\includegraphicscompressed[width=\columnwidth]{res/lageplan/3_AP.jpg}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[hbt]{0,4\columnwidth}
+		\includegraphicscompressed[width=\columnwidth]{res/lageplan/4_Mensa.jpg}
+	\end{minipage}
+	
+	\begin{minipage}[hbt]{0,4\columnwidth}
+		\includegraphicscompressed[width=\columnwidth]{res/lageplan/7_Chemie.jpg}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[hbt]{0,4\columnwidth}
+		\includegraphicscompressed[width=\columnwidth]{res/lageplan/6_Mathe.jpg}
+	\end{minipage}
+\end{figure}
+
 }

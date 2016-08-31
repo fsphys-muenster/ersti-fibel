@@ -33,3 +33,9 @@
   ist dementsprechend eine Kopie und dort vorhanden, damit LaTeX sie findet.
 - Die Datei "T1LukasSvatba.fd" enthält nur eine kleine Änderung, um eine LaTeX-
   Warnung loszuwerden. Hoffentlich passiert dadurch nichts Schlimmes ;-)
+- create_web_version.sh ist Unix-Shell-Skript, mit dem man die Web-Version der
+  Fibel (sollte unter 15MB groß sein) erstellen kann. Dazu wird das Programm
+  Ghostscript aufgerufen, das u.a. Bilder mit sehr hoher Auflösung in der PDF-
+  Datei herunterskaliert. Verwendung:
+      ./create_web_version.sh fibel.pdf fibel_web.pdf
+

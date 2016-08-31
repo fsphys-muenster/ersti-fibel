@@ -1,5 +1,5 @@
 % Autor: Simon May
-% Datum: 2014-09-14
+% Datum: 2015-07-28
 \documentclass[
 	% Sprache für z.B. Babel
 	ngerman,
@@ -10,16 +10,17 @@
 	% Schriftgröße
 	12pt,
 	% schreibt die Papiergröße korrekt ins Ausgabedokument
-	pagesize=auto
+	pagesize,
+	% Abstand zwischen Absätzen statt Einrücken
+	parskip=half-
 ]{scrartcl}
 
 \input{01_PaketeEinstellungen.tex}
 
 \input{02_EigeneBefehle.tex}
 
-\pdfcompresslevel=9
 \begin{document}
-% Titelseite
+
 \input{03_Titelseite.tex}
 
 % Kopf- und Fußzeile konfigurieren (eckige Klammern: \pagestyle{scrplain},

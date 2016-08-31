@@ -1,5 +1,5 @@
 % Autor: Simon May
-% Datum: 2014-08-19
+% Datum: 2015-07-28
 
 % --- Pakete einbinden
 % Silbentrennung nach ausgewählter Sprache (s. documentclass)
@@ -48,6 +48,8 @@
 \usepackage{gincltex}
 % Abbildungen im Fließtext (\begin{wrapfigure}...)
 \usepackage{wrapfig}
+% Bessere Verarbeitung von Dateinmane für \includegraphics etc.
+\usepackage{grffile}
 % Bilder in der Mitte von zweispaltigem Text
 \usepackage[nomicrotype]{pullquote}
 
@@ -61,23 +63,22 @@
 \usepackage{geometry}
 % Zeichnen/Diagramme in LaTeX
 \usepackage{tikz}
-% Text an festen Positionen auf jeder Seite
-\usepackage{background}
+% Für \AddEverypageHook
+\usepackage{everypage}
 % Mehrspaltiger Text
 \usepackage{multicol}
 % Ändern des Aussehens des Inhaltsverzeichnisses
 \usepackage{etoc}
-% Abstand zwischen Absätzen statt Einrücken; evtl. durch KOMA-Optionen ersetzen? XXX
-\usepackage{parskip}
 
-% Verlinkt Textstellen im PDF-Dokument
-\usepackage{hyperref}
 % Tabelle mit vorgegebener Breite und X-Spalten (passen sich automatisch an)
 \usepackage{tabularx}
 % Tabellenoptionen (z.B. vertikal zentrierte Paragraphen mit "m")
 \usepackage{array}
 % "\multirow"-Befehl in Tabellen
 \usepackage{multirow}
+
+% Verlinkt Textstellen im PDF-Dokument
+\usepackage{hyperref}
 % gestrichelte Linien (z.B. "\hdashline"); nach tabularx laden?
 \usepackage{arydshln}
 % "Schlaue" Referenzen; nach "hyperref" laden!
@@ -185,28 +186,22 @@
 % -- siunitx
 \sisetup{
 	locale=DE,
-	group-digits=true,
-	separate-uncertainty,
-	output-product=\cdot,
-	output-decimal-marker={,},
-	input-product=*,
+	mode=text,
 	quotient-mode=fraction,
 	per-mode=fraction,
 	fraction-function=\sfrac
 }
 \DeclareSIUnit{\euro}{€}
 
-% -- background
-\backgroundsetup{
-	color=black,
-	opacity=1,
-	scale=1,
-	contents={}
-}
-
 % -- cref
 % Verweise auf Fußnoten als hochgestelltes Fußnotensymbol darstellen
 \crefformat{footnote}{#2\textsuperscript{#1}#3}
+
+% -- url
+\makeatletter
+% Keine Zeilenumbrüche bei Punkten oder Doppelpunkten in URLs
+\g@addto@macro{\UrlNoBreaks}{\do\:}
+\makeatother
 
 % -- wrapfig
 % Abstand am oberen/unteren Rand des Bildes
