@@ -1,0 +1,285 @@
+% --- Pakete einbinden
+% Bedingte Kompilation für verschiedene TeX-Engines
+\usepackage{iftex}
+% Silbentrennung nach ausgewählter Sprache (vgl. \documentclass)
+\usepackage[english, main=ngerman, shorthands=off]{babel}
+\ifLuaTeX
+	% Schriftart-Einstellungen für LuaLaTeX
+	\usepackage{fontspec}
+\else
+	% Verwendung der Zeichentabelle T1 (Sonderzeichen etc.)
+	\usepackage[T1]{fontenc}
+	% Legt die Zeichenkodierung fest, z.B. UTF-8
+	\usepackage[utf8]{inputenc}
+\fi
+% Text-Schriftart
+\usepackage{lmodern}
+% „fancy“ Schriftart
+\usepackage{aurical}
+
+% Verbessertes Aussehen von Text
+\usepackage[final]{microtype}
+\ifLuaTeX
+	% Verbesserte Behandlung von Ligaturen
+	\usepackage{selnolig}
+\fi
+% Einstellung des Zeilenabstands
+\usepackage{setspace}
+% Alternative Implementation von \raggedright etc.
+\usepackage{ragged2e}
+% Automatische Anführungszeichen
+\usepackage{csquotes}
+% Formatierung von Telefonnummern
+\usepackage{phonenumbers}
+
+% Nutzen von „+“, „-“ etc. in \setlength, \setcounter, …
+\usepackage{calc}
+% Nützliche LaTeX-interne Befehle
+\usepackage{ltxcmds}
+% \ifthenelse-Befehl
+\usepackage{xifthen}
+% \forloop-Befehl
+\usepackage{forloop}
+% Optionen für eigene definierte Befehle
+\usepackage{xparse}
+% Befehle mit Optionen der Form „<key>=<value>, …“ definieren
+\usepackage{keyval}
+
+% Farben
+\usepackage{xcolor}
+% Bessere Verarbeitung von Dateinamen für \includegraphics etc.
+% „final“ muss auch hier gesetzt werden, damit die Option für graphicx richtig
+% übernommen wird; s. https://tex.stackexchange.com/q/328499/51235
+\usepackage[final]{grffile}
+% Zum Einbinden von Grafiken (\includegraphics)
+\usepackage[final]{graphicx}
+% .tex-Dateien mit \includegraphics einbiden
+\usepackage{gincltex}
+% Abbildungen im Fließtext (\begin{wrapfigure}…)
+\usepackage{wrapfig}
+% Bilder in der Mitte von zweispaltigem Text
+\usepackage[nomicrotype]{pullquote}
+% Zeichnen/Diagramme in LaTeX
+\usepackage{tikz}
+% Zusätzliche Definitionen für absolute Positierung auf der Seite mit TikZ
+\usepackage{tikzpagenodes}
+
+% Mathepaket (Grenzen über/unter Integralzeichen)
+\usepackage[intlimits]{amsmath}
+% Symbole, \mathbb etc.
+\usepackage{amssymb}
+% Einige für Physik nützliche Mathe-Befehle
+\usepackage[notrig]{physics}
+% Chemische Formeln
+\usepackage{chemformula}
+% „Schöne“ Brüche im Fließtext mit \sfrac
+\usepackage{xfrac}
+% Ermöglicht die Nutzung von „\SI{Zahl}{Einheit}“
+\usepackage{siunitx}
+
+% Optionen für Listen
+\usepackage{enumitem}
+% Darstellen einer Seite im Querformat mit automatischer Drehung in
+% der PDF-Ansicht (\begin{landscape}…)
+\usepackage{pdflscape}
+% Seiten für Notizen
+\usepackage{notespages}
+% Wird für Kopf- und Fußzeile benötigt
+\usepackage[draft=false]{scrlayer-scrpage}
+% Einstellen der Seitenränder
+\usepackage[vtex=false, dvips=false, pdftex=false]{geometry}
+% Für \AddThispageHook, \AddEverypageHook
+\usepackage{everypage}
+% Mehrspaltiger Text
+\usepackage{multicol}
+% Ändern des Aussehens des Inhaltsverzeichnisses
+\usepackage{etoc}
+
+% Tabelle mit vorgegebener Breite und X-Spalten (passen sich automatisch an)
+\usepackage{tabularx}
+% Tabellenoptionen (z.B. vertikal zentrierte Paragraphen mit „m“)
+\usepackage{array}
+% \multirow-Befehl in Tabellen
+\usepackage{multirow}
+% gestrichelte Linien (z.B. \hdashline); nach tabularx laden?
+\usepackage{arydshln}
+
+% Verlinkt Textstellen im PDF-Dokument
+\usepackage{hyperref}
+% Erstellen von Glossaren; nach „hyperref“ laden!
+\usepackage{glossaries}
+% „Schlaue“ Referenzen; nach „hyperref“ laden!
+\usepackage{cleveref}
+
+% --- Einstellungen
+% -- geometry (Seitenränder)
+\geometry{
+	left=1.1cm,
+	right=1.1cm,
+	top=0.3cm,
+	bottom=0.35cm,
+	headsep=0.1cm,
+	headheight=1.3cm,
+	footskip=1.1cm,
+	includeheadfoot
+}
+% Für Schnittmarken und Randbereich
+% Nur aktivieren, wenn \fibelcropmarks = true
+\providecommand{\fibelcropmarks}{true}
+\ifstr{\fibelcropmarks}{true}{
+	% DIN A4: 210mm×297mm (d.h. 7mm Schnittrand an allen 4 Rändern)
+	% Hinweis: Damit das crop-Paket richtig funktioniert, dürfen die Abmessungen
+	% der Seite (Kopf, Fuß, Ränder etc.) ab hier nicht mehr geändert werden!
+	\usepackage[cam, center, width=224truemm, height=311truemm]{crop}
+}{}
+
+% -- (La)TeX
+% Mehr Freiraum in Tabellen
+\renewcommand{\arraystretch}{1.2}
+% „Einsame“ Zeilen (heißen anscheinend „Schusterjungen“ bzw. „Hurenkinder“) am
+% Seitenanfang/-ende vermeiden (default: 150; max: 10000)
+\clubpenalty=3500
+\widowpenalty=3500
+% Zusätzlichen vertikalen Freiraum der Umgebungen „center“, „flushleft“ und
+% „flushright“ unterdrücken
+\AtBeginEnvironment{center}{\topsep=0pt\partopsep=0pt}
+\AtBeginEnvironment{flushleft}{\topsep=0pt\partopsep=0pt}
+\AtBeginEnvironment{flushright}{\topsep=0pt\partopsep=0pt}
+
+% -- koma
+% Für Überschriften sollen keinerlei Nummern angezeigt werden.
+% Trotzdem wird aber der Zähler „section“ benötigt, wenn z.B. ein Zähler mit
+% jeder neuen \section zurückgesetzt werden soll.
+% Setze also „secnumdepth“ so, dass \section als nummeriert gilt, deaktiviere
+% aber die tatsächliche Ausgabe der Zahl über \sectionformat.
+\setcounter{secnumdepth}{\sectionnumdepth}
+\renewcommand{\sectionformat}{}
+% Überschriften zentrieren
+\let\raggedsection=\centering
+% Abstände vor und nach \subsection und \subsubsection ändern
+% KOMA-Skript default für \subsection und \subsubsection:
+% beforeskip=-3.25ex plus -1ex minus -.2ex, afterskip=1.5ex plus .2ex
+\newcommand{\fibelspacingsubsection}[1][subsection]{
+	\RedeclareSectionCommand[
+		beforeskip=-2.5ex plus -0.5ex minus -1.2ex,
+		afterskip=1ex plus 0.2ex minus 0.5ex
+	]{#1}
+}
+\newcommand{\fibelspacingsubsubsection}[1][subsubsection]{
+	\RedeclareSectionCommand[
+		beforeskip=-0.75ex plus -0.5ex minus -0.7ex,
+		afterskip=1sp minus 1ex
+	]{#1}
+}
+\fibelspacingsubsection
+\fibelspacingsubsubsection
+% Überschriften in Serifen
+\addtokomafont{sectioning}{\rmfamily}
+% \begin{description}… in Serifen
+\addtokomafont{descriptionlabel}{\rmfamily}
+% Kopf-/Fußzeile in normaler Schriftart
+\addtokomafont{pageheadfoot}{\normalfont}
+\addtokomafont{pagenumber}{\normalfont}
+% Seitenzahl groß
+\addtokomafont{pagenumber}{\LARGE}
+% Kopf- und Fußzeile konfigurieren (eckige Klammern: \pagestyle{scrplain},
+% geschwungene Klammern: \pagestyle{scrheadings})
+% Kopf/Fuß zunächst vollständig leeren
+\clearscrheadfoot
+% Mitte der Kopfzeile
+% … ungerade Seitenzahlen
+\cohead[]{{\large Fachschaft Physik}\\\fibelheadsepline[odd]}
+% … gerade Seitenzahlen
+\cehead[]{{\large Universität Münster}\\\fibelheadsepline[even]}
+% Mitte der Fußzeile
+\cfoot[\pagemark]{\pagemark}
+
+% -- graphicx
+% Standardmäßig „keepaspectratio“ verwenden
+% s. https://tex.stackexchange.com/a/91619/51235
+\setkeys{Gin}{keepaspectratio}
+
+% -- hyperref (Links/Verweise)
+\hypersetup{
+	unicode,
+	% Links/Verweise mit Kasten der Dicke 0.5pt versehen
+	pdfborder={0 0 0.5},
+	% Links auch im Entwurfs-Modus („draft“) erzeugen
+	final
+}
+
+% -- csquotes (Anführungszeichen)
+% Anführungszeichen automatisch umwandeln
+\MakeOuterQuote{"}
+
+% -- phonenumbers (Telefonnummern)
+\setphonenumbers{
+	country=DE,
+	foreign=international,
+	area-code-sep=space
+}
+
+% -- tikz (Zeichnungen)
+% Positionsberechnungen bei TikZ
+\usetikzlibrary{calc}
+
+% -- siunitx (Einheiten)
+\sisetup{
+	locale=DE,
+	forbid-literal-units,
+	mode=text,
+	binary-units,
+	quotient-mode=fraction,
+	per-mode=fraction,
+	fraction-function=\sfrac,
+	detect-weight
+}
+\DeclareSIUnit{\euro}{€}
+\DeclareSIUnit{\LP}{LP}
+
+% -- cref (Verweise)
+% Verweise auf Fußnoten als hochgestelltes Fußnotensymbol darstellen
+\crefformat{footnote}{#2\textsuperscript{#1}#3}
+
+% -- url
+\makeatletter
+% Keine Zeilenumbrüche bei Doppelpunkten in URLs (wegen https://…)
+\g@addto@macro{\UrlNoBreaks}{\do\:}
+\makeatother
+
+% -- etoc (Inhaltsverzeichnis)
+% Definition des Aussehens des Inhaltsverzeichnisses
+\etocsettocstyle
+% before
+{\section*{Inhaltsverzeichnis}
+\setlength{\parindent}{0cm}
+\RaggedRight
+% Warnungen im Inhaltsverzeichnis deaktivieren
+\hbadness=10000
+\vbadness=10000
+\hfuzz=1cm
+% Wegweiser im Inhaltsverzeichnis, wird von Text umflossen
+\begin{pullquote}{shape=image, textcoldist=6mm, objvoffset=15, objdist=5mm, image=private/res/toc_wegweiser.png, imageopts={width=10.5cm}}}
+% after
+{\end{pullquote}
+\cleardoublepage}
+
+% Definition des Aussehens von sections im Inhaltsverzeichnis
+\etocsetstyle{section}
+% start (first section)
+% s. auch https://tex.stackexchange.com/q/97782
+{\advance\csname @rightskip\endcsname 1em
+	\advance\rightskip 1em
+	\advance\parfillskip -1em}
+% prefix
+{}
+% content
+{\normalsize\etocname~~\dotfill~\makebox[\rightskip][r]{\etocpage}\pullquotenl\par}
+% end (last section)
+{}
+
+% Definition des Aussehens von \subsection, \subsubsection im Inhaltsverzeichnis:
+% Nicht anzeigen ;-)
+\etocsetstyle{subsection}{}{}{}{}
+\etocsetstyle{subsubsection}{}{}{}{}
+

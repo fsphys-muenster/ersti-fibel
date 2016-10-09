@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.4.3">
+    <DOCUMENT ANZPAGES="1" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="113.385826771654" BORDERBOTTOM="56.6929133858268" PRESET="0" BleedTop="8.50110236220473" BleedLeft="8.50110236220473" BleedRight="8.50110236220473" BleedBottom="8.50110236220473" ORIENTATION="0" PAGESIZE="Custom" FIRSTNUM="1" BOOK="1" AUTOSPALTEN="1" ABSTSPALTEN="3.881" UNITS="1" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="sRGB IEC61966-2.1" DPPr="Fogra27L CMYK Coated Press" DPIn="sRGB IEC61966-2.1" DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="sRGB IEC61966-2.1" DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="German" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="1" SnapToGuides="1" SnapToGrid="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="180000" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="0.001" dispY="0.001" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="1" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="150" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="150" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <COLOR NAME="Black" CMYK="#000000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Registration" CMYK="#ffffffff" Spot="0" Register="1"/>
+        <COLOR NAME="White" CMYK="#00000000" Spot="0" Register="0"/>
+        <HYPHEN/>
+        <STYLE NAME="Default Paragraph Style" ALIGN="3" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" FONT="Average Sans Regular" FONTSIZE="11" wordTrack="1"/>
+        <STYLE NAME="Überschrift" ALIGN="0" CPARENT="Überschrift"/>
+        <STYLE NAME="Unterüberschrift" PARENT="Default Paragraph Style" ALIGN="2" CPARENT="Unterüberschrift"/>
+        <STYLE NAME="Intro" PARENT="Default Paragraph Style" CPARENT="Intro"/>
+        <STYLE NAME="Autor" PARENT="Default Paragraph Style" ALIGN="2" CPARENT="kursiv"/>
+        <STYLE NAME="Seitenbeschriftung links" PARENT="Default Paragraph Style" ALIGN="0" CPARENT="Seitenbeschriftung"/>
+        <STYLE NAME="Seitenbeschriftung rechts" PARENT="Seitenbeschriftung links" ALIGN="2" CPARENT="Seitenbeschriftung"/>
+        <STYLE NAME="Zitat" ALIGN="1" LINESP="27" CPARENT="Zitat"/>
+        <STYLE NAME="kursiv" PARENT="Autor" ALIGN="3" CPARENT="kursiv"/>
+        <STYLE NAME="klein" PARENT="Default Paragraph Style" CPARENT="klein"/>
+        <CHARSTYLE CNAME="Default Character Style" FONT="Average Sans Regular" FONTSIZE="11" FEATURES="inherit" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="German"/>
+        <CHARSTYLE CNAME="Unterüberschrift" FONT="Droid Sans Regular" FONTSIZE="12" SCALEH="80" SCALEV="92" KERN="3" wordTrack="1.09"/>
+        <CHARSTYLE CNAME="kursiv" FONT="Gudea Italic"/>
+        <CHARSTYLE CNAME="Intro" FONT="Source Sans Pro Bold" LANGUAGE="German"/>
+        <CHARSTYLE CNAME="Seitenbeschriftung" FONTSIZE="12"/>
+        <CHARSTYLE CNAME="Zitat" FONTSIZE="20" LANGUAGE="German"/>
+        <CHARSTYLE CNAME="Überschrift" FONTSIZE="30" LANGUAGE="German"/>
+        <CHARSTYLE CNAME="klein" CPARENT="Default Character Style" FONTSIZE="10"/>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Hintergrund" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="0" useColor="0" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="0" PSLevel="0" PDLanguage="0" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="" filename="" separationName="" printerCommand=""/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="0" CMethod="2" Quality="0" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="0" Grayscale="0" RGBMode="0" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB IEC61966-2.1" ImageP="sRGB IEC61966-2.1" PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" PageLayout="2" openAction="">
+            <Subset Name="Average Sans Regular"/>
+            <Subset Name="Gudea Italic"/>
+            <Subset Name="Source Sans Pro Bold"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Double Sided" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="0" From="0" To="0" Type="Type_1_2_3" Start="1" Reversed="0" Active="1"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="85.0393700787402" BORDERBOTTOM="56.6929133858268" NUM="0" NAM="Normal links" MNAM="" Size="Custom" Orientation="0" LEFT="1" PRESET="0" VerticalGuides="56.6929 290.551 304.724 " HorizontalGuides="18.4252 121.89 150.236 223.937 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="85.0393700787402" BORDERBOTTOM="56.6929133858268" NUM="1" NAM="Normal rechts" MNAM="" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="56.6929 290.551 304.724 " HorizontalGuides="18.4252 121.89 150.236 223.937 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="85.0393700787402" BORDERBOTTOM="56.6929133858268" NUM="2" NAM="Zitat" MNAM="" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="56.6929 290.551 304.724 " HorizontalGuides="18.4252 121.89 150.236 223.937 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="695.276220472441" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="85.0393700787402" BORDERBOTTOM="56.6929133858268" NUM="0" NAM="" MNAM="Normal rechts" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="290.551 304.724 538.583 56.6929 " HorizontalGuides="18.4252 121.89 150.236 223.937 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <MASTEROBJECT OwnPage="-1" PTYPE="5" XPOS="-447.085984249921" YPOS="133.38708664252" WIDTH="746.7807136" HEIGHT="1" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="90" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="0" POCOOR="" NUMCO="0" COCOOR="" NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="Zitat" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </MASTEROBJECT>
+        <MASTEROBJECT OwnPage="2" PTYPE="4" XPOS="156.693543307087" YPOS="312.34771653552" WIDTH="205.2" HEIGHT="94.45228346" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="Black" TXTSTROKE="Black" TXTSTRSH="100" TXTFILLSH="100" TXTSCALE="100" TXTSCALEV="100" TXTBASE="0" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LINESP="15" LINESPMode="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Average Sans Regular" ISIZE="11" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="2" TEXTFLOW="1" TEXTFLOW2="1" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 205.2 0 205.2 0 205.2 0 205.2 0 205.2 94.4523 205.2 94.4523 205.2 94.4523 205.2 94.4523 0 94.4523 0 94.4523 0 94.4523 0 94.4523 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 205.2 0 205.2 0 205.2 0 205.2 0 205.2 94.4523 205.2 94.4523 205.2 94.4523 205.2 94.4523 0 94.4523 0 94.4523 0 94.4523 0 94.4523 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="Zitat" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="3" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </MASTEROBJECT>
+        <MASTEROBJECT OwnPage="2" PTYPE="4" XPOS="161.493543307087" YPOS="324.04062992752" WIDTH="199.2" HEIGHT="75.66330708" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="Black" TXTSTROKE="Black" TXTSTRSH="100" TXTFILLSH="100" TXTSCALE="100" TXTSCALEV="100" TXTBASE="0" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LINESP="15" LINESPMode="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Average Sans Regular" ISIZE="11" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 199.2 0 199.2 0 199.2 0 199.2 0 199.2 75.6633 199.2 75.6633 199.2 75.6633 199.2 75.6633 0 75.6633 0 75.6633 0 75.6633 0 75.6633 0 0 0 0 " NUMCO="16" COCOOR="-2.72968 -3.29519 -2.72968 -3.29519 201.948 -3.29519 201.948 -3.29519 201.948 -3.29519 201.948 -3.29519 201.948 79.0219 201.948 79.0219 201.948 79.0219 201.948 79.0219 -2.72968 79.0219 -2.72968 79.0219 -2.72968 79.0219 -2.72968 79.0219 -2.72968 -3.29519 -2.72968 -3.29519 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="Zitat" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="3" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&quot;"/>
+            <para PARENT="Zitat"/>
+            <PageItemAttributes/>
+        </MASTEROBJECT>
+        <MASTEROBJECT OwnPage="2" PTYPE="5" XPOS="165.093543309087" YPOS="315.30393700752" WIDTH="189.5999999" HEIGHT="1" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="0" POCOOR="" NUMCO="0" COCOOR="" NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="Zitat" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </MASTEROBJECT>
+        <MASTEROBJECT OwnPage="2" PTYPE="5" XPOS="165.093543369087" YPOS="406.01259840252" WIDTH="189.5999999" HEIGHT="1" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="0" POCOOR="" NUMCO="0" COCOOR="" NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="Zitat" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </MASTEROBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="1022.67803146142" YPOS="38.4264598425198" WIDTH="236.6926772" HEIGHT="14.87244094" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 236.693 0 236.693 0 236.693 0 236.693 0 236.693 14.8724 236.693 14.8724 236.693 14.8724 236.693 14.8724 0 14.8724 0 14.8724 0 14.8724 0 14.8724 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 236.693 0 236.693 0 236.693 0 236.693 0 236.693 14.8724 236.693 14.8724 236.693 14.8724 236.693 14.8724 0 14.8724 0 14.8724 0 14.8724 0 14.8724 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="Anzeige"/>
+            <trail PARENT="Seitenbeschriftung rechts"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="751.969133858268" YPOS="105.04062992126" WIDTH="481.889763779527" HEIGHT="36.8506299212598" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 481.89 0 481.89 0 481.89 0 481.89 0 481.89 36.8506 481.89 36.8506 481.89 36.8506 481.89 36.8506 0 36.8506 0 36.8506 0 36.8506 0 36.8506 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 481.89 0 481.89 0 481.89 0 481.89 0 481.89 36.8506 481.89 36.8506 481.89 36.8506 481.89 36.8506 0 36.8506 0 36.8506 0 36.8506 0 36.8506 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="751.969133858268" YPOS="105.04062992126" WIDTH="481.889763779527" HEIGHT="36.8506299212598" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 481.89 0 481.89 0 481.89 0 481.89 0 481.89 36.8506 481.89 36.8506 481.89 36.8506 481.89 36.8506 0 36.8506 0 36.8506 0 36.8506 0 36.8506 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 481.89 0 481.89 0 481.89 0 481.89 0 481.89 36.8506 481.89 36.8506 481.89 36.8506 481.89 36.8506 0 36.8506 0 36.8506 0 36.8506 0 36.8506 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="Planetarium Münster"/>
+            <trail PARENT="Überschrift"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="751.969133858268" YPOS="141.89125984252" WIDTH="481.889763779527" HEIGHT="229.606062992126" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 481.89 0 481.89 0 481.89 0 481.89 0 481.89 229.606 481.89 229.606 481.89 229.606 481.89 229.606 0 229.606 0 229.606 0 229.606 0 229.606 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 481.89 0 481.89 0 481.89 0 481.89 0 481.89 229.606 481.89 229.606 481.89 229.606 481.89 229.606 0 229.606 0 229.606 0 229.606 0 229.606 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="In die Ur­zeit zu den Di­no­sau­ri­ern und an­de­ren Tie­ren ab­tau­chen, einen In­dia­ner hoch zu Ross er­le­ben oder in die un­end­li­chen Wei­ten des Weltalls flie­gen – das ist mög­lich im LWL-Mu­se­um für Na­tur­kun­de Müns­ter mit sei­nem Pla­ne­ta­ri­um. Ein­zig­ar­tig für Deutsch­land ist die Kom­bi­na­ti­on Na­tur­kun­de­mu­se­um und Groß­pla­ne­ta­ri­um un­ter ei­nem Dach. Dem Be­su­cher bie­ten sich diens­tags bis sonn­tags zwi­schen 9 und 18 Uhr fas­zi­nie­ren­de Aus­flü­ge in frem­de Wel­ten und zu un­be­kann­ten Kul­tu­ren. "/>
+            <para/>
+            <para/>
+            <ITEXT CH="Aber auch am Abend geht die Post ab. Denn der Ster­nen­saal mit­ten im Haus ist ein au­ßer­ge­wöhn­li­cher Ort. Hier gibt es un­end­lich viel zu ent­de­cken. Im kli­ma­ti­sier­ten Pla­ne­ta­ri­um er­wacht die kla­re Ster­nen­nacht – egal, wie drau­ßen das Wet­ter ist - und nimmt Ster­nen­fans mit auf ra­san­te Aus­flü­ge ins All, zu fet­zi­gen Mu­siks­hows, Li­ve­mu­sik-Kon­zer­ten, span­nen­den Le­sun­gen, Li­ve-Schal­tun­gen zur ESA und NA­SA, zu astro­no­mi­schen Vor­trä­gen, Thea­ter im Pla­ne­ta­ri­um oder zu ganz be­son­de­ren Shows."/>
+            <para/>
+            <para/>
+            <ITEXT CH="Wei­te­re In­for­ma­tio­nen: www.lwl-pla­ne­ta­ri­um-mu­ens­ter.de "/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="Pla­ne­ta­ri­um im LWL-Mu­se­um für Na­tur­kun­de"/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="Sen­tru­per Str. 285 | 48161 Müns­ter"/>
+            <para PARENT="kursiv"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="751.969133858268" YPOS="456.207244091338" WIDTH="233.858086614173" HEIGHT="348.990866144883" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 233.858 0 233.858 0 233.858 0 233.858 0 233.858 348.991 233.858 348.991 233.858 348.991 233.858 348.991 0 348.991 0 348.991 0 348.991 0 348.991 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 233.858 0 233.858 0 233.858 0 233.858 0 233.858 348.991 233.858 348.991 233.858 348.991 233.858 348.991 0 348.991 0 348.991 0 348.991 0 348.991 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="1.88958324542909e-08" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="THEA­TER "/>
+            <para PARENT="Intro"/>
+            <ITEXT CH="Freuyn­de + Gaesd­te prä­sen­tie­ren: Kep­lers Som­ni­um"/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="04.11.-06.11.2016 | je 19.30 Uhr | Stu­den­ten­ein­tritt: 12 €"/>
+            <para PARENT="klein"/>
+            <para/>
+            <ITEXT CH="ASTRO­VOR­TRÄ­GE"/>
+            <para PARENT="Intro"/>
+            <ITEXT CH="Li­ve: An­kunft beim Mars und ers­te Er­geb­nis­se"/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="19.10.2016 | 16.30 Uhr (Teil 1) und 19.30 Uhr (Teil 2) | Stu­den­ten­ein­tritt: 3 €"/>
+            <para PARENT="klein"/>
+            <para PARENT="klein"/>
+            <ITEXT CH="Von Eu­ro­pa über Chi­le zum Uni­ver­sum"/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="01.11.2016 | Vor­trag: 18.30 Uhr, Pre­mie­re 19.30 Uhr | Dr. Diet­rich Baa­de, ESO"/>
+            <para PARENT="klein"/>
+            <ITEXT CH="Vor­trag &amp; öf­fent­li­che Pre­mie­re der Show „Von der Er­de zum Uni­ver­sum“ | Stu­den­ten­ein­tritt: 4,10 €"/>
+            <para PARENT="klein"/>
+            <para/>
+            <ITEXT CH="LE­SUN­GEN (Li­ve)"/>
+            <para PARENT="Intro"/>
+            <ITEXT CH="Per­ry Rho­dan: Un­ter­neh­men Star­dust von K.H. Scheer"/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="18.10.2016 | 19.30 Uhr | Ein­tritt 12,00 €"/>
+            <para PARENT="klein"/>
+            <para/>
+            <ITEXT CH="Hal­lo­ween-Le­sung: Der selt­sa­me Fall des Dr. Jekyll und Mr. Hy­de "/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="von Ro­bert Louis Ste­ven­son (mit Li­ve­mu­sik)."/>
+            <para PARENT="klein"/>
+            <ITEXT CH="31.10.2016 | 19.30 Uhr | Ein­tritt 11,00 €"/>
+            <para PARENT="klein"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="1000.0008110378" YPOS="456.207244072442" WIDTH="233.8580866" HEIGHT="348.990866163779" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 233.858 0 233.858 0 233.858 0 233.858 0 233.858 348.991 233.858 348.991 233.858 348.991 233.858 348.991 0 348.991 0 348.991 0 348.991 0 348.991 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 233.858 0 233.858 0 233.858 0 233.858 0 233.858 348.991 233.858 348.991 233.858 348.991 233.858 348.991 0 348.991 0 348.991 0 348.991 0 348.991 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="248.031677179527" gYpos="0" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="MU­SIKS­HOWS (kei­ne Li­ve­mu­sik)"/>
+            <para PARENT="Intro"/>
+            <ITEXT CH="Dark Si­de of the Moon"/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="Gran­dio­ser Rock mit der Mu­sik von Pink Floyd."/>
+            <para PARENT="klein"/>
+            <ITEXT CH="25.11.2016 | 19.30 Uhr | Stu­den­ten­ein­tritt: 8,00 € "/>
+            <para PARENT="klein"/>
+            <para/>
+            <ITEXT CH="The Wall"/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="Mei­len­stein der Rock­ge­schich­te mit der Mu­sik von Pink Floyd."/>
+            <para PARENT="klein"/>
+            <ITEXT CH="14.10.2016 | 16.12.2016 | je 19.30 Uhr | Stu­den­ten­ein­tritt: 8,00 €"/>
+            <para PARENT="klein"/>
+            <para/>
+            <ITEXT CH="Queen – Hea­ven"/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="Ful­mi­nan­te Bild­wel­ten mit den größ­ten Hits der bri­ti­schen Band."/>
+            <para PARENT="klein"/>
+            <ITEXT CH="21.10.2016 | 11.11.2016 | 09.12.2016 | je 19.30 Uhr"/>
+            <para PARENT="klein"/>
+            <ITEXT CH="Stu­den­ten­ein­tritt: 8,00 €"/>
+            <para PARENT="klein"/>
+            <para/>
+            <ITEXT CH="KON­ZERT (Li­ve­mu­sik)"/>
+            <para PARENT="Intro"/>
+            <ITEXT CH="RE­SET No6: Nachts im Mu­se­um "/>
+            <para PARENT="kursiv"/>
+            <ITEXT CH="Kon­zerts­hows im Pla­ne­ta­ri­um und Span­nen­des im"/>
+            <para PARENT="klein" ALIGN="4"/>
+            <ITEXT CH="Mu­se­um"/>
+            <para PARENT="klein"/>
+            <ITEXT CH="22.10.2016 | 19.30-24 Uhr | VVK 5 € AK 10"/>
+            <para PARENT="klein"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="1000.00022047244" YPOS="317.591811023622" WIDTH="233.858677165354" HEIGHT="127.407874015748" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.164805269320193" LOCALSCY="0.164805269320193" LOCALX="0" LOCALY="-120.115034142026" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../../../ownCloud/Uni/wwu/Fachschaft/Ersti-Fibel/2016/Planetarium/NaA_kl(c)Oblonczyk,LWL100.JPG" PFILE2="" PFILE3="" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 233.859 0 233.859 0 233.859 0 233.859 0 233.859 127.408 233.859 127.408 233.859 127.408 233.859 127.408 0 127.408 0 127.408 0 127.408 0 127.408 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 233.859 0 233.859 0 233.859 0 233.859 0 233.859 127.408 233.859 127.408 233.859 127.408 233.859 127.408 0 127.408 0 127.408 0 127.408 0 127.408 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="923.648818897637" YPOS="370.99842519685" WIDTH="73.3342519685043" HEIGHT="74.0012598425197" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.0504709235846554" LOCALSCY="0.0500354254250347" LOCALX="0" LOCALY="-119.422127318832" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../../../ownCloud/Uni/wwu/Fachschaft/Ersti-Fibel/2016/Planetarium/Planetarium06-hoch(C)LWL,Oblonczyk.jpg" PFILE2="" PFILE3="" PRFILE="Embedded sRGB IEC61966-2.1" EPROF="Embedded sRGB IEC61966-2.1" IRENDER="0" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 73.3343 0 73.3343 0 73.3343 0 73.3343 0 73.3343 74.0013 73.3343 74.0013 73.3343 74.0013 73.3343 74.0013 0 74.0013 0 74.0013 0 74.0013 0 74.0013 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 73.3343 0 73.3343 0 73.3343 0 73.3343 0 73.3343 74.0013 73.3343 74.0013 73.3343 74.0013 73.3343 74.0013 0 74.0013 0 74.0013 0 74.0013 0 74.0013 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="845.366929133858" YPOS="370.99968503937" WIDTH="75.35" HEIGHT="74" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.0815523059617548" LOCALSCY="0.0813149581063138" LOCALX="-411.96172413793" LOCALY="-89.9583333333333" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../../../ownCloud/Uni/wwu/Fachschaft/Ersti-Fibel/2016/Planetarium/IMG_2919-BEARBEITET(C)Michaela Scholl.jpg" PFILE2="" PFILE3="" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 75.35 0 75.35 0 75.35 0 75.35 0 75.35 74 75.35 74 75.35 74 75.35 74 0 74 0 74 0 74 0 74 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 75.35 0 75.35 0 75.35 0 75.35 0 75.35 74 75.35 74 75.35 74 75.35 74 0 74 0 74 0 74 0 74 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="751.969133858268" YPOS="371.086929133858" WIDTH="90.0931496062994" HEIGHT="74.0012598425197" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.0740012598425197" LOCALSCY="0.0740012598425197" LOCALX="-95.6857512534319" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../../../ownCloud/Uni/wwu/Fachschaft/Ersti-Fibel/2016/Planetarium/IMG_2809-BEARBEITET(C)Michaela Scholl.jpg" PFILE2="" PFILE3="" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 90.0931 0 90.0931 0 90.0931 0 90.0931 0 90.0931 74.0013 90.0931 74.0013 90.0931 74.0013 90.0931 74.0013 0 74.0013 0 74.0013 0 74.0013 0 74.0013 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 90.0931 0 90.0931 0 90.0931 0 90.0931 0 90.0931 74.0013 90.0931 74.0013 90.0931 74.0013 90.0931 74.0013 0 74.0013 0 74.0013 0 74.0013 0 74.0013 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>

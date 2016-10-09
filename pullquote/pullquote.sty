@@ -405,8 +405,10 @@
     \newcount\objrows@pq
     \newdimen\objrowwd@pq
     \newread\@inputfile@pq
-    \def\white@pq{white}
-    \def\black@pq{black}
+    % 2016-08-25 Simon May: Newer versions of ImageMagick seem to output
+    % "gray(0)" and "gray(255)" instead of "black" and "white"
+    \def\white@pq{gray(255)}
+    \def\black@pq{gray(0)}
     \newcommand\@pullquoteimgshape@pq
     {%
       \setbox\objbox@pq=\hbox{\obj@pq}%

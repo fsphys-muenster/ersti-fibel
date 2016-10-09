@@ -1,67 +1,58 @@
-% Autor: Simon May
-% Datum: 2015-07-28
 \documentclass[
 	% Sprache für z.B. Babel
 	ngerman,
 	% Papierformat
 	a4paper,
-	% Zweiseitig
+	% zweiseitig
 	twoside,
 	% Schriftgröße
 	12pt,
 	% schreibt die Papiergröße korrekt ins Ausgabedokument
-	pagesize,
+	pagesize=false,
 	% Abstand zwischen Absätzen statt Einrücken
-	parskip=half-
+	parskip=half-,
+	% \footheight (Höhe der Fußzeile) muss hier eingestellt werden – gibt es in
+	% geometry leider nicht!
+	footheight=0.9cm,
+	% Entwurf; in der Endversion ausschalten!
+%	draft,
+%%	% zeigt Seiten-Layout mit Linien (geometry); in der Endversion ausschalten!
+%	showframe
 ]{scrartcl}
 
-\input{01_PaketeEinstellungen.tex}
+\input{tex/01_PaketeEinstellungen.tex}
 
-\input{02_EigeneBefehle.tex}
+\input{tex/02_EigeneBefehle.tex}
 
 \begin{document}
 
-\input{03_Titelseite.tex}
-
-% Kopf- und Fußzeile konfigurieren (eckige Klammern: \pagestyle{scrplain},
-% geschwungene Klammern: \pagestyle{scrheadings})
-% Innenseite der Kopfzeile
-\ihead[]{}
-% Mitte der Kopfzeile
-% ... ungerade Seitenzahlen
-\cohead[]{{\large Fachschaft Physik}\\\fibelheadsepline[odd]}
-% ... gerade Seitenzahlen
-\cehead[]{{\large Universität Münster}\\\fibelheadsepline[even]}
-% Außenseite der Kopfzeile
-\ohead[]{}
-% Innnenseite der Fußzeile
-\ifoot[]{}
-% Mitte der Fußzeile
-\cfoot[]{\LARGE\pagemark}
-% Außenseite der Fußzeile
-\ofoot[]{}
+\input{tex/03_Titelseite.tex}
 
 % Ab hier mit Kopf- und Fußzeile
 \pagestyle{scrheadings}
 
 % Text links/rechts an den Seitenrändern auf jeder Seite
 \AddEverypageHook{
-	\ifthispageodd{
-		% ungerade Seiten
-		\begin{tikzpicture}[remember picture, overlay]
-		\node [rotate=270] at ($(current page.center) + (9.9cm, -10.9cm)$) {\fibelmargin};
-		\end{tikzpicture}
-	}
-	{
-		% gerade Seiten
-		\begin{tikzpicture}[remember picture, overlay]
-		\node [rotate=90] at ($(current page.center) + (-9.9cm, -10.9cm)$) {\fibelmargin};
-		\end{tikzpicture}
-	}
+	% Seitenrand-Text nur für Seitenstil „scrheadings“ anzeigen
+	\ifstr{\currentpagestyle}{scrheadings}{
+		\ifthispageodd{
+			% ungerade Seiten
+			\begin{tikzpicture}[remember picture, overlay]
+				\node[rotate=270] at ($(current page.center) + (9.9cm, -10.9cm)$)
+				{\fibelmargin};
+			\end{tikzpicture}
+		}{
+			% gerade Seiten
+			\begin{tikzpicture}[remember picture, overlay]
+				\node[rotate=90] at ($(current page.center) + (-9.9cm, -10.9cm)$)
+				{\fibelmargin};
+			\end{tikzpicture}
+		}
+	}{}
 }
 
 % Inhalt (Artikel etc.)
-\input{10_Inhalt.tex}
+\input{tex/10_Inhalt.tex}
 
 \end{document}
 

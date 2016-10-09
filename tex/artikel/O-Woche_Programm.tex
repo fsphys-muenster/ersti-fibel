@@ -1,0 +1,136 @@
+% XXX Jedes Jahr O-Wochen-Plan aktualisieren!
+% Zeilenumbruch \\ als \fibnlx zwischenspeichern (in Tabellen wird \\ für eine
+% neue Tabellenzeile umdefiniert)
+\let\fibnlx=\\
+% Befehl \fibnl ist ein Zeilenumbruch mit etwas Freiraum darunter
+\DeclareDocumentCommand{\fibnl}{}{\fibnlx[\baselineskip]}
+
+% Länge \fibprogrammcw ist die Breite einer Spalte in der Programmtabelle
+% (außer Spalte mit den Zeiten)
+\newlength{\fibprogrammcw}
+\setlength{\fibprogrammcw}{0.214\textheight}
+
+\begin{landscape}
+\section{Programm der Physik-Orientierungseinheit (O-Woche/Ersti-Woche)}
+\renewcommand{\arraystretch}{1.8}
+\footnotesize
+\begin{tabular}{| >{\bfseries\hfill}p{0.08\textheight} | *{4}{p{\fibprogrammcw} |}}
+\hline
+Uhrzeit &
+	\textbf{Montag, 10.10.} &
+	\textbf{Dienstag, 11.10.} &
+	\textbf{Mittwoch, 12.10.} &
+	\textbf{Donnerstag, 13.10.}
+\\ \hline
+10:00\vspace{\baselineskip} &
+	\multirow{4}{\fibprogrammcw}[-2mm]{%
+		\textbf{Einführungsveranstaltung}\fibnl
+		\hspace*{\fill}
+		\textit{Hörsaal~AP}\fibnl
+		\textbf{Tutorien und Institutsführung}\fibnl
+		\textbf{Mittagessen}
+	} &
+	\multirow{2}[2]{\fibprogrammcw}[-3mm]{%
+		\textbf{Infoveranstaltung~II}\fibnlx
+		(Gremien, IVV~NWZ+ZIV, BAföG)\fibnl
+		\hspace*{\fill}
+		\textit{Hörsaal~AP}} &
+	\multirow{2}[6]{\fibprogrammcw}[-3mm]{%
+		\textbf{Ausweichtermin Infoveranstaltung~I}\fibnlx
+		(nur für Zwei-Fach-Bachelor)\fibnl
+		\hspace*{\fill}
+		\textit{Hörsaal KP~404}} &
+\\ \cline{1-1}
+11:00\vspace{\baselineskip} & & & &
+\\ \cline{1-1}\cline{3-5}
+12:00 & &
+	Mittagspause &
+	\textbf{Laborführungen}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen vor der Fachschaft} &
+	\multirow{2}[20]{\fibprogrammcw}{\textbf{Infoveranstaltung~III}\fibnlx
+		(jDPG \& andere studentische Gruppierungen)\fibnl
+		\textbf{Plenum \& Preisverleihung}\fibnl
+		\hspace*{\fill}
+		\textit{Hörsaal~1}}
+\\ \cline{1-1}\cline{4-4}
+13:00\vspace{2\baselineskip} & & &
+	Mittagspause &
+\\ \hline
+14:00 &
+	\multirow{2}[12]{\fibprogrammcw}{\textbf{Infoveranstaltung~I}\fibnlx
+		(Bachelor Physik/Geophysik, Zwei-Fach-Bachelor)\fibnl
+		\hspace*{\fill}
+		\textit{Hörsaal~AP}} &
+	\textbf{Buch-Club}\fibnlx
+	(Fachliteratur)\fibnl
+	\hspace*{\fill}\textit{Hörsaal~AP} &
+	\multirow{4}[38]{\fibprogrammcw}{\textbf{Stadtspiel}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen an der Freitreppe}\fibnl~\fibnl~\fibnl~\fibnl~\fibnl
+		anschließend Grillen vor der Fachschaft\fibnlx
+		(bei passender Wetterlage)} &
+	\multirow{2}[8]{\fibprogrammcw}{%
+		\textbf{"Kaffeetrinken" mit den Professoren}\fibnl
+		\hspace*{\fill}
+		\textit{Foyer IG1}
+	}
+\\ \cline{1-1}\cline{3-3}
+15:00 &
+	&
+	\textbf{Vortrag der Polizei}\fibnlx
+		inkl.\ Fahrradregistrierung\fibnl
+		\hspace*{\fill}\textit{Hörsaal~AP} &
+	&
+\\ \cline{1-3}\cline{5-5}
+16:00 &
+	\multirow{2}[4]{\fibprogrammcw}{\textbf{Physikspiel}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen an der Freitreppe}} &
+	\textbf{Ersti-Begrüßung des Rektorats}\fibnl
+		\hspace*{\fill}
+		\textit{Foyer im Schloss}
+	& &
+\\ \cline{1-1}\cline{3-3}\cline{5-5}
+17:00 & &
+	\multirow{2}{\fibprogrammcw}{%
+		\textbf{Konstruktionswettbewerb}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen im Foyer IG1}
+	}
+	& &
+	\multirow{3}[4]{\fibprogrammcw}{%
+		\textbf{Spieleabend (\emph{ab} 17:00~Uhr)}\fibnlx
+		Brettspiele, Kartenspiele, Pen~\&~Paper und mehr!\fibnl
+		\hspace*{\fill}
+		\textit{Seminarraum KP~104}
+	}
+\\ \cline{1-2}
+18:00 &
+	\multirow{2}{\fibprogrammcw}{%
+		\textbf{Grillen}\fibnlx
+		(bei passender Wetterlage)
+	}
+	& & &
+\\ \cline{1-1}\cline{3-3}
+abends &
+	&
+	\textbf{Vorabendprogramm\fibnlx
+		(Pizza Essen, "Vorglühen", \dots)}\fibnlx
+	\hspace*{\fill}
+	\textit{Hörsaal~AP}\fibnl
+	\textbf{Kneipenbingo (20:00 Uhr!)}\fibnlx
+		\hspace*{\fill}
+		\textit{Treffen vor der Cavete} &
+	&
+\\ \hline
+\end{tabular}
+
+\smallskip
+
+% XXX Jedes Jahr Astroseminar-Termin aktualisieren!
+\textbf{Du findest Astrophysik spannend?
+	Zum Thema "Auf den Wogen von Raum und Zeit" findet dieses Jahr wieder das jährliche Astroseminar am Fr.\ und Sa., 21.10. \& 22.10. (Woche nach der Ersti-Woche) statt.
+	Eintritt frei -- Anmeldung erforderlich!
+	Mehr Infos: \url{https://www.uni-muenster.de/Astroseminar}}
+\end{landscape}

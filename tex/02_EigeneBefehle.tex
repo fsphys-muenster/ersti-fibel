@@ -1,0 +1,171 @@
+% Variablen für Titelseite/Seitenvorlage
+% Jahr und Semester gegebenenfalls ändern!
+\newcommand{\fibeltitel}{Erstsemester-Informationszeitung des Fachbereichs Physik der Westfälischen Wilhelms-Universität Münster}
+% XXX Jedes Jahr aktualisieren!
+\newcommand{\fibeljahr}{2016/2017}
+\newcommand{\fibelsemester}{Wintersemester}
+\newcommand{\fibelautor}{Fachschaft Physik der WWU Münster; Simon May, Benedikt Bieringer}
+
+% Befehl \email: E-Mail-Adresse mit mailto-Link (anklickbar in der PDF-Datei)
+% 	Parameter #1: Gewünschte E-Mail-Adresse
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+% Befehl \hrefurl: Link, der als URL gesetzt wird, wo aber Verweisziel und Text
+% 	nicht identisch sind
+% 	Parameter: Wie bei \href
+\newcommand{\hrefurl}[2]{\href{#1}{\texttt{#2}}}
+
+% Befehl \fibelsig: Für Unterschriften unter Artikeln
+% 	Parameter #1: Name des Autors
+\newcommand{\fibelsig}[1]{\par\hfill(#1)\par}
+
+% Befehl \fibelimgtext: Bild mit zusätzlichem Text (z.B. Quellen-URL)
+% 	Parameter #1 (optional): Position/Ausrichtung des Textes
+% 		(default: unten rechts)
+% 	Parameter #2: Bild (z.B. \includegraphics)
+% 	Parameter #3: Zusätzlicher Text (standardmäßig \scriptsize)
+\NewDocumentCommand{\fibelimgtext}{O{bottom right} >{\TrimSpaces}m m}{%
+	\def\fibrotate{90}%
+	\def\fibxsep{2pt}%
+	\def\fibysep{0}%
+	\def\fibtxt{#3}%
+	\def\fibalign{l}%
+	\def\fibianchor{south east}%
+	\def\fibtanchor{south west}%
+	\ifstr{#1}{top left}{%
+		\def\fibalign{r}%
+		\def\fibianchor{north west}%
+		\def\fibtanchor{north east}%
+	}{\ifstr{#1}{bottom left}{%
+		\def\fibalign{r}%
+		\def\fibianchor{south west}%
+		\def\fibtanchor{south east}%
+	}{\ifstr{#1}{top right}{%
+		\def\fibianchor{north east}%
+		\def\fibtanchor{north west}%
+	}{\ifstr{#1}{bottom right}{%
+		% bottom right is default
+	}{\ifstr{#1}{above left}{%
+		\def\fibianchor{north west}%
+		\def\fibtanchor{south west}%
+		\def\fibrotate{0}%
+		\def\fibxsep{0}%
+		% Texthöhe als 0 erscheinen lassen
+		\def\fibtxt{\raisebox{0pt}[0pt][0pt]{#3}}%
+	}{\ifstr{#1}{above right}{%
+		\def\fibianchor{north east}%
+		\def\fibtanchor{south east}%
+		\def\fibrotate{0}%
+		\def\fibxsep{0}%
+		% Texthöhe als 0 erscheinen lassen
+		\def\fibtxt{\raisebox{0pt}[0pt][0pt]{#3}}%
+	}{\ifstr{#1}{below left}{%
+		\def\fibianchor{south west}%
+		\def\fibtanchor{north west}%
+		\def\fibrotate{0}%
+		\def\fibxsep{0}%
+		\def\fibysep{2pt}%
+		% Texthöhe als 0 erscheinen lassen
+		\def\fibtxt{\raisebox{-\totalheight}[0pt][0pt]{#3}}%
+	}{\ifstr{#1}{below right}{%
+		\def\fibianchor{south east}%
+		\def\fibtanchor{north east}%
+		\def\fibrotate{0}%
+		\def\fibxsep{0}%
+		\def\fibysep{2pt}%
+		% Texthöhe als 0 erscheinen lassen
+		\def\fibtxt{\raisebox{-\totalheight}[0pt][0pt]{#3}}%
+	}{%
+		\makeatletter%
+		\fibelwarning{Ungueltige Option fuer den Befehl \string\fibelimgtext: #1}%
+		\makeatother%
+	}}}}}}}}%
+	\makebox[\widthof{#2}][\fibalign]{%
+		\begin{tikzpicture}
+			\node[anchor=\fibianchor, inner sep=0] at (0, 0)
+			{#2};
+			\node[anchor=\fibtanchor, inner ysep=\fibysep, inner xsep=\fibxsep] at (0, 0)
+			{\rotatebox{\fibrotate}{\scriptsize\fibtxt}};
+		\end{tikzpicture}%
+	}%
+}
+
+% Befehl \fibelwerbung: Für eine Seite mit Werbung
+% 	Stern: Verwende \thispagestyle{empty} statt \thispagestyle{scrplain}
+% 		(Umschlagsseite)
+% 	Optionaler Parameter #1: Optionen für \fibfullpage
+% 	Optionaler Parameter #2: Erstellt eine Seite mit dem Parameter als Inhalt;
+%	falls leer: Verwendet das Wort „Werbung“ in groß und zentriert
+\NewDocumentCommand{\fibelwerbung}{s >{\TrimSpaces}O{\Huge\bfseries Werbung} >{\TrimSpaces}o}{%
+	\IfBooleanTF{#1}{\thispagestyle{empty}}{\thispagestyle{scrplain}}
+	\IfValueTF{#3}{%
+		\fibfullpage[#2]{#3}
+	}{%
+		\fibfullpage{#2}
+	}
+	% irgendein Output wird benötigt, damit überhaupt eine neue Seite
+	% angefangen wird
+	\hspace{0pt}
+	\clearpage
+}
+
+% Befehl \fibfullpage: Erzeugt den Inhalt als Seitenhintergrund
+% 	Optionaler Parameter #1: Optionen für die TikZ-\node
+% 	Parameter #2: Inhalt
+\makeatletter
+\NewDocumentCommand{\fibfullpage}{O{} m}{%
+	\def\fibfpcontent{%
+		\begin{tikzpicture}[remember picture, overlay]
+		\node[inner sep=0, outer sep=0, #1] at (current page) {#2};
+		\end{tikzpicture}%
+		
+	}%
+	% falls das „crop“-Paket geladen ist, muss der Hintergrund auf eine andere
+	% Weise erzeugt werden, da dieser sonst ÜBER die Schnittmarken gesetzt wird
+	\ltx@ifpackageloaded{crop}{%
+		\global\let\CROP@user@a\fibfpcontent%
+		\gdef\CROP@user@b{\global\let\CROP@user@a\relax}
+	}{%
+		\AddThispageHook{\fibfpcontent}
+	}%
+}
+\makeatother
+
+% Zähler für Umgebung fibelurl (wird mit jeder \section zurückgesetzt)
+\newcounter{fibelurlctr}[section]
+\crefformat{fibelurlctr}{#2[#1]#3}
+
+% Umgebung „fibelurl“: Für nummerierte Linklisten mit Verweisen wie z.B. im
+% Artikel Geld/BAföG
+\newenvironment{fibelurl}
+{\refstepcounter{fibelurlctr}[\arabic{fibelurlctr}]~}
+{\par}
+
+% Befehl \pullquotenl: Leerzeile für die „pullquote“-Umgebung (Bild in der
+% Mitte, von Text umflossen)
+\newcommand{\pullquotenl}{\par~}
+% Befehl \fibelsigpq: Für Unterschriften unter Artikeln mit pullquote (ohne
+% \par)
+% 	Parameter #1: Name des Autors
+\newcommand{\fibelsigpq}[1]{\hfill(#1)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !!! Die Befehle ab hier sind nicht zur direkten Verwendung durch den gemeinen
+% !!! Fibel-Schreiberling gedacht ;-)
+
+% Temporäre Variablen
+\newlength{\fibtemp}
+\newcounter{fibtemp}
+
+% Definition der Linie in der Kopfzeile
+\NewDocumentCommand{\fibelheadsepline}{O{even}}
+{\vspace{-0.6cm}%
+\ifstr{#1}{even}{\Huge$\Phi$\hfill}{}%
+\rule[2.6mm]{0.96\linewidth}{0.5mm}%
+\ifstr{#1}{odd}{\hfill\Huge$\Phi$}{}}
+
+% Definition des Textes an den Seitenrändern jeder Seite
+\newcommand{\fibelmargin}{\Large Ersti-$\Phi$bel \fibeljahr}
+
+% Erzeugung einer Warnung
+\newcommand{\fibelwarning}[1]{\GenericWarning{}{LaTeX warning: #1}}
