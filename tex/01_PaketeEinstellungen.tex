@@ -47,14 +47,14 @@
 
 % Farben
 \usepackage{xcolor}
-% Bessere Verarbeitung von Dateinamen für \includegraphics etc.
-% „final“ muss auch hier gesetzt werden, damit die Option für graphicx richtig
-% übernommen wird; s. https://tex.stackexchange.com/q/328499/51235
-\usepackage[final]{grffile}
 % Zum Einbinden von Grafiken (\includegraphics)
-\usepackage[final]{graphicx}
+\usepackage{graphicx}
 % .tex-Dateien mit \includegraphics einbiden
 \usepackage{gincltex}
+% Bessere Verarbeitung von Dateinamen für \includegraphics etc.
+\usepackage{grffile}
+% Niemals „draft“ für graphicx verwenden
+\PassOptionsToPackage{final}{graphicx}
 % Abbildungen im Fließtext (\begin{wrapfigure}…)
 \usepackage{wrapfig}
 % Bilder in der Mitte von zweispaltigem Text
@@ -125,7 +125,7 @@
 }
 % Für Schnittmarken und Randbereich
 % Nur aktivieren, wenn \fibelcropmarks = true
-\providecommand{\fibelcropmarks}{true}
+\providecommand{\fibelcropmarks}{false}
 \ifstr{\fibelcropmarks}{true}{
 	% DIN A4: 210mm×297mm (d.h. 7mm Schnittrand an allen 4 Rändern)
 	% Hinweis: Damit das crop-Paket richtig funktioniert, dürfen die Abmessungen
