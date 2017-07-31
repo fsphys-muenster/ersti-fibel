@@ -1,6 +1,4 @@
 # ersti-fibel
-[![license](https://img.shields.io/github/license/fsphys-muenster/ersti-fibel.svg)](LICENSE)
-
 Die Ersti-Φbel ist die Erstsemester-Informationszeitschrift des Fachbereichs Physik der WWU Münster.
 Die vollständige Version der Ersti-Φbel ist für Phsyik-Studierende der WWU (Nutzergruppe `p0stud`) [auf der Homepage der Fachschaft Physik](https://sso.uni-muenster.de/Physik.FSPHYS/intern/intern-physiker/erstifibel) als PDF-Datei verfügbar.
 
