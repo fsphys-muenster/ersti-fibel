@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg12257"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="1277.5"
+   height="957.5"
+   viewBox="0 0 1277.5 957.5"
+   sodipodi:docname="9_Chemie.svg"
+   inkscape:export-filename="/media/eichhornchen/Windows/Users/Eichhörnchen/GitHub/ersti-fibel/res/lageplan/9_Chemie.png"
+   inkscape:export-xdpi="400"
+   inkscape:export-ydpi="400">
+  <metadata
+     id="metadata12263">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12261">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       height="1.4"
+       width="1.4"
+       y="-0.2"
+       x="-0.2"
+       inkscape:label="Outline"
+       id="filter11425-4-7-9-4-3-2">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="3.69799"
+         result="blur1"
+         id="feGaussianBlur11427-0-9-8-5-6-0" />
+      <feComposite
+         in="blur1"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite11429-0-6-7-3-5-1" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 31.18 -0 "
+         result="colormatrix1"
+         id="feColorMatrix11431-5-9-1-4-6-7" />
+      <feGaussianBlur
+         stdDeviation="0.01"
+         result="blur2"
+         id="feGaussianBlur11433-5-6-1-2-2-6" />
+      <feComposite
+         in="blur2"
+         in2="blur2"
+         operator="over"
+         result="composite2"
+         id="feComposite11435-7-2-4-2-9-9" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 -0 "
+         result="colormatrix2"
+         id="feColorMatrix11437-0-8-8-1-6-4" />
+      <feGaussianBlur
+         stdDeviation="1"
+         result="blur3"
+         id="feGaussianBlur11439-3-8-4-0-8-0" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 5 -1 "
+         result="colormatrix3"
+         id="feColorMatrix11441-8-4-2-5-5-9" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood11443-6-3-8-6-6-5" />
+      <feComposite
+         in="flood"
+         in2="colormatrix3"
+         operator="in"
+         result="composite3"
+         id="feComposite11445-9-2-2-8-0-2" />
+      <feComposite
+         in="SourceGraphic"
+         in2="colormatrix3"
+         operator="out"
+         result="composite4"
+         id="feComposite11447-1-6-5-54-4-4" />
+      <feComposite
+         k4="0"
+         k1="0"
+         in="composite4"
+         in2="composite3"
+         k2="1"
+         k3="1"
+         operator="arithmetic"
+         result="composite5"
+         id="feComposite11449-0-8-2-7-2-7" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="992"
+     inkscape:window-height="480"
+     id="namedview12259"
+     showgrid="false"
+     inkscape:zoom="0.17324808"
+     inkscape:cx="439.11977"
+     inkscape:cy="661.34375"
+     inkscape:window-x="75"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg12257" />
+  <image
+     sodipodi:absref="/media/eichhornchen/Windows/Users/Eichhörnchen/GitHub/ersti-fibel/res/lageplan/9_Chemie_raw.jpg"
+     xlink:href="9_Chemie_raw.jpg"
+     y="0"
+     x="0"
+     id="image12265"
+     preserveAspectRatio="none"
+     height="957.5"
+     width="1277.5" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot5527-0-2-5-1-5-9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:6.89813185;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter11425-4-7-9-4-3-2)"
+     transform="matrix(3.6695709,0,0,3.6695709,-1866.4436,-5810.6165)"
+     inkscape:transform-center-x="990.80486"
+     inkscape:transform-center-y="-9.1319724"><flowRegion
+       id="flowRegion5529-5-1-0-0-7-7"><rect
+         id="rect5531-8-8-2-3-9-5"
+         width="930.02521"
+         height="853.32208"
+         x="527.33386"
+         y="1574.8529"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';fill:#ffffff;stroke:#ffffff;stroke-width:6.89813185" /></flowRegion><flowPara
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono';fill:#ffffff;stroke:#ffffff;stroke-width:6.89813185"
+       id="flowPara6159-5-3-3-06-9-4">9</flowPara></flowRoot></svg>
