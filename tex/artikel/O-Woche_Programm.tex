@@ -14,7 +14,17 @@
 \section{Programm der Physik-Orientierungseinheit (O-Woche/Ersti-Woche)}
 \renewcommand{\arraystretch}{1.8}
 \footnotesize
-\begin{tabular}{| >{\bfseries\hfill}p{0.08\textheight} | *{4}{p{\fibprogrammcw} |}}
+\begin{tabular}{
+	|
+	>{\bfseries\hfill} % füge „\bfseries\hfill“ zu Beginn jeder Zelle dieser Spalte ein (also fett und rechtsbündig)
+	p{0.08\textheight} % Textspalte (mehrzeilig) der Breite 0.08\textheight
+	|
+	*{4} % füge die folgende Definition viermal ein
+	{
+		p{\fibprogrammcw} % Textspalte (mehrzeilig) der Breite \fibprogrammcw
+		|
+	}
+}
 \hline
 Uhrzeit &
 	\textbf{Montag, 10.10.} &
