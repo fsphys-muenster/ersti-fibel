@@ -5,10 +5,16 @@
 % Befehl \fibnl ist ein Zeilenumbruch mit etwas Freiraum darunter
 \DeclareDocumentCommand{\fibnl}{}{\fibnlx[\baselineskip]}
 
+% XXX Relevanz dieser Definition prüfen
+% Nur für den Dienstags-Einschub.
+\newlength{\fibprogrammeinschub}
+\setlength{\fibprogrammeinschub}{0.005\textheight}
+
 % Länge \fibprogrammcw ist die Breite einer Spalte in der Programmtabelle
 % (außer Spalte mit den Zeiten)
 \newlength{\fibprogrammcw}
-\setlength{\fibprogrammcw}{0.214\textheight}
+\setlength{\fibprogrammcw}{0.214\textheight - 0.25\fibprogrammeinschub}
+
 
 \begin{landscape}
 \section{Programm der Physik-Orientierungseinheit (O-Woche/Ersti-Woche)}
@@ -19,7 +25,12 @@
 	>{\bfseries\hfill} % füge „\bfseries\hfill“ zu Beginn jeder Zelle dieser Spalte ein (also fett und rechtsbündig)
 	p{0.08\textheight} % Textspalte (mehrzeilig) der Breite 0.08\textheight
 	|
-	*{4} % füge die folgende Definition viermal ein
+	p{\fibprogrammcw} % Textspalte (mehrzeilig) der Breite \fibprogrammcw
+	|
+	% Dienstags-Einschub.
+	p{\fibprogrammeinschub} % Textspalte (mehrzeilig) der Breite \fibprogrammcw
+	|
+	*{3} % füge die folgende Definition viermal ein
 	{
 		p{\fibprogrammcw} % Textspalte (mehrzeilig) der Breite \fibprogrammcw
 		|
@@ -27,11 +38,14 @@
 }
 \hline
 Uhrzeit &
-	\textbf{Montag, 10.10.} &
-	\textbf{Dienstag, 11.10.} &
-	\textbf{Mittwoch, 12.10.} &
-	\textbf{Donnerstag, 13.10.}
-\\ \hline
+	\textbf{Montag, 02.10.} &
+	\multirow{10}{*}{
+		\hspace*{-2mm}\rotatebox{-90}{\hspace*{1cm}\textbf{Dienstags: Gemütliches Beisammensein in kleinerem Rahmen}}
+	}&
+	\textbf{Mittwoch, 04.10.} &
+	\textbf{Donnerstag, 05.10.} &
+	\textbf{Freitag, 06.10.}
+\\ \cline{1-2}\cline{4-6}
 10:00\vspace{\baselineskip} &
 	\multirow{4}{\fibprogrammcw}[-2mm]{%
 		\textbf{Einführungsveranstaltung}\fibnl
@@ -39,7 +53,7 @@ Uhrzeit &
 		\textit{Hörsaal~AP}\fibnl
 		\textbf{Tutorien und Institutsführung}\fibnl
 		\textbf{Mittagessen}
-	} &
+	} & &
 	\multirow{2}[2]{\fibprogrammcw}[-3mm]{%
 		\textbf{Infoveranstaltung~II}\fibnlx
 		(Gremien, IVV~NWZ+ZIV, BAföG)\fibnl
@@ -51,10 +65,12 @@ Uhrzeit &
 		\hspace*{\fill}
 		\textit{Hörsaal KP~404}} &
 \\ \cline{1-1}
-11:00\vspace{\baselineskip} & & & &
-\\ \cline{1-1}\cline{3-5}
-12:00 & &
-	Mittagspause &
+11:00\vspace{\baselineskip} & & & & &
+\\ \cline{1-1}\cline{4-6}
+12:00 & & &
+	\textbf{Buch-Club}\fibnlx
+	(Fachliteratur)\fibnl
+	\hspace*{\fill}\textit{Hörsaal~AP}  &
 	\textbf{Laborführungen}\fibnl
 		\hspace*{\fill}
 		\textit{Treffen vor der Fachschaft} &
@@ -63,76 +79,67 @@ Uhrzeit &
 		\textbf{Plenum \& Preisverleihung}\fibnl
 		\hspace*{\fill}
 		\textit{Hörsaal~1}}
-\\ \cline{1-1}\cline{4-4}
+\\ \cline{1-1}\cline{4-5}
 13:00\vspace{2\baselineskip} & & &
 	Mittagspause &
-\\ \hline
+	Mittagspause &
+\\ \cline{1-2}\cline{4-6}
 14:00 &
 	\multirow{2}[12]{\fibprogrammcw}{\textbf{Infoveranstaltung~I}\fibnlx
 		(Bachelor Physik/Geophysik, Zwei-Fach-Bachelor)\fibnl
 		\hspace*{\fill}
-		\textit{Hörsaal~AP}} &
-	\textbf{Buch-Club}\fibnlx
-	(Fachliteratur)\fibnl
-	\hspace*{\fill}\textit{Hörsaal~AP} &
+		\textit{Hörsaal~AP}} & & 
 	\multirow{4}[38]{\fibprogrammcw}{\textbf{Stadtspiel}\fibnl
 		\hspace*{\fill}
 		\textit{Treffen an der Freitreppe}\fibnl~\fibnl~\fibnl~\fibnl~\fibnl
 		anschließend Grillen vor der Fachschaft\fibnlx
 		(bei passender Wetterlage)} &
+	\multirow{2}{\fibprogrammcw}{%
+		\textbf{Konstruktionswettbewerb}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen im Foyer IG1}
+	} &
 	\multirow{2}[8]{\fibprogrammcw}{%
 		\textbf{"Kaffeetrinken" mit den Professoren}\fibnl
 		\hspace*{\fill}
 		\textit{Foyer IG1}
 	}
-\\ \cline{1-1}\cline{3-3}
+\\ \cline{1-1}
 15:00 &
-	&
-	\textbf{Vortrag der Polizei}\fibnlx
-		inkl.\ Fahrradregistrierung\fibnl
-		\hspace*{\fill}\textit{Hörsaal~AP} &
-	&
-\\ \cline{1-3}\cline{5-5}
+	& & & &
+\\ \cline{1-2}\cline{5-5}
 16:00 &
 	\multirow{2}[4]{\fibprogrammcw}{\textbf{Physikspiel}\fibnl
 		\hspace*{\fill}
-		\textit{Treffen an der Freitreppe}} &
+		\textit{Treffen an der Freitreppe}} & & &
 	\textbf{Ersti-Begrüßung des Rektorats}\fibnl
 		\hspace*{\fill}
-		\textit{Foyer im Schloss}
-	& &
-\\ \cline{1-1}\cline{3-3}\cline{5-5}
-17:00 & &
-	\multirow{2}{\fibprogrammcw}{%
-		\textbf{Konstruktionswettbewerb}\fibnl
-		\hspace*{\fill}
-		\textit{Treffen im Foyer IG1}
-	}
-	& &
-	\multirow{3}[4]{\fibprogrammcw}{%
-		\textbf{Spieleabend (\emph{ab} 17:00~Uhr)}\fibnlx
-		Brettspiele, Kartenspiele, Pen~\&~Paper und mehr!\fibnl
-		\hspace*{\fill}
-		\textit{Seminarraum KP~104}
-	}
-\\ \cline{1-2}
+		\textit{Foyer der Mensa} &
+\\ \cline{1-1}\cline{5-6}
+17:00 & & & & 
+	\textbf{Vortrag der Polizei}\fibnlx
+		inkl.\ Fahrradregistrierung\fibnl
+		\hspace*{\fill}\textit{Hörsaal~AP} &
+\\ \cline{1-2}\cline{5-5}
 18:00 &
 	\multirow{2}{\fibprogrammcw}{%
 		\textbf{Grillen}\fibnlx
 		(bei passender Wetterlage)
 	}
-	& & &
-\\ \cline{1-1}\cline{3-3}
-abends &
-	&
-	\textbf{Vorabendprogramm\fibnlx
-		(Pizza Essen, "Vorglühen", \dots)}\fibnlx
-	\hspace*{\fill}
-	\textit{Hörsaal~AP}\fibnl
-	\textbf{Kneipenbingo (20:00 Uhr!)}\fibnlx
+	& & & 
+	\multirow{3}[4]{\fibprogrammcw}{%
+		\textbf{Spieleabend}\fibnlx
+		Brettspiele, Kartenspiele, Pen~\&~Paper und mehr!\fibnl
 		\hspace*{\fill}
-		\textit{Treffen vor der Cavete} &
-	&
+		\textit{Seminarraum KP~104}
+	} &
+\\
+19:00 &	& & & &
+\\ \cline{1-1}
+abends &
+	\textbf{Kneipenabend}\fibnlx
+		\hspace*{\fill}
+		\textit{Treffen vor der Cavete} & & & &
 \\ \hline
 \end{tabular}
 
@@ -140,7 +147,7 @@ abends &
 
 % XXX Jedes Jahr Astroseminar-Termin aktualisieren!
 \textbf{Du findest Astrophysik spannend?
-	Zum Thema "Auf den Wogen von Raum und Zeit" findet dieses Jahr wieder das jährliche Astroseminar am Fr.\ und Sa., 21.10. \& 22.10. (Woche nach der Ersti-Woche) statt.
+	Zum Thema "Auf Entdeckungsreise im Kosmos" findet dieses Jahr wieder das jährliche Astroseminar am Fr.\ und Sa., 20.10. \& 21.10. (zwei Wochen nach der Ersti-Woche) statt.
 	Eintritt frei -- Anmeldung erforderlich!
 	Mehr Infos: \url{https://www.uni-muenster.de/Astroseminar}}
 \end{landscape}
