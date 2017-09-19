@@ -121,22 +121,22 @@
      inkscape:window-height="480"
      id="namedview12259"
      showgrid="false"
-     inkscape:zoom="0.17324808"
-     inkscape:cx="439.11977"
-     inkscape:cy="661.34375"
-     inkscape:window-x="75"
-     inkscape:window-y="34"
+     inkscape:zoom="0.12250489"
+     inkscape:cx="415.97447"
+     inkscape:cy="520.13664"
+     inkscape:window-x="180"
+     inkscape:window-y="259"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg12257" />
   <image
      sodipodi:absref="/media/eichhornchen/Windows/Users/Eichhörnchen/GitHub/ersti-fibel/res/lageplan/9_Chemie_raw.jpg"
      xlink:href="9_Chemie_raw.jpg"
-     y="0"
-     x="0"
-     id="image12265"
-     preserveAspectRatio="none"
+     width="1277.5"
      height="957.5"
-     width="1277.5" />
+     preserveAspectRatio="none"
+     id="image12265"
+     x="0"
+     y="0" />
   <flowRoot
      xml:space="preserve"
      id="flowRoot5527-0-2-5-1-5-9"
@@ -151,5 +151,5 @@
          x="527.33386"
          y="1574.8529"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';fill:#ffffff;stroke:#ffffff;stroke-width:6.89813185" /></flowRegion><flowPara
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono';fill:#ffffff;stroke:#ffffff;stroke-width:6.89813185"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:146.47489166px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono';fill:#ffffff;stroke:#ffffff;stroke-width:6.89813185"
        id="flowPara6159-5-3-3-06-9-4">9</flowPara></flowRoot></svg>
