@@ -1,5 +1,6 @@
-\fibelwerbung*[
-	\includegraphics[width=\paperwidth]{res/werbung/nadann.pdf}
+\AddThispageHook{\addtokomafont{pagenumber}{\color{white}}}
+\fibelwerbung[yshift=-5mm][
+	\includegraphics[width=1.01\paperwidth, height=1.06\paperheight]{res/werbung/techniker.pdf}
 ]
 
 % -- Impressum
@@ -41,10 +42,10 @@
 \clearpage
 
 \fibelwerbung[yshift=3mm][
-	\ifthispageodd{}{\fibelwarning{%
-		MLP-Werbung muss auf eine ungerade (rechte) Seite, \MessageBreak
-		ist aber auf Seite \arabic{page}%
-	}}
+%	\ifthispageodd{}{\fibelwarning{%
+%		MLP-Werbung muss auf eine ungerade (rechte) Seite, \MessageBreak
+%		ist aber auf Seite \arabic{page}%
+%	}}
 	\includegraphics[scale=1.005]{res/werbung/mlp.pdf}
 	%\includegraphics[width=1.01\paperwidth, height=1.01\paperheight]{res/werbung/mlp.pdf}
 ]
@@ -101,6 +102,10 @@
 \input{tex/artikel/Persoenlichkeitsentwicklung.tex}
 \clearpage
 
+\fibelwerbung[
+	\includegraphics[width=\paperwidth, height=\paperheight]{res/werbung/lwl_planetarium.pdf}
+]
+
 \input{tex/artikel/Kneipenguide.tex}
 \clearpage
 
@@ -127,17 +132,11 @@
 \input{tex/artikel/Notizen_Loesungen.tex}
 \clearpage
 
-\fibelwerbung*[
-	\includegraphics[width=1.01\paperwidth, height=1.01\paperheight]{res/werbung/dark_dreams_in_metal.jpg}
-]
-
 \input{tex/artikel/O-Woche_Programm.tex}
 \clearpage
 
-\AddThispageHook{\addtokomafont{pagenumber}{\color{white}}}
-\fibelwerbung[yshift=-5mm][
-	\includegraphics[width=1.01\paperwidth, height=1.06\paperheight]{res/werbung/techniker.pdf}
-]
+% TODO
+\clearpage
 
 \fibelwerbung*[
 	\includegraphics{res/werbung/thalia.pdf}
