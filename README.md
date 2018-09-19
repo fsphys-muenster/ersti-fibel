@@ -10,7 +10,7 @@ Siehe auch [`private/README.md`](private/README.md) für weitere Informationen.
 
 ## Hinweise zur Ordnerstruktur und zum Umgang mit den Dateien
 - Bedeutung der einzelnen TeX-Dateien:
-  - Hauptdatei ist die Datei [`fibel.tex`](fibel.tex); diese also kompilieren.
+  - Hauptdatei ist die Datei [`fibel.tex`](fibel.tex); diese also (i.a. mit lualatex) kompilieren.
   - Zum Schreiben von Artikeln sind eigentlich nur die Datei [`tex/10_Inhalt.tex`](tex/10_Inhalt.tex) und die diversen Dateien im Ordner [`tex/artikel`](tex/artikel/)
 interessant.
   Die Artikel werden im Ordner [`tex/artikel`](tex/artikel/) gespeichert und innerhalb von [`10_Inhalt.tex`](tex/10_Inhalt.tex) eingebunden.
