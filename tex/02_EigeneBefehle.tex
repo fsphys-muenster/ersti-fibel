@@ -2,9 +2,9 @@
 % Jahr und Semester gegebenenfalls ändern!
 \newcommand{\fibeltitel}{Erstsemester-Informationszeitung des Fachbereichs Physik der Westfälischen Wilhelms-Universität Münster}
 % XXX Jedes Jahr aktualisieren!
-\newcommand{\fibeljahr}{2017/2018}
+\newcommand{\fibeljahr}{2018/2019}
 \newcommand{\fibelsemester}{Wintersemester}
-\newcommand{\fibelautor}{Fachschaft Physik der WWU Münster; Simon May, Benedikt Bieringer}
+\newcommand{\fibelautor}{Fachschaft Physik der WWU Münster; Benedikt Bieringer, Andrea Garner, Alexandra Everwand}
 
 % Befehl \email: E-Mail-Adresse mit mailto-Link (anklickbar in der PDF-Datei)
 % 	Parameter #1: Gewünschte E-Mail-Adresse
@@ -148,6 +148,17 @@
 % \par)
 % 	Parameter #1: Name des Autors
 \newcommand{\fibelsigpq}[1]{\hfill(#1)}
+
+% Notizbild
+\newcommand{\fibelnotesimg}{%
+	\begin{tikzpicture}[remember picture, overlay]
+		\node[anchor=north east, yshift=-0.5cm] at (current page text area.north east)
+		{\includegraphics[width=5cm]{res/tango_accessories-text-editor.pdf}};
+	\end{tikzpicture}%
+}
+\newcommand{\fibelnotesimgsmall}{%
+	\includegraphics[width=2cm]{res/tango_accessories-text-editor.pdf}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % !!! Die Befehle ab hier sind nicht zur direkten Verwendung durch den gemeinen

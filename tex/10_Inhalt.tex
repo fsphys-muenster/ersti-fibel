@@ -1,14 +1,20 @@
+%%% General Templates
+%% Etwas mehr Abstand zwischen Paragraphen, weil der Artikel so kurz ist
+%\setlength{\parskip}{1.6\parskip}
+
+%%% Inhalt.tex
 \AddThispageHook{\addtokomafont{pagenumber}{\color{white}}}
 \fibelwerbung[%yshift=-5mm][
-	\includegraphics[width=1.02\paperwidth, height=1.06\paperheight]{res/werbung/techniker.pdf}
+	\includegraphics[width=1.02\paperwidth]{res/werbung/techniker.pdf}
 ]
+\clearpage
 
 % -- Impressum
 \input{tex/04_Impressum.tex}
 \clearpage
 
 % -- Inhaltsverzeichnis
-\enlargethispage{10pt}
+\enlargethispage{15pt}
 \tableofcontents
 
 % --- Ab hier Artikel
@@ -134,7 +140,8 @@
 
 \input{tex/artikel/O-Woche_Programm.tex}
 \clearpage
-~ % TODO
+
+\input{tex/artikel/Infos_O-Woche.tex}
 \clearpage
 
 \fibelwerbung*[
