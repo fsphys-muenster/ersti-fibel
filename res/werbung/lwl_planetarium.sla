@@ -131,33 +131,9 @@
                 <trail PARENT="Überschrift"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="751.969133858268" YPOS="446.034330708661" OwnPage="0" ItemID="216187680" PTYPE="4" WIDTH="242.805354330709" HEIGHT="568.011023622048" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L242.805 0 L242.805 568.011 L0 568.011 L0 0 Z" copath="M0 0 L242.806 0 L242.806 568.011 L0 568.011 L0 0 Z" gXpos="1.4210854715202e-14" gYpos="-10.172913363781" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="1000.00022047244" YPOS="445.034330708661" OwnPage="0" ItemID="216187680" PTYPE="4" WIDTH="242.805354330709" HEIGHT="568.011023622048" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L242.805 0 L242.805 568.011 L0 568.011 L0 0 Z" copath="M0 0 L242.806 0 L242.806 568.011 L0 568.011 L0 0 Z" gXpos="248.031086614173" gYpos="-11.172913363781" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
-                <ITEXT CH="BESONDERES"/>
-                <para PARENT="Intro"/>
-                <ITEXT CH="Europas Weg zu den Sternen"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Einblicke hinter die Kulissen der größten Observatorien."/>
-                <breakline/>
-                <ITEXT CH="FR 11.10.2019 | FR 20.12.2019 | je 19.00 Uhr"/>
-                <breakline/>
-                <ITEXT CH="FR 18.10.2019 | FR 01.11.2019 | FR 15.11.2019 | je 18.00 Uhr"/>
-                <breakline/>
-                <ITEXT CH="Eintritt Studierende: 4 €"/>
-                <para PARENT="klein"/>
-                <ITEXT CH="Die Jagd nach dem Geisterteilchen"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Der größte Detektor der Welt: IceCube"/>
-                <breakline/>
-                <ITEXT CH="FR 26.07.2019 | FR 06.09.2019 | FR 04.10.2019 | "/>
-                <breakline/>
-                <ITEXT CH="je 18.00 Uhr"/>
-                <breakline/>
-                <ITEXT CH="FR 08.11.2019 | FR 06.12.2019 | je 19.00 Uhr"/>
-                <breakline/>
-                <ITEXT CH="Eintritt Studierende: 4 €"/>
-                <para PARENT="klein"/>
                 <ITEXT CH="ASTROVORTRÄGE"/>
                 <para PARENT="Intro"/>
                 <ITEXT CH="Hawking und die Schwarzen Löcher"/>
@@ -171,34 +147,6 @@
                 <ITEXT CH="Eiswelten am Rand des Sonnensystems"/>
                 <breakline/>
                 <ITEXT CH="DI 03.12.2019 | PD Dr. Harald Krüger, Max-Planck-Institut für Sonnensystemforschung | Eintritt Studierende: 4 €"/>
-                <para PARENT="klein"/>
-                <ITEXT CH="KONZERT (Livemusik)"/>
-                <para PARENT="Intro"/>
-                <ITEXT CH="Electronic Music 4 — Ron Boots und moonbooter"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Elektronische Livemusik unter dem Sternenhimmel."/>
-                <breakline/>
-                <ITEXT CH="SA 23.11.2019 | 19.30 Uhr | Eintritt Studierende 16 €"/>
-                <para PARENT="klein"/>
-                <para/>
-            </StoryText>
-        </PAGEOBJECT>
-        <PAGEOBJECT XPOS="1000.00022047244" YPOS="445.270236198427" OwnPage="0" ItemID="216833072" PTYPE="4" WIDTH="247.523677151177" HEIGHT="450.138110258267" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L247.524 0 L247.524 450.138 L0 450.138 L0 0 Z" copath="M0 0 L247.524 0 L247.524 450.138 L0 450.138 L0 0 Z" gXpos="248.031086614168" gYpos="-10.9370078740159" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
-            <StoryText>
-                <DefaultStyle/>
-                <ITEXT CH="LESUNGEN (Live)"/>
-                <para PARENT="Intro"/>
-                <ITEXT CH="Halloween-Lesung: Bram Stokers Dracula (ab 16 Jahre)"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Präsentiert von Christoph Tiemann und Theater ex libris."/>
-                <breakline/>
-                <ITEXT CH="DO 31.10.2019 | 19.00 Uhr | Eintritt Studierende: 8 €"/>
-                <para PARENT="klein"/>
-                <ITEXT CH="Adventslesung: Der Kleine Prinz"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Gelesen von Beate Reker. Live-Musik Leon Jaekel."/>
-                <breakline/>
-                <ITEXT CH="SA 30.11.2019 | 19.00 Uhr | Eintritt 14,00 €"/>
                 <para PARENT="klein"/>
                 <ITEXT CH="MU­SIKS­HOWS (kei­ne Li­ve­mu­sik)"/>
                 <para PARENT="Intro"/>
@@ -225,6 +173,57 @@
                 <ITEXT CH="Grandioser Rock mit der Musik von Pink Floyd."/>
                 <breakline/>
                 <ITEXT CH="FR 22.11.2019 | 20.30 Uhr | Eintritt Studierende: 6 €"/>
+                <para PARENT="klein"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="751.969133858268" YPOS="445.270236198427" OwnPage="0" ItemID="216833072" PTYPE="4" WIDTH="247.523677151177" HEIGHT="450.138110258267" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L247.524 0 L247.524 450.138 L0 450.138 L0 0 Z" copath="M0 0 L247.524 0 L247.524 450.138 L0 450.138 L0 0 Z" gXpos="-4.06430444854777e-12" gYpos="-10.9370078740159" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="BESONDERES"/>
+                <para PARENT="Intro"/>
+                <ITEXT CH="Europas Weg zu den Sternen"/>
+                <para PARENT="kursiv"/>
+                <ITEXT CH="Einblicke hinter die Kulissen der größten Observatorien."/>
+                <breakline/>
+                <ITEXT CH="FR 11.10.2019 | FR 20.12.2019 | je 19.00 Uhr"/>
+                <breakline/>
+                <ITEXT CH="FR 18.10.2019 | FR 01.11.2019 | FR 15.11.2019 | je 18.00 Uhr"/>
+                <breakline/>
+                <ITEXT CH="Eintritt Studierende: 4 €"/>
+                <para PARENT="klein"/>
+                <ITEXT CH="Die Jagd nach dem Geisterteilchen"/>
+                <para PARENT="kursiv"/>
+                <ITEXT CH="Der größte Detektor der Welt: IceCube"/>
+                <breakline/>
+                <ITEXT CH="FR 26.07.2019 | FR 06.09.2019 | FR 04.10.2019 | "/>
+                <breakline/>
+                <ITEXT CH="je 18.00 Uhr"/>
+                <breakline/>
+                <ITEXT CH="FR 08.11.2019 | FR 06.12.2019 | je 19.00 Uhr"/>
+                <breakline/>
+                <ITEXT CH="Eintritt Studierende: 4 €"/>
+                <para PARENT="klein"/>
+                <ITEXT CH="KONZERT (Livemusik)"/>
+                <para PARENT="Intro"/>
+                <ITEXT CH="Electronic Music 4 — Ron Boots und moonbooter"/>
+                <para PARENT="kursiv"/>
+                <ITEXT CH="Elektronische Livemusik unter dem Sternenhimmel."/>
+                <breakline/>
+                <ITEXT CH="SA 23.11.2019 | 19.30 Uhr | Eintritt Studierende 16 €"/>
+                <para PARENT="klein"/>
+                <ITEXT CH="LESUNGEN (Live)"/>
+                <para PARENT="Intro"/>
+                <ITEXT CH="Halloween-Lesung: Bram Stokers Dracula (ab 16 Jahre)"/>
+                <para PARENT="kursiv"/>
+                <ITEXT CH="Präsentiert von Christoph Tiemann und Theater ex libris."/>
+                <breakline/>
+                <ITEXT CH="DO 31.10.2019 | 19.00 Uhr | Eintritt Studierende: 8 €"/>
+                <para PARENT="klein"/>
+                <ITEXT CH="Adventslesung: Der Kleine Prinz"/>
+                <para PARENT="kursiv"/>
+                <ITEXT CH="Gelesen von Beate Reker. Live-Musik Leon Jaekel."/>
+                <breakline/>
+                <ITEXT CH="SA 30.11.2019 | 19.00 Uhr | Eintritt 14,00 €"/>
                 <para PARENT="klein"/>
             </StoryText>
         </PAGEOBJECT>
