@@ -4,9 +4,8 @@
 
 %%% Inhalt.tex
 \AddThispageHook{\addtokomafont{pagenumber}{\color{white}}}
-\fibelwerbung[%yshift=-5mm][
-	\includegraphics[width=1.02\paperwidth]{res/werbung/techniker.pdf}
-]
+\thispagestyle{empty}
+\mbox{}% U2 leer
 \clearpage
 
 % -- Impressum
@@ -47,14 +46,10 @@
 \input{tex/artikel/Geld.tex}
 \clearpage
 
-\fibelwerbung*[%yshift=1mm][
-%	\ifthispageodd{}{\fibelwarning{%
-%		MLP-Werbung muss auf eine ungerade (rechte) Seite, \MessageBreak
-%		ist aber auf Seite \arabic{page}%
-%	}}
-	\includegraphics[scale=1.4142]{res/werbung/mlp.pdf}
-	%\includegraphics[width=1.01\paperwidth, height=1.01\paperheight]{res/werbung/mlp.pdf}
+\fibelwerbung[%yshift=-5mm][
+	\includegraphics[width=1.02\paperwidth]{res/werbung/techniker.pdf}
 ]
+\clearpage
 
 \input{tex/artikel/Ausland_Erasmus.tex}
 \input{tex/artikel/Nachhilfe.tex}
@@ -76,6 +71,7 @@
 \clearpage
 
 \input{tex/artikel/FSR_Vorstellungsrunde.tex}
+\input{tex/artikel/ToiletPaper.tex}
 \clearpage
 
 \input{tex/artikel/jDPG.tex}
@@ -138,12 +134,9 @@
 \input{tex/artikel/Notizen_Loesungen.tex}
 \clearpage
 
+\thispagestyle{empty}
+\mbox{}% U3 leer
+\clearpage
+
+\thispagestyle{empty}
 \input{tex/artikel/O-Woche_Programm.tex}
-\clearpage
-
-\input{tex/artikel/Infos_O-Woche.tex}
-\clearpage
-
-\fibelwerbung*[
-	\includegraphics{res/werbung/thalia.pdf}
-]
