@@ -32,34 +32,34 @@
 	\def\fibalign{l}%
 	\def\fibianchor{south east}%
 	\def\fibtanchor{south west}%
-	\ifstr{#1}{top left}{%
+	\Ifstr{#1}{top left}{%
 		\def\fibalign{r}%
 		\def\fibianchor{north west}%
 		\def\fibtanchor{north east}%
-	}{\ifstr{#1}{bottom left}{%
+	}{\Ifstr{#1}{bottom left}{%
 		\def\fibalign{r}%
 		\def\fibianchor{south west}%
 		\def\fibtanchor{south east}%
-	}{\ifstr{#1}{top right}{%
+	}{\Ifstr{#1}{top right}{%
 		\def\fibianchor{north east}%
 		\def\fibtanchor{north west}%
-	}{\ifstr{#1}{bottom right}{%
+	}{\Ifstr{#1}{bottom right}{%
 		% bottom right is default
-	}{\ifstr{#1}{above left}{%
+	}{\Ifstr{#1}{above left}{%
 		\def\fibianchor{north west}%
 		\def\fibtanchor{south west}%
 		\def\fibrotate{0}%
 		\def\fibxsep{0}%
 		% Texthöhe als 0 erscheinen lassen
 		\def\fibtxt{\raisebox{0pt}[0pt][0pt]{#3}}%
-	}{\ifstr{#1}{above right}{%
+	}{\Ifstr{#1}{above right}{%
 		\def\fibianchor{north east}%
 		\def\fibtanchor{south east}%
 		\def\fibrotate{0}%
 		\def\fibxsep{0}%
 		% Texthöhe als 0 erscheinen lassen
 		\def\fibtxt{\raisebox{0pt}[0pt][0pt]{#3}}%
-	}{\ifstr{#1}{below left}{%
+	}{\Ifstr{#1}{below left}{%
 		\def\fibianchor{south west}%
 		\def\fibtanchor{north west}%
 		\def\fibrotate{0}%
@@ -67,7 +67,7 @@
 		\def\fibysep{2pt}%
 		% Texthöhe als 0 erscheinen lassen
 		\def\fibtxt{\raisebox{-\totalheight}[0pt][0pt]{#3}}%
-	}{\ifstr{#1}{below right}{%
+	}{\Ifstr{#1}{below right}{%
 		\def\fibianchor{south east}%
 		\def\fibtanchor{north east}%
 		\def\fibrotate{0}%
@@ -171,9 +171,9 @@
 % Definition der Linie in der Kopfzeile
 \NewDocumentCommand{\fibelheadsepline}{O{even}}
 {\vspace{-0.6cm}%
-\ifstr{#1}{even}{\Huge$\Phi$\hfill}{}%
+\Ifstr{#1}{even}{\Huge$\Phi$\hfill}{}%
 \rule[2.6mm]{0.96\linewidth}{0.5mm}%
-\ifstr{#1}{odd}{\hfill\Huge$\Phi$}{}}
+\Ifstr{#1}{odd}{\hfill\Huge$\Phi$}{}}
 
 % Definition des Textes an den Seitenrändern jeder Seite
 \newcommand{\fibelmargin}{\Large Ersti-$\Phi$bel \fibeljahr}

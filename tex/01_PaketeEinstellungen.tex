@@ -126,7 +126,7 @@
 % Für Schnittmarken und Randbereich
 % Nur aktivieren, wenn \fibelcropmarks = true
 \providecommand{\fibelcropmarks}{false}
-\ifstr{\fibelcropmarks}{true}{
+\Ifstr{\fibelcropmarks}{true}{
 	% crop-Paket benötigt luatex85 für Kompatibilität
 	\usepackage{luatex85}
 	% DIN A4: 210mm×297mm (d.h. 7mm Schnittrand an allen 4 Rändern)

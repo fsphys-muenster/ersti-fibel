@@ -34,8 +34,8 @@
 % Text links/rechts an den Seitenrändern auf jeder Seite
 \AddEverypageHook{
 	% Seitenrand-Text nur für Seitenstil „scrheadings“ anzeigen
-	\ifstr{\currentpagestyle}{scrheadings}{
-		\ifthispageodd{
+	\Ifstr{\currentpagestyle}{scrheadings}{
+		\Ifthispageodd{
 			% ungerade Seiten
 			\begin{tikzpicture}[remember picture, overlay]
 				\node[rotate=270] at ($(current page.center) + (9.9cm, -10.9cm)$)
