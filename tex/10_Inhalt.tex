@@ -52,7 +52,7 @@
 \clearpage
 
 \input{tex/artikel/Ausland_Erasmus.tex}
-\input{tex/artikel/Nachhilfe.tex}
+\input{tex/artikel/ToiletPaper.tex}
 \clearpage
 
 \input{tex/artikel/Semesterticket.tex}
@@ -71,7 +71,7 @@
 \clearpage
 
 \input{tex/artikel/FSR_Vorstellungsrunde.tex}
-\input{tex/artikel/ToiletPaper.tex}
+\input{tex/artikel/Nachhilfe.tex}
 \clearpage
 
 \input{tex/artikel/jDPG.tex}
@@ -86,12 +86,6 @@
 \input{tex/artikel/Erstiwochenende.tex}
 \clearpage
 
-\input{tex/artikel/Nikolaus.tex}
-\clearpage
-
-\input{tex/artikel/UEberlebenszettel.tex}
-\clearpage
-
 \input{tex/artikel/Lernen_Buecher.tex}
 \clearpage
 
@@ -104,6 +98,7 @@
 \input{tex/artikel/Persoenlichkeitsentwicklung.tex}
 \clearpage
 
+\AddThispageHook{\addtokomafont{pagenumber}{\color{white}}} % XXX Seitennummer verdeckt Corona-Hinweis
 \fibelwerbung[
 	\includegraphics[width=\paperwidth, height=\paperheight]{res/werbung/lwl_planetarium.pdf}
 ]
@@ -116,9 +111,6 @@
 
 \input{tex/artikel/Evaluation.tex}
 \input{tex/artikel/Buchmarkt.tex}
-\clearpage
-
-\input{tex/artikel/Lexikon.tex}
 \clearpage
 
 \input{tex/artikel/Fahrradfahren.tex}
@@ -134,8 +126,10 @@
 \input{tex/artikel/Notizen_Loesungen.tex}
 \clearpage
 
-\thispagestyle{empty}
-\mbox{}% U3 leer
+\input{tex/artikel/Lexikon.tex}
+\clearpage
+
+\input{tex/artikel/UEberlebenszettel.tex}
 \clearpage
 
 \thispagestyle{empty}

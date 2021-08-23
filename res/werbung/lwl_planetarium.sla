@@ -11,6 +11,7 @@
         <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
         <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
         <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="d" SPACE="RGB" R="153" G="102" B="51"/>
         <HYPHEN/>
         <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="3" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="9" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" FONT="Average Sans Regular" FONTSIZE="11" wordTrack="1"/>
         <STYLE NAME="Überschrift" ALIGN="0" CPARENT="Überschrift"/>
@@ -22,6 +23,7 @@
         <STYLE NAME="Zitat" ALIGN="1" LINESP="27" CPARENT="Zitat"/>
         <STYLE NAME="kursiv" PARENT="Autor" ALIGN="0" NACH="0" CPARENT="kursiv"/>
         <STYLE NAME="klein" PARENT="Default Paragraph Style" ALIGN="0" DIRECTION="0" LINESP="13" NACH="7" CPARENT="klein"/>
+        <STYLE NAME="klein bold" PARENT="kursiv" CPARENT="klein bold"/>
         <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Average Sans Regular" FONTSIZE="11" FEATURES="inherit" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="de"/>
         <CHARSTYLE CNAME="Unterüberschrift" FONT="DejaVu Sans Book" FONTSIZE="12" SCALEH="80" SCALEV="92" KERN="3" wordTrack="1.09"/>
         <CHARSTYLE CNAME="kursiv" FONT="Gudea Italic"/>
@@ -30,6 +32,7 @@
         <CHARSTYLE CNAME="Zitat" FONTSIZE="20" LANGUAGE="de"/>
         <CHARSTYLE CNAME="Überschrift" FONTSIZE="30" LANGUAGE="de"/>
         <CHARSTYLE CNAME="klein" CPARENT="Default Character Style" FONTSIZE="10"/>
+        <CHARSTYLE CNAME="klein bold" CPARENT="klein" FONT="Source Sans Pro Bold" FONTFEATURES="-clig"/>
         <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
             <TableBorderLeft>
                 <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
@@ -64,6 +67,8 @@
             <Subset Name="Average Sans Regular"/>
             <Subset Name="Gudea Italic"/>
             <Subset Name="Source Sans Pro Bold"/>
+            <Subset Name="Source Sans Pro Bold Italic"/>
+            <Subset Name="Source Sans Pro SemiBold"/>
             <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
             <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
             <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
@@ -101,133 +106,128 @@
         <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="85.0393700787402" BORDERBOTTOM="56.6929133858268" NUM="1" NAM="Normal rechts" MNAM="" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="56.6929 290.551 304.724 " HorizontalGuides="18.4252 121.89 150.236 223.937 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
         <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="85.0393700787402" BORDERBOTTOM="56.6929133858268" NUM="2" NAM="Zitat" MNAM="" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="56.6929 290.551 304.724 " HorizontalGuides="18.4252 121.89 150.236 223.937 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
         <PAGE PAGEXPOS="695.276220472441" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="56.6929133858268" BORDERRIGHT="56.6929133858268" BORDERTOP="85.0393700787402" BORDERBOTTOM="56.6929133858268" NUM="0" NAM="" MNAM="Normal rechts" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="290.551 304.724 538.583 56.6929 " HorizontalGuides="18.4252 121.89 150.236 223.937 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
-        <MASTEROBJECT XPOS="-447.085984249921" YPOS="133.38708664252" OwnPage="-1" ItemID="216049120" PTYPE="5" WIDTH="746.7807136" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="0" PCOLOR2="Black" PLINEART="1" path="" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <MASTEROBJECT XPOS="156.693543307087" YPOS="312.34771653552" OwnPage="2" ItemID="216072016" PTYPE="4" WIDTH="205.2" HEIGHT="94.45228346" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="2" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L205.2 0 L205.2 94.4523 L0 94.4523 L0 0 Z" copath="M0 0 L205.2 0 L205.2 94.4523 L0 94.4523 L0 0 Z" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="3" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <MASTEROBJECT XPOS="-447.085984249921" YPOS="133.38708664252" OwnPage="-1" ItemID="1881853896" PTYPE="5" WIDTH="746.7807136" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="0" PCOLOR2="Black" PLINEART="1" path="" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <MASTEROBJECT XPOS="156.693543307087" YPOS="312.34771653552" OwnPage="2" ItemID="1881854536" PTYPE="4" WIDTH="205.2" HEIGHT="94.45228346" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="2" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L205.2 0 L205.2 94.4523 L0 94.4523 L0 0 Z" copath="M0 0 L205.2 0 L205.2 94.4523 L0 94.4523 L0 0 Z" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="3" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="3" LINESPMode="0" LINESP="15" FONT="Average Sans Regular" FONTSIZE="11" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0"/>
                 <trail/>
             </StoryText>
         </MASTEROBJECT>
-        <MASTEROBJECT XPOS="161.493543307087" YPOS="324.04062992752" OwnPage="2" ItemID="216119440" PTYPE="4" WIDTH="199.2" HEIGHT="75.66330708" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L199.2 0 L199.2 75.6633 L0 75.6633 L0 0 Z" copath="M-2.72968 -3.29519 L201.948 -3.29519 L201.948 79.0219 L-2.72968 79.0219 L-2.72968 -3.29519 Z" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="3" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <MASTEROBJECT XPOS="161.493543307087" YPOS="324.04062992752" OwnPage="2" ItemID="1881905624" PTYPE="4" WIDTH="199.2" HEIGHT="75.66330708" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L199.2 0 L199.2 75.6633 L0 75.6633 L0 0 Z" copath="M-2.72968 -3.29519 L201.948 -3.29519 L201.948 79.0219 L-2.72968 79.0219 L-2.72968 -3.29519 Z" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="3" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="3" LINESPMode="0" LINESP="15" FONT="Average Sans Regular" FONTSIZE="11" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0"/>
                 <ITEXT CH="&quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&quot;"/>
                 <para PARENT="Zitat"/>
             </StoryText>
         </MASTEROBJECT>
-        <MASTEROBJECT XPOS="165.093543309087" YPOS="315.30393700752" OwnPage="2" ItemID="216060912" PTYPE="5" WIDTH="189.5999999" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" path="" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <MASTEROBJECT XPOS="165.093543369087" YPOS="406.01259840252" OwnPage="2" ItemID="216016752" PTYPE="5" WIDTH="189.5999999" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" path="" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="1022.67803146142" YPOS="38.4264598425198" OwnPage="0" ItemID="216007296" PTYPE="4" WIDTH="236.6926772" HEIGHT="14.87244094" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L236.693 0 L236.693 14.8724 L0 14.8724 L0 0 Z" copath="M0 0 L236.693 0 L236.693 14.8724 L0 14.8724 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <MASTEROBJECT XPOS="165.093543309087" YPOS="315.30393700752" OwnPage="2" ItemID="1881816296" PTYPE="5" WIDTH="189.5999999" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" path="" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <MASTEROBJECT XPOS="165.093543369087" YPOS="406.01259840252" OwnPage="2" ItemID="1881802600" PTYPE="5" WIDTH="189.5999999" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Black" PLINEART="1" path="" OnMasterPage="Zitat" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="1022.67803146142" YPOS="38.4264598425198" OwnPage="0" ItemID="1881826296" PTYPE="4" WIDTH="236.6926772" HEIGHT="14.87244094" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L236.693 0 L236.693 14.8724 L0 14.8724 L0 0 Z" copath="M0 0 L236.693 0 L236.693 14.8724 L0 14.8724 L0 0 Z" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT CH="Anzeige"/>
                 <trail PARENT="Seitenbeschriftung rechts"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="751.969133858268" YPOS="105.04062992126" OwnPage="0" ItemID="216084016" PTYPE="4" WIDTH="481.889763779527" HEIGHT="36.8506299212598" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 36.8506 L0 36.8506 L0 0 Z" copath="M0 0 L481.89 0 L481.89 36.8506 L0 36.8506 L0 0 Z" gXpos="1.13686837721616e-13" gYpos="-1.06581410364015e-14" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="751.969133858268" YPOS="105.04062992126" OwnPage="0" ItemID="1881868072" PTYPE="4" WIDTH="481.889763779527" HEIGHT="36.8506299212598" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 36.8506 L0 36.8506 L0 0 Z" copath="M0 0 L481.89 0 L481.89 36.8506 L0 36.8506 L0 0 Z" gXpos="1.13686837721616e-13" gYpos="-1.06581410364015e-14" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT CH="Planetarium Münster"/>
                 <trail PARENT="Überschrift"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="1000.00022047244" YPOS="445.034330708661" OwnPage="0" ItemID="216187680" PTYPE="4" WIDTH="242.805354330709" HEIGHT="568.011023622048" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L242.805 0 L242.805 568.011 L0 568.011 L0 0 Z" copath="M0 0 L242.806 0 L242.806 568.011 L0 568.011 L0 0 Z" gXpos="248.031086614173" gYpos="-11.172913363781" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="1000.00022047244" YPOS="445.034330708661" OwnPage="0" ItemID="1881935032" PTYPE="4" WIDTH="233.858677165355" HEIGHT="568.011023622048" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.859 0 L233.859 568.011 L0 568.011 L0 0 Z" copath="M0 0 L233.859 0 L233.859 568.011 L0 568.011 L0 0 Z" gXpos="248.031086614173" gYpos="-11.172913363781" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT CH="ASTROVORTRÄGE"/>
                 <para PARENT="Intro"/>
-                <ITEXT CH="Hawking und die Schwarzen Löcher"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Zum Tode eines Weltgeistes"/>
+                <ITEXT CH="Licht im Dunklen – Schwarze Löcher, das Universum und wir"/>
+                <para PARENT="klein bold"/>
+                <ITEXT CH="Prof. Dr. Heino Falcke, Radboud-Uni Nijmegen"/>
                 <breakline/>
-                <ITEXT CH="DI 05.11.2019 | Dr. Peter Zinn, Bochumer Institut für Technologie | Eintritt Studierende: 4 €"/>
+                <ITEXT CH="DO 26.11.2020 | 19.30 Uhr | Eintritt Studierende: 4 €"/>
                 <para PARENT="klein"/>
-                <ITEXT CH="Pluto und der Kuiper-Gürtel"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Eiswelten am Rand des Sonnensystems"/>
-                <breakline/>
-                <ITEXT CH="DI 03.12.2019 | PD Dr. Harald Krüger, Max-Planck-Institut für Sonnensystemforschung | Eintritt Studierende: 4 €"/>
-                <para PARENT="klein"/>
-                <ITEXT CH="MU­SIKS­HOWS (kei­ne Li­ve­mu­sik)"/>
+                <ITEXT CH="MU­SIKS­HOWS "/>
+                <ITEXT FONT="Source Sans Pro SemiBold" CH="(kei­ne Li­ve­mu­sik)"/>
                 <para PARENT="Intro"/>
-                <ITEXT CH="Queen — Heaven"/>
-                <para PARENT="kursiv"/>
+                <ITEXT CH="Queen – Heaven"/>
+                <para PARENT="klein bold"/>
                 <ITEXT CH="Die größten Hits der britischen Band."/>
                 <breakline/>
-                <ITEXT CH="FR 08.11.2019 | 20.30 Uhr"/>
-                <breakline/>
-                <ITEXT CH="FR 27.12.2019 | 19.30 Uhr"/>
+                <ITEXT CH="FR 06.11.2020 | FR 04.12.2020 | je 19.45 Uhr"/>
                 <breakline/>
                 <ITEXT CH="Eintritt Studierende: 6 €"/>
                 <para PARENT="klein"/>
                 <ITEXT CH="Space Rock Symphony"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Rockballaden vereint in einer Show."/>
+                <para PARENT="klein bold"/>
+                <ITEXT CH="Moderne Rockballaden vereint in einer Show."/>
                 <breakline/>
-                <ITEXT CH="FR 15.11.2019 | FR 13.12.2019 | je 19.30 Uhr"/>
+                <ITEXT CH="FR 13.11.2020 | FR 11.12.2020 | je 19.45 Uhr"/>
                 <breakline/>
                 <ITEXT CH="Eintritt Studierende: 6 €"/>
                 <para PARENT="klein"/>
                 <ITEXT CH="Dark Side Of The Moon"/>
-                <para PARENT="kursiv"/>
+                <para PARENT="klein bold"/>
                 <ITEXT CH="Grandioser Rock mit der Musik von Pink Floyd."/>
                 <breakline/>
-                <ITEXT CH="FR 22.11.2019 | 20.30 Uhr | Eintritt Studierende: 6 €"/>
+                <ITEXT CH="FR 20.11.2020 | FR 18.12.2020 | je 19.45 Uhr"/>
+                <breakline/>
+                <ITEXT CH="Eintritt Studierende: 6 €"/>
                 <para PARENT="klein"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="751.969133858268" YPOS="445.270236198427" OwnPage="0" ItemID="216833072" PTYPE="4" WIDTH="247.523677151177" HEIGHT="450.138110258267" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L247.524 0 L247.524 450.138 L0 450.138 L0 0 Z" copath="M0 0 L247.524 0 L247.524 450.138 L0 450.138 L0 0 Z" gXpos="-4.06430444854777e-12" gYpos="-10.9370078740159" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="751.969133858268" YPOS="445.270236198427" OwnPage="0" ItemID="1881960376" PTYPE="4" WIDTH="233.858086614173" HEIGHT="450.138110258267" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 450.138 L0 450.138 L0 0 Z" copath="M0 0 L233.858 0 L233.858 450.138 L0 450.138 L0 0 Z" gXpos="-4.06430444854777e-12" gYpos="-10.9370078740159" gWidth="481.889763779527" gHeight="348.990866163779" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT CH="BESONDERES"/>
                 <para PARENT="Intro"/>
-                <ITEXT CH="Europas Weg zu den Sternen"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Einblicke hinter die Kulissen der größten Observatorien."/>
+                <ITEXT CH="Stradivari in der Kuppel – UNESCO-Weltkulturerbe"/>
+                <para PARENT="klein bold"/>
+                <ITEXT CH="Geigenbau im italienischen Cremona."/>
                 <breakline/>
-                <ITEXT CH="FR 11.10.2019 | FR 20.12.2019 | je 19.00 Uhr"/>
-                <breakline/>
-                <ITEXT CH="FR 18.10.2019 | FR 01.11.2019 | FR 15.11.2019 | je 18.00 Uhr"/>
-                <breakline/>
-                <ITEXT CH="Eintritt Studierende: 4 €"/>
+                <ITEXT CH="DO 05.11.2020 | 19.30 Uhr | Eintritt Studierende: 8 €"/>
                 <para PARENT="klein"/>
-                <ITEXT CH="Die Jagd nach dem Geisterteilchen"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Der größte Detektor der Welt: IceCube"/>
-                <breakline/>
-                <ITEXT CH="FR 26.07.2019 | FR 06.09.2019 | FR 04.10.2019 | "/>
-                <breakline/>
-                <ITEXT CH="je 18.00 Uhr"/>
-                <breakline/>
-                <ITEXT CH="FR 08.11.2019 | FR 06.12.2019 | je 19.00 Uhr"/>
-                <breakline/>
-                <ITEXT CH="Eintritt Studierende: 4 €"/>
-                <para PARENT="klein"/>
-                <ITEXT CH="KONZERT (Livemusik)"/>
+                <ITEXT CH="KONZERTE "/>
+                <ITEXT FONT="Source Sans Pro SemiBold" CH="(Livemusik)"/>
                 <para PARENT="Intro"/>
-                <ITEXT CH="Electronic Music 4 — Ron Boots und moonbooter"/>
-                <para PARENT="kursiv"/>
+                <ITEXT CH="Electronic Music 5 – Moonbooter"/>
+                <para PARENT="klein bold"/>
                 <ITEXT CH="Elektronische Livemusik unter dem Sternenhimmel."/>
                 <breakline/>
-                <ITEXT CH="SA 23.11.2019 | 19.30 Uhr | Eintritt Studierende 16 €"/>
+                <ITEXT CH="SA 14.11.2020 | 19.30 Uhr | Eintritt Studierende: 16 €"/>
                 <para PARENT="klein"/>
-                <ITEXT CH="LESUNGEN (Live)"/>
+                <ITEXT CH="Jessica Burri – Die zwölf Heiligen Nächte"/>
+                <para PARENT="klein bold"/>
+                <ITEXT CH="Magische Orte von einst werden wieder lebendig."/>
+                <breakline/>
+                <ITEXT CH="SA 28.11.2020 | 19.30 Uhr | Eintritt Studierende: 12 €"/>
+                <para PARENT="klein"/>
+                <ITEXT CH="LESUNGEN"/>
                 <para PARENT="Intro"/>
-                <ITEXT CH="Halloween-Lesung: Bram Stokers Dracula (ab 16 Jahre)"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Präsentiert von Christoph Tiemann und Theater ex libris."/>
+                <ITEXT CH="Dario Fo: Offene Zweierbeziehung"/>
+                <para PARENT="klein bold"/>
+                <ITEXT CH="Eine szenische Lesung von/mit Annette Roth und "/>
                 <breakline/>
-                <ITEXT CH="DO 31.10.2019 | 19.00 Uhr | Eintritt Studierende: 8 €"/>
+                <ITEXT CH="Manne Spitzer."/>
+                <breakline/>
+                <ITEXT CH="DI 17.11.2020 | 19.30 Uhr | Eintritt Studierende: 8 €"/>
                 <para PARENT="klein"/>
-                <ITEXT CH="Adventslesung: Der Kleine Prinz"/>
-                <para PARENT="kursiv"/>
-                <ITEXT CH="Gelesen von Beate Reker. Live-Musik Leon Jaekel."/>
+                <ITEXT CH="Stille Nacht – Sherlock wacht"/>
+                <para PARENT="klein bold"/>
+                <ITEXT CH="Christoph Tiemann und Theater ex libris."/>
                 <breakline/>
-                <ITEXT CH="SA 30.11.2019 | 19.00 Uhr | Eintritt 14,00 €"/>
+                <ITEXT CH="SA 05.12.2020 | 19.30 Uhr | Eintritt Studierende: 10 €"/>
+                <para PARENT="klein"/>
+                <ITEXT CH="Der Kleine Prinz "/>
+                <ITEXT FONT="Source Sans Pro Regular" CH="(gekürzte Fassung)"/>
+                <para PARENT="klein bold"/>
+                <ITEXT CH="Es liest Manne Spitzer."/>
+                <breakline/>
+                <ITEXT CH="DI 22.12.2020 | 19.30 Uhr | Eintritt Studierende: 12 €"/>
                 <para PARENT="klein"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="751.969133858268" YPOS="141.89125984252" OwnPage="0" ItemID="216262336" PTYPE="4" WIDTH="481.889763779527" HEIGHT="227.607637795276" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 227.608 L0 227.608 L0 0 Z" copath="M0 0 L481.89 0 L481.89 227.608 L0 227.608 L0 0 Z" gXpos="-9.30810983845731e-13" gYpos="1.77635683940025e-14" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="751.969133858268" YPOS="141.89125984252" OwnPage="0" ItemID="1882012008" PTYPE="4" WIDTH="481.889763779527" HEIGHT="227.607637795276" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 227.608 L0 227.608 L0 0 Z" copath="M0 0 L481.89 0 L481.89 227.608 L0 227.608 L0 0 Z" gXpos="-9.30810983845731e-13" gYpos="1.77635683940025e-14" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT CH="In die Ur­zeit zu den Di­no­sau­ri­ern und an­de­ren Tie­ren ab­tau­chen oder in die un­end­li­chen Wei­ten des Weltalls flie­gen – das ist mög­lich im LWL-Mu­se­um für Na­tur­kun­de Müns­ter mit sei­nem Pla­ne­ta­ri­um. Ein­zig­ar­tig für Deutsch­land ist die Kom­bi­na­ti­on Na­tur­kun­de­mu­se­um und Groß­pla­ne­ta­ri­um un­ter ei­nem Dach. Den Studierenden bie­ten sich diens­tags bis sonn­tags zwi­schen 9 und 18 Uhr fas­zi­nie­ren­de Aus­flü­ge in frem­de Wel­ten und zu un­be­kann­ten Kul­tu­ren."/>
@@ -242,9 +242,18 @@
                 <para PARENT="kursiv"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="923.648818897637" YPOS="359.659842519684" OwnPage="0" ItemID="216907024" PTYPE="2" WIDTH="73.3342519685043" HEIGHT="74.0012598425197" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0504709235846554" LOCALSCY="0.0500354254250347" LOCALX="0" LOCALY="-119.422127318832" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="lwl/Planetarium06-hoch(C)LWL,Oblonczyk.jpg" PRFILE="Embedded sRGB IEC61966-2.1" EPROF="Embedded sRGB IEC61966-2.1" IRENDER="0" path="M0 0 L73.3343 0 L73.3343 74.0013 L0 74.0013 L0 0 Z" copath="M0 0 L73.3343 0 L73.3343 74.0013 L0 74.0013 L0 0 Z" gXpos="1.56319401867222e-13" gYpos="-11.3385826771653" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
-        <PAGEOBJECT XPOS="845.366929133858" YPOS="359.661102362204" OwnPage="0" ItemID="216897696" PTYPE="2" WIDTH="75.35" HEIGHT="74" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0815523059617548" LOCALSCY="0.0813149581063138" LOCALX="-411.96172413793" LOCALY="-89.9583333333333" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="lwl/IMG_2919-BEARBEITET(C)Michaela Scholl.jpg" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" path="M0 0 L75.35 0 L75.35 74 L0 74 L0 0 Z" copath="M0 0 L75.35 0 L75.35 74 L0 74 L0 0 Z" gXpos="1.56319401867222e-13" gYpos="-11.3385826771653" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
-        <PAGEOBJECT XPOS="751.969133858268" YPOS="359.748346456692" OwnPage="0" ItemID="217382368" PTYPE="2" WIDTH="90.0931496062994" HEIGHT="74.0012598425197" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0740012598425197" LOCALSCY="0.0740012598425197" LOCALX="-95.6857512534319" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="lwl/IMG_2809-BEARBEITET(C)Michaela Scholl.jpg" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" path="M0 0 L90.0931 0 L90.0931 74.0013 L0 74.0013 L0 0 Z" copath="M0 0 L90.0931 0 L90.0931 74.0013 L0 74.0013 L0 0 Z" gXpos="1.52766688188422e-13" gYpos="-11.3385826771653" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
-        <PAGEOBJECT XPOS="1000.00022047244" YPOS="305.25" OwnPage="0" ItemID="217366880" PTYPE="2" WIDTH="233.858677165354" HEIGHT="128.391754780653" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.164805269320193" LOCALSCY="0.164805269320193" LOCALX="0" LOCALY="-117.035702676685" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="lwl/NaA_kl(c)Oblonczyk,LWL100.JPG" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" path="M0 0 L233.859 0 L233.859 128.392 L0 128.392 L0 0 Z" copath="M0 0 L233.859 0 L233.859 128.392 L0 128.392 L0 0 Z" gXpos="1.30739863379858e-12" gYpos="-12.3418110236232" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="923.648818897637" YPOS="359.659842519684" OwnPage="0" ItemID="1883611800" PTYPE="2" WIDTH="73.3342519685043" HEIGHT="74.0012598425197" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0504709235846554" LOCALSCY="0.0500354254250347" LOCALX="0" LOCALY="-119.422127318832" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="lwl/Planetarium06-hoch(C)LWL,Oblonczyk.jpg" PRFILE="Embedded sRGB IEC61966-2.1" EPROF="Embedded sRGB IEC61966-2.1" IRENDER="0" path="M0 0 L73.3343 0 L73.3343 74.0013 L0 74.0013 L0 0 Z" copath="M0 0 L73.3343 0 L73.3343 74.0013 L0 74.0013 L0 0 Z" gXpos="1.56319401867222e-13" gYpos="-11.3385826771653" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="845.366929133858" YPOS="359.661102362204" OwnPage="0" ItemID="1882572216" PTYPE="2" WIDTH="75.35" HEIGHT="74" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0815523059617548" LOCALSCY="0.0813149581063138" LOCALX="-411.96172413793" LOCALY="-89.9583333333333" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="lwl/IMG_2919-BEARBEITET(C)Michaela Scholl.jpg" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" path="M0 0 L75.35 0 L75.35 74 L0 74 L0 0 Z" copath="M0 0 L75.35 0 L75.35 74 L0 74 L0 0 Z" gXpos="1.56319401867222e-13" gYpos="-11.3385826771653" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="751.969133858268" YPOS="359.748346456692" OwnPage="0" ItemID="1883151896" PTYPE="2" WIDTH="90.0931496062994" HEIGHT="74.0012598425197" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0740012598425197" LOCALSCY="0.0740012598425197" LOCALX="-95.6857512534319" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="lwl/IMG_2809-BEARBEITET(C)Michaela Scholl.jpg" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" path="M0 0 L90.0931 0 L90.0931 74.0013 L0 74.0013 L0 0 Z" copath="M0 0 L90.0931 0 L90.0931 74.0013 L0 74.0013 L0 0 Z" gXpos="1.52766688188422e-13" gYpos="-11.3385826771653" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="1000.00022047244" YPOS="305.25" OwnPage="0" ItemID="1883175656" PTYPE="2" WIDTH="233.858677165354" HEIGHT="128.391754780653" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.164805269320193" LOCALSCY="0.164805269320193" LOCALX="0" LOCALY="-117.035702676685" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="lwl/NaA_kl(c)Oblonczyk,LWL100.JPG" PRFILE="Embedded Adobe RGB (1998)" EPROF="Embedded Adobe RGB (1998)" IRENDER="0" path="M0 0 L233.859 0 L233.859 128.392 L0 128.392 L0 0 Z" copath="M0 0 L233.859 0 L233.859 128.392 L0 128.392 L0 0 Z" gXpos="1.30739863379858e-12" gYpos="-12.3418110236232" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="760.473070866142" YPOS="808.032755905512" OwnPage="0" ItemID="1884085976" PTYPE="4" WIDTH="464.210078740158" HEIGHT="43.0518897637791" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L464.21 0 L464.21 43.0519 L0 43.0519 L0 0 Z" copath="M0 0 L464.21 0 L464.21 43.0519 L0 43.0519 L0 0 Z" gXpos="760.473070866142" gYpos="808.032755905512" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Source Sans Pro Bold Italic" CH="Coronahinweis:"/>
+                <ITEXT CH=" Alle Events finden unter Beachtung der zum Zeitpunkt der Veranstaltung gültigen Coronaschutzverordnung statt. Das LWL-Museum weist darauf hin, dass das Risiko einer – auch kurzfristigen – Absage der Veranstaltung aufgrund eines veränderten Infektionsgeschehens möglich ist."/>
+                <trail PARENT="kursiv" ALIGN="3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="754.803779527559" YPOS="801.528818897638" OwnPage="0" ItemID="1884037576" PTYPE="5" WIDTH="474.282379449511" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PCOLOR2="Black" PLINEART="1" path="" gXpos="754.803779527559" gYpos="801.528818897638" gWidth="0" gHeight="0" LAYER="0"/>
     </DOCUMENT>
 </SCRIBUSUTF8NEW>
