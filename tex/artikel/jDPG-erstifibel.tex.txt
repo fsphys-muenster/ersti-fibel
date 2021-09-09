@@ -1,0 +1,111 @@
+\section[Die junge DPG stellt sich vor]{Mehr als nur Uni -- Die junge~DPG stellt sich vor}
+\begin{minipage}{0.1\textwidth}
+    \includegraphics[width=\textwidth]{res/jdpg_logo.pdf}
+\end{minipage}\hfill
+\begin{minipage}{0.75\textwidth}
+    \centering
+    \textbf{Liebe Physik-Erstis der Uni Münster,\\
+    auch die junge DPG möchte Euch herzlich im Kreis der Physikstudierenden begrüßen.}
+\end{minipage}\hfill
+\begin{minipage}{0.1\textwidth}
+    \includegraphics[width=\textwidth]{res/jdpg_logo.pdf}
+\end{minipage}
+
+\begin{multicols}{2}
+In Deutschland studieren rund \num{30000} Studierende Physik.
+Du bist jetzt einer von ihnen.
+An "Jungphysiker:innen" wie dich wendet sich die junge Deutsche Physikalische Gesellschaft~(jDPG) mit ihren Angeboten rund um das Physikstudium.
+
+Die Ziele der jDPG sind unter anderem ein Netzwerk für Studierende in ganz Deutschland zu schaffen, sowie ein wissenschaftliches Programm zu bieten.
+Desweiteren ermöglicht die jDPG eine umfangreiche Berufsvorbereitung und fördert den Dialog zwischen den Generationen.
+Dabei versteht sie sich, zusammen mit den Physikfachschaften, als eine bundesweite Interessenvertretung von Physikstudierdende.
+
+Mehr als \num{3500} Mitglieder zählt die jDPG derzeit.
+Für diese Mitglieder und auch für alle anderen Physikstudierenden gibt es unsere Angebote sowohl deutschlandweit, als auch vor Ort in den einzelnen Regionalgruppen.
+
+Die Regionalgruppe Münster veranstaltet Exkursionen zu physikalisch interessanten Zielen (Forschungsinstitute, Unternehmen, etc.).
+So ging es in den letzten Jahren z.\,B.\ zum weltweit ersten Supraleiterkabel, das im öffentlichen Stromnetz integriert ist (AmpaCity), zum Forschungszentrum Jülich und für zwei Tage nach Hamburg zum Deutschen Elektronen-Synchrotron (DESY), dem "Center for Free-Electron Laser Science" und Philips. Die letzte Exkursion ging zum Deutschen Zentrum für Luft- und Raumfahrt (DLR) in Köln.
+
+Eine weitere Veranstaltungsreihe in Münster ist \textbf{Doctor's Diaries}, welche ca. dreimal im Semester stattfindet. Hier werden Doktorand:innen aus den unterschiedlichen Arbeitsgruppen der Physik eingeladen, um in einem lockeren Vortrag sich selbst und das Doktorprojekt vorzustellen. Wir sorgen für Kekse und Saft und ihr könnt Fragen stellen und so die aktuellen Forschungsgebiete kennen lernen. Wenn es sich anbietet, gibt es auch eine Führung durch die Labore. 
+%Dabei können Studierende die verschiedenen Arbeitsgruppen des Fachbereichs hier in Münster genauer kennen lernen, indem ein Dialog zwischen den Studierenden und einem eingeladenen Doktoranden aus der entsprechenden Arbeitsgruppe stattfindet. Gegebenenfalls können im Anschluss auch Labore besichtigt werden. Natürlich werden Kekse und Saft von uns bereitgestellt.
+
+Jährlich findet ein \textbf{Preisträgertreffen} für die Abiturpreisträger:innen statt -- eine gute Möglichkeit sich untereinander kennen zu lernen und neue Kontakte auch aus anderen Semestern hier in Münster zu knüpfen.
+
+
+Die Regionalgruppe Münster trifft sich mehrfach im Semester zum Stammtisch, zu dem auch du gerne vorbeischauen kannst, natürlich unverbindlich ;)
+
+
+Aktuelle Informationen zu unseren Veranstaltungen erhaltet ihr über unsere Internetseite\footnote{\url{muenster.jdpg.de}} oder den monatlichen Fachschaftsnewsletter\footnote{erhaltet ihr automatisch auf eurer Uni-E-Mail}.
+
+Von den deutschlandweiten Veranstaltungen ist die Sommerexkursion das Highlight für die Mitglieder der jDPG.
+Fünf Tage lang treffen sich Physikstudierende aus ganz Deutschland in einer Stadt, um Einblicke in die aktuelle Forschung und Entwicklung zu bekommen, und zwar nicht im Hörsaal, sondern direkt am Schauplatz des Geschehens.
+Neben dem fachlichen Teil ist aber auch eine Kneipentour und ein gemeinsames Grillen ein fester Bestandteil des Programms.
+
+Besonders wichtig für die Kommunikation und Organisation der jDPG ist die jährliche Mitgliederversammlung.
+Dort werden wichtige Beschlüsse gefasst und der gesamte jDPG-Vorstand wird neu gewählt.
+Außerdem informieren der überregionale jDPG Newsletter, das Physik~Journal, die Mitgliederzeitschrift der Deutschen Physikalischen Gesellschaft, zusätzlich.
+
+%Die oben genannten Projekte organisieren sich natürlich nicht von selbst.
+%Im Moment zählt die jDPG ungefähr 250~aktive Mitglieder, welche sich um das Programm kümmern.
+%Anna Bakenecker sieht in der Werbung neuer aktiver Mitglieder einer der wichtigsten Aufgaben der kommenden Jahre.
+%Das Tolle an der jDPG sei, dass man in kurzer Zeit viel erreichen könne, sagt die Physikstudentin.
+%\begin{quote}
+%    \textit{"In vielen Organisationen versickern neue Ideen.
+%    Bei uns werden sie umgesetzt."}
+%\end{quote}
+%Wer selbst aktiv werden möchte, kann dies in den zahlreichen Regionalgruppen vor Ort, oder auf bundesweiter Ebene in Arbeitskreisen.
+
+Der Anstoß zur Gründung der jDPG kam im Jahr~2005 aus der Deutschen Physikalischen Gesellschaft selbst.
+Diese hatte zwar 30~Prozent studentische Mitglieder, aber die Angebote für diese junge Zielgruppe fehlten.
+Als die DPG auf die Studierenden der TU~Dresden zuging, haben sich spontan fünf Jungphysiker:innen gefunden, die bereit waren, diese Lücke zu schließen.
+"Wir haben das damals für ein kleines Versuchsprojekt gehalten", erzählt jDPG-Mitglied René Pfitzner.
+Mit der rasanten Entwicklung der vergangenen Jahre habe damals niemand gerechnet.
+
+%Die erste Veranstaltung der jDPG war eine Sommerexkursion nach Berlin.
+%Das Max-Born-Institut, das Albert-Einstein-Institut und auch die Firma Rolls~Royce standen auf dem Programm.
+
+%\begin{quote}
+%    \textit{"Das hat uns einen richtigen Schub gegeben"},
+%\end{quote}
+%erinnert sich René Pfitzner.
+%Aus ganz Deutschland hätten sich Freiwillige gemeldet, die die Idee der jDPG unterstützen wollten.
+%So haben sich langsam die ersten Regionalgruppen gebildet und Ende~2006 wurde die jDPG offiziell gegründet.
+
+%Doch die steigenden Mitgliederzahlen zeigten auch, dass eine lose Arbeitsgruppe, wie sie am Anfang geplant war, nicht mehr ausreichen würde.
+%Eine neue Struktur musste her und diese wurde auf der ersten Mitgliederversammlung im Jahr~2007 beschlossen und seitdem immer wieder verändert.
+%\begin{quote}
+%    \textit{"Wir haben die jDPG nie auf dem Reißbrett geplant"},
+%\end{quote}
+%sagt der langjährige Bundessprecher Heinrich.
+%\begin{quote}
+%    \textit{"Die Struktur ist immer aus den neuen Anforderungen gewachsen."}
+%\end{quote}
+
+Heute ist die jDPG mit über 30~Regionalgruppen eine bundesweit aktive Organisation mit festem Programm.
+
+Weitere Informationen findest du auf
+\begin{center}
+    \textbf{\url{http://www.jdpg.de}}.
+\end{center}
+
+Die Angebote der Regionalgruppe~Münster und den Termin für den nächsten Stammtisch findest du auch direkt unter
+\begin{center}
+    \textbf{\url{http://muenster.jdpg.de}}.
+\end{center}
+
+Bei weiteren Fragen kannst du dich auch gerne an uns wenden:
+\textbf{\email{muenster@jdpg.de}}.
+
+\fibelsig{Eure Regionalgruppe Münster}
+
+\begin{center}
+    \includegraphics[width=\columnwidth]{res/jdpg_foto.png}
+\end{center}
+
+\end{multicols}
+
+\begin{center}
+    \fibelimgtext{
+        \includegraphics[width=0.7\textwidth]{res/xkcd/669_experiment.png}
+    }{\url{https://xkcd.com/669}}
+\end{center}
