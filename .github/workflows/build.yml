@@ -1,0 +1,68 @@
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # GITLAB_PRIVATE_ACCESS: Access token for private GitLab repository
+      - name: Checkout private repository
+        env: 
+          GITLAB_PRIVATE_ACCESS: ${{ secrets.GITLAB_PRIVATE_ACCESS }}
+        run: |
+          cd $GITHUB_WORKSPACE
+          git clone https://oauth2:$GITLAB_PRIVATE_ACCESS@zivgitlab.uni-muenster.de/s_may006/ersti-fibel_private.git private
+      - name: Run pdflatex
+        run: |
+          docker run --rm -t -v $GITHUB_WORKSPACE:/mounted -w /mounted texlive/texlive:latest latexmk -pdf -halt-on-error fibel.tex
+        
+      - name: Install Ghostscript
+        run: |
+          sudo apt update
+          sudo apt install ghostscript
+      
+      - name: Post-process tex file
+        run: ./create_print_version.sh && ./create_web_version.sh
+
+      # SCIEBO_SHARELINK_ID: Part in shared link after .de/s/
+      - name: Upload result
+        env: 
+          SCIEBO_SHARELINK_ID: ${{ secrets.SCIEBO_SHARELINK_ID }}
+        run: |
+          for f in *.pdf;
+          do
+            /usr/bin/curl -u $SCIEBO_SHARELINK_ID: -X PUT -T ./$f https://uni-muenster.sciebo.de/public.php/webdav/$GITHUB_SHA-$f
+          done
+      - name: Write comment
+        uses: actions/github-script@v4
+        if: github.event_name == 'pull_request'
+        with:
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Files successfully compiled - SHA: ' + context.sha
+            })
+      
+      - name: Log comment
+        run: |
+          echo Files successfully compiled - SHA: $GITHUB_SHA
