@@ -90,15 +90,7 @@ Hi :), mein Name ist Sandra, bin 20 und ich studiere inzwischen im 5. Semester P
 Ansonsten wünsche ich euch erst einmal viel Spaß in der O-Woche! }
 
 
-\fibelvorstellung{
-	\begin{wrapfigure}{l}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/jan_kirchner_neu.jpg}
-	\end{wrapfigure}
-}
-{
-	Hallo! Ich bin Jan, seit Wintersemester 2016 in der Fachschaft, und vertrete uns auf der Fachschaftenkonferenz. Mittlerweile bin ich hauptsächlich im allgemeinen Studierendenausschuss aktiv. 
-  Ich kann euch sehr empfehlen, euch neben dem Studium auch in der Studierendenschaft einzubringen, und wünsche euch einen guten Einstieg in das erste Semester!
-}
+---------------------------------------------------------- 
 
 
 \fibelvorstellung{
@@ -140,8 +132,9 @@ Ich wünsche euch allen eine schöne O-Woche und hoffe man sieht sich mal in der
 	\end{wrapfigure}
 }
 {
-Hi, ich bin Marius und heiße euch auch herzlich willkommen hier in Münster. Wenn ihr die Stadt noch nicht richtig kennt, dann freut euch darauf, sie kennenzulernen. 
-Das Studium wird zwar zwischendurch etwas schwierig, aber lasst euch trotzdem nicht die Freude dran nehmen. ¡Mucha suerte!}
+Hi, ich bin Marius und heiße euch ebenfalls herzlich willkommen hier in Münster. Wenn ihr die Stadt noch nicht richtig kennt, dann freut euch darauf, sie kennenzulernen. 
+Das Studium wird zwar zwischendurch etwas schwierig, aber lasst euch trotzdem nicht die Freude dran nehmen. ¡Mucha suerte!
+}
 
 
 \fibelvorstellung{
@@ -149,10 +142,12 @@ Das Studium wird zwar zwischendurch etwas schwierig, aber lasst euch trotzdem ni
 		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/lukas_eschmann_cropped.jpg}
 	\end{wrapfigure}
 }
-{Moin liebe Erstis,
-	mein Name ist Lukas und schon seit 2012 in der Fachschaft. Mein "normales" Studium habe ich bereits abgeschlossen, kann also so ziemlich alle Fragen zum Studium beantworten.
+{
+Moin liebe Erstis,
+	mein Name ist Lukas und schon seit 2012 in der Fachschaft. Mein ,,normales" Studium habe ich bereits abgeschlossen, kann also so ziemlich alle Fragen zum Studium beantworten.
 	Ich bin mittlerweile im Promotionsstudiengang angekommen und bin nur noch wenig in Hörsälen oder dem Fachschaftsraum anzutreffen.
-	Auch Fragen zu Forschungsschwerpunkten der Uni oder aktuellen Themen der Forschung könnt ihr mir gerne stellen.}
+	Auch Fragen zu Forschungsschwerpunkten der Uni oder aktuellen Themen der Forschung könnt ihr mir gerne stellen.
+}
 
 
 \fibelvorstellung{
@@ -160,8 +155,10 @@ Das Studium wird zwar zwischendurch etwas schwierig, aber lasst euch trotzdem ni
 		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Eva.jpg}
 	\end{wrapfigure}
 }
-{Hey, ich heiße Eva und studiere im 5. Semester Physik. Seit dem Sommersemester 2020 bin ich in der Fachschaft und nun stellvertretende Vorsitzende. Außerdem betätigte ich mich im Design-Team und in der Öffentlichkeitsarbeit. 
-Ich wünsche Euch einen tollen Start ins Studium! PS: Über ein freundliches „Hallo" (auf dem Gang, im Vorbeigehen) freue ich mich immer.} 
+{
+Hey, ich heiße Eva und studiere im 5. Semester Physik. Seit dem Sommersemester 2020 bin ich in der Fachschaft und nun stellvertretende Vorsitzende. Außerdem betätigte ich mich im Design-Team und in der Öffentlichkeitsarbeit. 
+Ich wünsche Euch einen tollen Start ins Studium! PS: Über ein freundliches „Hallo" (auf dem Gang, im Vorbeigehen) freue ich mich immer.
+} 
 
 
 \fibelvorstellung{
@@ -216,4 +213,3 @@ Ich kann dir nur empfehlen: Mach' mit und verändere die Uni!}
 \end{multicols}
 
 \vspace{20ex}
-
