@@ -51,17 +51,6 @@ jobs:
           do
             /usr/bin/curl -u $SCIEBO_SHARELINK_ID: -X PUT -T ./$f https://uni-muenster.sciebo.de/public.php/webdav/$GITHUB_SHA-$f
           done
-      - name: Write comment
-        uses: actions/github-script@v4
-        if: github.event_name == 'pull_request'
-        with:
-          script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Files successfully compiled - SHA: ' + context.sha
-            })
       
       - name: Log comment
         run: |
