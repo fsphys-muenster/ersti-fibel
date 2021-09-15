@@ -47,6 +47,17 @@ Falls ihr irgendwelche Fragen habt werde ich euch liebend gerne weiter helfen. N
 
 \fibelvorstellung{
 	\begin{wrapfigure}{l}{0cm}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS21/Jonas L.jpg}
+	\end{wrapfigure}
+}
+{
+Moin zusammen! Ich bin Jonas und studiere mittlerweile im Master Physik. In meinem Bachelor habe ich außerdem ziemlich viel Mathe gemacht (und bin da auch eigentlich immer noch nicht ganz von losgekommen). 
+Zudem bin ich im Moment Vorsitzender der Fachschaft. Wenn ihr also Fragen zum Nebenfach Mathe oder zur Fachschaft an sich habt, bin ich ein guter Ansprechpartner :-)
+}
+
+
+\fibelvorstellung{
+	\begin{wrapfigure}{r}{0cm}
 		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS21/Anna N.PNG}
 	\end{wrapfigure}
 }
@@ -58,7 +69,7 @@ Ansonsten wünsche ich euch an dieser Stelle einen wunderschönen Start ins Stud
 
 
 \fibelvorstellung{
-	\begin{wrapfigure}{r}{0cm}
+	\begin{wrapfigure}{l}{0cm}
 		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/benedikt_bieringer.png}
 	\end{wrapfigure}
 }
@@ -70,7 +81,7 @@ In meinen mittlerweile schon 14~Semestern Fachschafts- und Studienerfahrung kann
 
 
 \fibelvorstellung{
-	\begin{wrapfigure}{l}{0cm}
+	\begin{wrapfigure}{r}{0cm}
 		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/hauke_hawighorst.jpg}
 	\end{wrapfigure}
 }
@@ -81,12 +92,24 @@ Euch ein herzliches Willkommen in Münster!
 
 
 \fibelvorstellung{
-	\begin{wrapfigure}{r}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/jan_honermann}
+	\begin{wrapfigure}{l}{0cm}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/jan_honermann.jpg}
 	\end{wrapfigure}
 }
 {
 Hi, ich bin Jan und sitze gerade an meiner Doktorarbeit. Falls ihr Fragen habt, könnt ihr euch gerne an mich wenden, ich bin meistens netter, als ich aussehe ;)
+}
+
+
+\fibelvorstellung{
+	\begin{wrapfigure}{r}{0cm}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS21/Lambert.jpg}
+	\end{wrapfigure}
+}
+{
+Hallo, ich bin Lambert und jetzt im 3. Semester meines Physikbachelors. Ich vertrete die Fachschaft auf der Fachschaftenkonferenz und helfe ein wenig bei der Evaluation mit. 
+Ihr könnt mir gerne alle möglichen Fragen zum Studium und auch anderen Themen stellen. Es ist aber gut möglich, dass ich die Antwort nicht kenne. 
+Willkommen in Münster und einen schönen Studiumsbeginn!
 }
 
 
