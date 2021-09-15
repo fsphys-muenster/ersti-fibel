@@ -47,7 +47,7 @@ Falls ihr irgendwelche Fragen habt werde ich euch liebend gerne weiter helfen. N
 
 \fibelvorstellung{
 	\begin{wrapfigure}{l}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS21/Jonas L.jpg}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel/Jonas L.jpg}
 	\end{wrapfigure}
 }
 {
@@ -58,7 +58,7 @@ Zudem bin ich im Moment Vorsitzender der Fachschaft. Wenn ihr also Fragen zum Ne
 
 \fibelvorstellung{
 	\begin{wrapfigure}{r}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS21/Anna N.PNG}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel/Anna N.PNG}
 	\end{wrapfigure}
 }
 {
@@ -103,7 +103,7 @@ Hi, ich bin Jan und sitze gerade an meiner Doktorarbeit. Falls ihr Fragen habt, 
 
 \fibelvorstellung{
 	\begin{wrapfigure}{r}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS21/Lambert.jpg}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel/Lambert.jpg}
 	\end{wrapfigure}
 }
 {
@@ -126,7 +126,7 @@ Ich wünsche euch einen lustigen Start ins Physikstudium!
 
 \fibelvorstellung{
 	\begin{wrapfigure}{r}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Sandra.JPEG}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte/Sandra.JPEG}
 	\end{wrapfigure}
 }
 {
@@ -137,7 +137,7 @@ Ansonsten wünsche ich euch erst einmal viel Spaß in der O-Woche!
 
 \fibelvorstellung{
 	\begin{wrapfigure}{l}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Anna T.JPEG}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel/Anna T.JPEG}
 	\end{wrapfigure}
 }
 {
@@ -183,7 +183,7 @@ Auch Fragen zu Forschungsschwerpunkten der Uni oder aktuellen Themen der Forschu
 
 \fibelvorstellung{
 	\begin{wrapfigure}{l}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Eva.jpg}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel/Eva.jpg}
 	\end{wrapfigure}
 }
 {
@@ -194,7 +194,7 @@ Ich wünsche Euch einen tollen Start ins Studium! PS: Über ein freundliches „
 
 \fibelvorstellung{
 	\begin{wrapfigure}{r}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Hannah.jpg}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel/Hannah.jpg}
 	\end{wrapfigure}
 }
 {
@@ -206,7 +206,7 @@ Bei dieser bin verantwortlich für das Sommerfest und die Erstisphibel. Ich wün
 
 \fibelvorstellung{
 	\begin{wrapfigure}{l}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Ali Neuwirth.jpg}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel/Ali Neuwirth.jpg}
 	\end{wrapfigure}
 }
 {
@@ -217,7 +217,7 @@ In der Fachschaft beschäftige ich mich mit IT-Administration. Entsprechend kann
 
 \fibelvorstellung{
 	\begin{wrapfigure}{r}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Bild_Moritz.jpg}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel/Bild_Moritz.jpg}
 	\end{wrapfigure}
 }
 {
@@ -251,13 +251,17 @@ Bei Fragen kommt gerne zu mir; besonders beim Erasmusprogramm kann ich euch weit
 \vspace{6ex}
 
 \fibelvorstellung{
-	\begin{wrapfigure}{l}{0cm}
+	\begin{wrapfigure}{r}{0cm}
 		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/fritz.png}
 	\end{wrapfigure}
 }
-{Hallo, ich bin Fritz und bin neu in der Fachschaft Physik.
-Die Mannschaft hier ist echt genial aufgestellt, sodass es richtigen Spaß macht, ein aktiver Teil der Universität Münster zu sein.
-Ich kann dir nur empfehlen: Mach' mit und verändere die Uni!}
+{
+Hallo, ich bin Fritz und bin schon  in der Fachschaft Physik.
+Die Mannschaft hier ist echt genial aufgestellt. Dadurch macht es richtigen Spaß, ein aktiver Teil der Universität Münster zu sein.
+Ich kann dir nur empfehlen: Mach' mit und verändere die Uni!
+}
+
+
 \end{multicols}
 
 \vspace{20ex}
