@@ -82,19 +82,6 @@ Euch ein herzliches Willkommen in Münster!
 
 \fibelvorstellung{
 	\begin{wrapfigure}{r}{0cm}
-		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Sandra.JPEG}
-	\end{wrapfigure}
-}
-{
-Hi :), mein Name ist Sandra, bin 20 und ich studiere inzwischen im 5. Semester Physik. Bei Fragen könnt ihr euch gerne an mich wenden. 
-Ansonsten wünsche ich euch erst einmal viel Spaß in der O-Woche! }
-
-
----------------------------------------------------------- 
-
-
-\fibelvorstellung{
-	\begin{wrapfigure}{r}{0cm}
 		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/jan_honermann}
 	\end{wrapfigure}
 }
@@ -111,6 +98,28 @@ Hi, ich bin Jan und sitze gerade an meiner Doktorarbeit. Falls ihr Fragen habt, 
 {
 Huhu, ich bin Paula und seit dem Sommersemester 2019 in der Fachschaft. Neben Fragen Rund um das Studium könnt ihr mich auch gerne auf royale Hochzeiten oder Filme mit Audrey Hepburn ansprechen. 
 Ich wünsche euch einen lustigen Start ins Physikstudium!
+}
+
+
+\fibelvorstellung{
+	\begin{wrapfigure}{r}{0cm}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Sandra.JPEG}
+	\end{wrapfigure}
+}
+{
+Hi :), mein Name ist Sandra, bin 20 und ich studiere inzwischen im 5. Semester Physik. Bei Fragen könnt ihr euch gerne an mich wenden. 
+Ansonsten wünsche ich euch erst einmal viel Spaß in der O-Woche! 
+}
+
+
+\fibelvorstellung{
+	\begin{wrapfigure}{l}{0cm}
+		\includegraphics[width=\fibelstdlen]{res/vorstellungsfotos/Fotos Selbstvorstellungstexte Fibel WS 2021/Sandra.JPEG}
+	\end{wrapfigure}
+}
+{
+Heyo, ich bin Anna und studiere ab jetzt im fünften Semester Physik. 
+Ich hoffe ihr habt alle viel Spaß in der O-Woche und schafft es gut ins Studium, hoffentlich diesmal tatsächlich in Präsenz:)
 }
 
 
@@ -143,10 +152,9 @@ Das Studium wird zwar zwischendurch etwas schwierig, aber lasst euch trotzdem ni
 	\end{wrapfigure}
 }
 {
-Moin liebe Erstis,
-	mein Name ist Lukas und schon seit 2012 in der Fachschaft. Mein ,,normales" Studium habe ich bereits abgeschlossen, kann also so ziemlich alle Fragen zum Studium beantworten.
-	Ich bin mittlerweile im Promotionsstudiengang angekommen und bin nur noch wenig in Hörsälen oder dem Fachschaftsraum anzutreffen.
-	Auch Fragen zu Forschungsschwerpunkten der Uni oder aktuellen Themen der Forschung könnt ihr mir gerne stellen.
+Moin liebe Erstis, mein Name ist Lukas und schon seit 2012 in der Fachschaft. Mein ,,normales" Studium habe ich bereits abgeschlossen, kann also so ziemlich alle Fragen zum Studium beantworten.
+Ich bin mittlerweile im Promotionsstudiengang angekommen und bin nur noch wenig in Hörsälen oder dem Fachschaftsraum anzutreffen.
+Auch Fragen zu Forschungsschwerpunkten der Uni oder aktuellen Themen der Forschung könnt ihr mir gerne stellen.
 }
 
 
@@ -166,7 +174,11 @@ Ich wünsche Euch einen tollen Start ins Studium! PS: Über ein freundliches „
 		\includegraphics[width=\fibelstdlen]{Fotos Selbstvorstellungstexte Fibel WS 2021/Hannah.jpg}
 	\end{wrapfigure}
 }
-{Hannah.}
+{
+
+Hallihallo ich bin Hannah, ich studiere seit dem WS 19/20 Physik und bin auch schon genauso lange in der Fachschaft. 
+Bei dieser bin verantwortlich für das Sommerfest und die Erstisphibel. Ich wünsche euch einen entspannten Start ins Semester :)
+}
 
 
 \fibelvorstellung{
@@ -189,6 +201,19 @@ In der Fachschaft beschäftige ich mich mit IT-Administration. Entsprechend kann
 Moin, ich bin Moritz und jetzt seit 3 Semestern in der Fachschaft. Ich studiere im Zwei-Fach-Bachelor Physik und Chemie, bei Fragen zum Lehramtsstudium dürft ihr mich also gerne ansprechen. 
 Ich wünsche euch einen erfolgreichen Start ins Studium und insbesondere für die ZFB möglichst wenig Überschneidungen in euren Stundenplänen. :)
 }
+
+
+\fibelvorstellung{
+	\begin{wrapfigure}{l}{0cm}
+		\includegraphics[width=\fibelstdlen]{Fotos Selbstvorstellungstexte Fibel WS 2021/Ali Neuwirth.jpg}
+	\end{wrapfigure}
+}
+{
+Hej Leute, ich bin Tim und studiere Physik im Master. Ich kann euch nur sagen, lasst euch auf keinen Fall von einem vielleicht etwas schwierigen Einstieg verunsichern, das war für keinen von uns leicht. 
+Erstmal aber möchte ich euch noch viel Spaß in der O-Woche wünschen und hoffe, dass ihr die Möglichkeit bekommt, einige andere Erstis kennen zu lernen. 
+Bei Fragen kommt gerne zu mir; besonders beim Erasmusprogramm kann ich euch weiterhelfen, denn ich war selber im letzten Jahr in Lund. Also, habt eine schöne Zeit und vielleicht läuft man sich ja mal in der Uni über den Weg ;-)
+}
+
 
 
 
