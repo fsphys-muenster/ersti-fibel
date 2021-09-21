@@ -1,11 +1,12 @@
-\begin{wrapfigure}[8]{r}{0cm}
-	\includegraphics[width=3.1cm]{res/philipp_van_wickevoort_crommelin.PNG}
+\begin{wrapfigure}{r}{0cm}
+	\includegraphics[width=3.2cm]{philipp_van_wickevoort_crommelin.PNG}
 \end{wrapfigure}
 
 "Was machst Du eigentlich nach dem Abi?", unterbrach ich das abwechslungslose Rauschen des 70-PS-schwachen Dieselmotors unseres
-VW-Bus-T3s bei 80 km/h Höchstgeschwindigkeit auf der slowenischen Avtocesta, der Bundesautobahn A2, bei der Durchfahrt im
+VW-Bus-T3s bei 80\,km/h Höchstgeschwindigkeit auf der slowenischen Avtocesta, der Bundesautobahn A2, bei der Durchfahrt im
 Karawankentunnel – noch rund 300 km von unserem Ziel, der kroatischen Halbinsel Istrien, entfernt.
 Mich verblüfft heute noch, wie prompt die Antwort kam.
+
 "Physik studieren!", erwiderte mein guter alter Freund Johann und fügte nach kurzer Pause hinzu:
 "Weil ich dort die Fähigkeit erlerne, logisch zu denken."
 Das Selbstverständnis, das in der Betonung seiner Antwort lag, sollte noch viele Jahre in meinem Bewusstsein wiederhallen... \\ 
@@ -23,9 +24,9 @@ Physik- und Klassenlehrers. Je mehr ich darüber nachdachte, desto mehr klang es
 nach einem Tiefentauchgang in die Welt der Astronomie und der Quanten.
 Es klang nach Aussicht auf ein tiefgreifendes Verständnis der uns umgebenden Welt. Ich wollte es versuchen... \\ 
 
-Beim Besuch der ersten Mathe-1-Vorlesung an der Christian-Albrechts-Universität zu Kiel ahnte ich nichts von meinem Glück, dass mir dieses Fach in den kommenden Monaten 90\% meiner Kopfschmerzen
+Beim Besuch der ersten Mathe-\textsc{I}-Vorlesung an der Christian-Albrechts-Universität zu Kiel ahnte ich nichts von meinem Glück, dass mir dieses Fach in den kommenden Monaten 90\,\% meiner Kopfschmerzen
 verursachen und zeitlichen Kapazitäten abverlangen würde.
-Auf die restlichen 10\% fielen Physik 1, ein Computer-, ein Chemie- und ein weiterer – allerdings etwas angewandterer – Mathe-Grundkurs. \\ 
+Auf die restlichen 10\,\% fielen Physik \textsc{I}, ein Computer-, ein Chemie- und ein weiterer – allerdings etwas angewandterer – Mathe-Grundkurs. \\ 
 
 Ich wollte ihn schon korrigieren... Der Professor musste dem Anschein nach völlig falsch verstanden haben, was \textit{Mathematik} eigentlich war,
 nämlich eine Gleichung nach $x$ umzustellen oder mal eine Kurvendiskussion durchzuführen – so hatte man es doch noch aus der Schulzeit in Erinnerung.
@@ -43,7 +44,8 @@ Wer sich diese Frage stellt, kommt allerdings gleich zur nächsten: "Was, zur H�
 
 Ich wusste jedenfalls, falls es weitergehen soll, dann musste ein Tapetenwechsel her – andere Stadt, andere Uni, andere Professoren und andere Themen.
 Nach einiger Recherche habe ich mich für Münster entschieden – Deutschlands Fahrradhauptstadt.
-Das war eine gute Idee, denn in Münster gibt es scheinbar keine Probleme: \\ 
+Das war eine gute Idee, denn in Münster gibt es scheinbar keine Probleme: 
+
 Hoppelnde Karnickel auf Hauptverkehrskreiseln, perfekt begradigte Straßenmarkierungen auf perfekt geteerten Straßen, eine Polizei, die systemgefährdende Über-Rot-Gänger noch zur Rechenschaft zieht, die perfekte Balance zwischen städtischem Erholungs- und Wohnraum, kulturelle Vielseitigkeit für Jung und Alt und ein gefühlt verpflichtender, allsonntäglicher Kirchengang, den erfolgreich zu vermeiden sicherlich kein Problem darstellen würde. Kurzum, Münster war das perfekte Umfeld für ein akademisches Aufbaustudium unter Vermeidung blasphemischer Ablenkungen. \\ 
 
 Wer das Masterstudium dann beginnt, kann sich erstmal zurücklehnen.
@@ -53,9 +55,9 @@ persönlicheres Verhältnis zum Professor.
 Wer sich für ein Masterstudium der Physik entscheidet, der beweist nicht zuletzt seine Überzeugung, die er der Sache widmet.
 Die Probezeit ist sozusagen vorbei und dieses Gefühl wird einem meist auch von den Dozenten widergespiegelt. \\ 
 
-Die Frage, was ich mit einem Master-Abschluss der Physik eigentlich machen will war immer noch ungeklärt und so entschied ich mich für ein Praktikum in einer Bank.
+Die Frage, was ich mit einem Master-Abschluss der Physik eigentlich machen will, war immer noch ungeklärt und so entschied ich mich für ein Praktikum in einer Bank.
 Wie ich darauf kam? In Münster kann man sich so ziemlich alles in den Studienplan laden,
-so auch das Seminar \textit{Finanzmathematik und Risikomanagement} des theoretischen Kernphysikers Dr. Jörg C. Lemm, das dem Alltag erfrischend abwechslungsreichen Kontrast verpasste. \\ 
+so auch das Seminar \textit{Finanzmathematik und Risikomanagement} des theoretischen Kernphysikers \textsc{Dr. Jörg C. Lemm}, das dem Alltag erfrischend abwechslungsreichen Kontrast verpasste. \\ 
 
 Ich kann jedem ein Praktikum nur empfehlen. Nicht zuletzt, weil man als Physikstudent häufig wenig Vorstellung davon hat, was man außerhalb der Uni alles tolles mit seinem Wissen anfangen kann.
 Ich fand die Bankenwelt interessant, insbesondere, weil man dort die erlernte Mathematik und erlernten Programmierkenntnisse einbringen konnte.
@@ -72,4 +74,6 @@ Als Physiker ist man Generalist, der allerdings dazu befähigt ist, sich in jede
 
 Deswegen lautet mein Appell an alle, die noch an der Entscheidung zweifeln: "Traut Euch, denn es lohnt sich!" und alle, die unter dem Druck des Studiums leiden: "Haltet durch, denn es lohnt sich!" Ich für meinen Fall, würde es wieder machen. \\ 
 
-Philipp van Wickevoort Crommelin 
+\vspace{0.8cm}
+
+\textsc{Philipp van Wickevoort Crommelin}  
