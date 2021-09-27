@@ -4,10 +4,10 @@
 \let\fibnlx=\\
 % Befehl \fibnl ist ein Zeilenumbruch mit etwas Freiraum darunter
 \DeclareDocumentCommand{\fibnl}{}{\fibnlx[\baselineskip]}
-\DeclareDocumentCommand{\fibabstand}{}{\vspace{.5\baselineskip} }
+\DeclareDocumentCommand{\fibabstand}{}{\vspace{.5\baselineskip}}
 
 % XXX Relevanz dieser Definition prüfen
-% Nur für den Donnerstags-Einschub.
+% Nur für den Dienstags-Einschub.
 \newlength{\fibprogrammeinschub}
 \setlength{\fibprogrammeinschub}{0.005\textheight}
 
@@ -18,10 +18,7 @@
 
 
 \begin{landscape}
-\vspace*{\fill}
-\section{Programm der Orientierungswoche Physik (O-Woche/Ersti-Woche)}
-\newcommand{\GEINS}{G1 \tikz\draw[black,fill=black, line width=0.5mm] (0,0) circle (.7ex);\,\,}
-\newcommand{\GZWEI}{G2 \tikz\draw[black, line width=0.5mm] (0,0) circle (.7ex);\,\,}
+\section{Programm der Physik-Orientierungseinheit (O-Woche/Ersti-Woche)}
 \renewcommand{\arraystretch}{1.8}
 \footnotesize
 \begin{tabular}{
@@ -29,150 +26,285 @@
 	>{\bfseries\hfill} % füge „\bfseries\hfill“ zu Beginn jeder Zelle dieser Spalte ein (also fett und rechtsbündig)
 	p{0.08\textheight} % Textspalte (mehrzeilig) der Breite 0.08\textheight
 	|
-	*{4} % füge die folgende Definition 3x ein
+	*{5} % füge die folgende Definition 2x ein
 	{
-		p{\fibprogrammcw} % Textspalte (mehrzeilig) der Breite \fibprogrammcw
-		|
+		p{0.8\fibprogrammcw} % Textspalte (mehrzeilig) der Breite \fibprogrammcw
+		| % Breite der Spalten 
 	}
+	% Dienstags-Einschub.
+% 	p{\fibprogrammeinschub} % Textspalte (mehrzeilig) der Breite \fibprogrammeinschub
+% 	|
+% 	*{2} % füge die folgende Definition 2x ein
+% 	{
+% 		p{\fibprogrammcw} % Textspalte (mehrzeilig) der Breite \fibprogrammcw
+% 		|
+% 	}
 }
 \hline
 %%
 %% TABLE HEADER
 %%
-
 Uhrzeit &
-	\textbf{Montag, 26.10., \GEINS u. \GZWEI} &
-	\textbf{Dienstag, 27.10., \GEINS} &
-	\textbf{Mittwoch, 28.10., \GEINS u. \GZWEI} &
-	\textbf{Donnerstag, 29.10., \GZWEI}
+	\textbf{Montag, 04.10.} &
+	\textbf{Dienstag, 05.10.} &
+% 	\multirow{10}{*}{
+% 		\hspace*{-2mm}\rotatebox{-90}{\hspace*{.07cm} \textbf{Mittwoch} ab 13 Uhr\textbf{: Gemütliches Beisammensein in kleinerem Rahmen}}
+% 	}&
+	\textbf{Mittwoch, 06.10.} &
+	\textbf{Donnerstag, 07.10.} &
+	\textbf{Freitag, 08.10.}
 %% Horizontal Lines
-\\ \cline{1-5}
-%%
-%%  09:30
-%%
-9:30\fibabstand\fibabstand\fibabstand &
-% Mo
-	& 
-% Di
-	&
-% Mi
-	\multirow{3}{\fibprogrammcw}[-2mm]{
-            \textbf{Ersti-Begrüßung des Rektorats}\fibnlx
-            \textit{\GEINS online, \GZWEI präsenz u. online}\fibnl
-		\textbf{Einführungsveranstaltung}\fibnl
-		\textbf{Tutorien und Institutsführung}\fibnl
-		\textbf{Mittagspause}
-		} & 
-% Do
+\\ \hline 
 %%
 %%  10:00
 %%
-\\ \cline{1-3}\cline{5-5}
-10:00\fibabstand\fibabstand\fibabstand\fibabstand\fibabstand\fibabstand\fibabstand &
+10:00 \fibabstand\fibabstand\fibabstand &
 % Mo
-	\multirow{2}{\fibprogrammcw}[-2mm]{%
-		\textbf{Einführungsveranstaltung}\fibnlx
-		\textit{\GEINS}\fibnl
-		\textbf{Tutorien und Institutsführung}\fibnl
-		\textbf{Mittagspause}
+	\multirow{2}{0.8\fibprogrammcw}[-1mm]{%
+		\textbf{Einführungsveranstaltung}\fibnl
+		\hspace*{\fill}
+		\textit{Hörsaal~AP}
 	} & 
-% Di
+% Di 
+	\multirow{2}{0.8\fibprogrammcw}[-2.5mm]{%
 		\textbf{Infoveranstaltung~II}\fibnlx
-		\textit{\GEINS}\fibnl
-		(Gremien, IVV~NWZ+ZIV, BAföG)
-    &
-% Mi
-	&
+		(Gremien, IVV~NWZ+ZIV, BAföG)\fibnl\fibnlx
+		\hspace*{\fill}
+		\textit{Hörsaal~AP}
+	} & 
+% Mi		
+	\multirow{2}{0.8\fibprogrammcw}[-2.5mm]{%
+	    \textbf{Ausweichtermin Infoveranstaltung~I}\fibnlx
+		(nur für Zwei-Fach-Bachelor)\fibnl\fibnlx
+		\hspace*{\fill}
+		\textit{Hörsaal~AP}
+	} & 
 % Do
-    \textbf{Infoveranstaltung~II}\fibnlx
-    \textit{\GZWEI}\fibnl
-    (Gremien, IVV~NWZ+ZIV, BAföG)
+	\multirow{2}{0.8\fibprogrammcw}[-2.5mm]{%
+	    \textbf{Ersti-Begrüßung des Rektorats}\fibnl
+	    (mit anschließender Taschenausgabe)\fibnl\fibnlx
+		\hspace*{\fill}
+		\textit{Preußenstadion} 
+	}
+	&
+% Fr
 %% Horizontal Lines
-\\ \cline{1-1}\cline{3-3}\cline{5-5}
+\\ \cline{1-1} \cline{6-6}
+
+%%
+%%  11:00
+%%
+% Mo 
+11:00 \fibabstand & 
+% Mo 
+    \textbf{Tutorien und Institutsführung}
+& 
+% Di 
+& 
+% Mi 
+& 
+% Do 
+&
+% Fr
+    \textbf{Vortrag der Polizei}\fibnl
+		\hspace*{\fill}\textit{Hörsaal~1}
+%% Horizontal Lines
+\\ \cline{1-4}\cline{6-6}
+
 %%
 %%  12:00
-12:00 \fibabstand &
-%% Mo
+%% 
+% Mo
+12:00 \fibabstand & 
+		\textbf{Mittagessen}
     &
-% Di
-    \textbf{Mittagspause} &
-% Mi
+% Di 
+	\multirow{2}[2]{0.8\fibprogrammcw}{%
+        \textbf{Buchclub}\fibnlx
+		(Fachliteratur)\fibnlx
+		\hspace*{\fill}
+		\textit{Hörsaal~AP}
+	}
     & 
-% Do
-    \textbf{Mittagspause}
+% Mi	
+	\textbf{Laborführungen}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen vor der Fachschaft} 
+	&
+% Do 
+    &
+% Fr
+    \textbf{Mittagspause}\fibnl
+	\hspace*{\fill}
 %% Horizontal Lines
-\\ \cline{1-5}
+\\ \cline{1-4}\cline{6-6}
+
 %%
 %%  13:00
-13:00 \fibabstand& 
-%% Mo
-\multirow{2}{\fibprogrammcw}[-2mm]{
+%%
+% Mo
+13:00 \fibabstand\fibabstand\fibabstand & 
+    \multirow{2}[2]{0.8\fibprogrammcw}[-2mm]{%
         \textbf{Infoveranstaltung~I}\fibnlx
-        \textit{\GEINS}\fibnl
-        (Bachelor Physik, Zwei-Fach-Bachelor) 
-	}&
-% Di
-    \textbf{Buch-Club}\fibnlx
-    \textit{\GEINS}\fibnl
-	(Fachliteratur) &
+		(Bachelor Physik/Geophysik, Zwei-Fach-Bachelor)\fibnl\fibnlx
+		\hspace*{\fill}
+		\textit{Hörsaal~AP}
+	}
+	&
+% Di 
+	\textbf{Mittagspause}
+	\hspace*{\fill}
+	& 
 % Mi
-\multirow{2}{\fibprogrammcw}[-2mm]{
-    \textbf{Infoveranstaltung~I}\fibnlx
-    \textit{\GZWEI}\fibnl
-    (Bachelor Physik/Geophysik, Zwei-Fach-Bachelor) 
-    } &
+	\textbf{Mittagspause}
+	\hspace*{\fill}
+	&
 % Do
-    \textbf{Buch-Club}\fibnlx
-    \textit{\GZWEI}\fibnl
-	(Fachliteratur)
+    &
+% Fr
+	\multirow{2}[15]{0.8\fibprogrammcw}{%
+	    \textbf{Infoveranstaltung~III}\fibnlx
+		(jDPG \& andere studentische Gruppierungen)\fibnlx[0.5em]
+		\textbf{Plenum \& Preisverleihung}\fibnlx
+		\hspace*{\fill}
+		\textit{Hörsaal~1}
+		}
 %% Horizontal Lines
 \\ \cline{1-1}\cline{3-3}\cline{5-5}
+
 %%
 %%  14:00
 %%
-14:00 \fibabstand &
+14:00 \fibabstand\fibabstand\fibabstand\fibabstand & 
 % Mo
-	&
-% Di
-	\multirow{3}{\fibprogrammcw}[4mm]{\textbf{Stadtspiel}\fibnlx
-    \textit{\GEINS, nur Präsenz}
-	}&
-% Mi
+    & 
+% Di 
+	\multirow{2}[2]{0.8\fibprogrammcw}{%
+		\textbf{Stadtspiel}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen an der Freitreppe}
+	}& 
+% Mi 
 	& 
 % Do
-	\multirow{3}{\fibprogrammcw}[4mm]{\textbf{Stadtspiel}\fibnlx
-    \textit{\GZWEI, nur Präsenz}
-	}
+    \textbf{Mittagspause}
+		\hspace*{\fill}
+	&
+% Fr
 %% Horizontal Lines
-\\ \cline{1-2}\cline{4-4}
+\\ \cline{1-2}\cline{5-6}
+
 %%
 %%  15:00
 %%
 15:00 \fibabstand &
-% 
-% Mo & Di & Mi & Do
- & & &
-\\ \cline{1-2}\cline{4-4}
-%%
-%%  ab 19:00
-%%
-ab 19:00 \fibabstand &
 % Mo
-    \textbf{Online-Party}\fibnlx
-    \textit{\GEINS, \GZWEI}
-    &
-% Di
-    &
+    \multirow{4}[8]{0.8\fibprogrammcw}{\textbf{Campusspiel}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen an der Freitreppe}\fibnlx\fibnlx\fibnlx
+		anschließend Grillen auf der Wiese hinter der IG1\fibnlx
+		(bei passender Wetterlage)}
+	& 
+% Di - Fr	
+	& 
+% Mi 
+	& 
+% Do 
+	\multirow{2}[2]{0.8\fibprogrammcw}{%
+		\textbf{Konstruktionswettbewerb}\fibnl
+		\hspace*{\fill}
+		\textit{Treffen vor der Fachschaft}
+	}
+% Fr
+	&
+	\textbf{Restegrillen}
+%% Horizontal Lines 
+\\ \cline{1-1}\cline{4-4}
+
+%%
+%%  16:00
+%%
+\diagbox[width=4.76em]{Mi,\\16:30}{16:00} & %\fibabstand 
+% Mo 
+	 & 
+% Di		
+	& 
+		
 % Mi
-    \textbf{Online-Kneipentour}\fibnlx
-    \textit{\GEINS, \GZWEI}&
+	\multirow{3}[6]{0.8\fibprogrammcw}{%
+		\textbf{"Kaffeetrinken" mit den Profs}\fibnl
+		\hspace*{\fill}
+		\textit{Treffpunkt je nach Wetterlage, siehe Website}\fibnlx\fibnlx\fibnlx
+		anschließend entspannter Abend mit Flunky-Ball und Essen bestellen\fibnlx
+	} &
+% Do 
+    &
+% Fr 
+%% Horizontal Lines
+\\ \cline{1-1}
+
+%%
+%%  17:00
+%%
+17:00 \fibabstand & 
+% Mo 
+& 
+% Di 
+& 
+% Mi 
+& 
+% Do 
+& 
+% Fr 
+%% Horizontal Lines
+\\ \cline{1-1}\cline{5-5}
+
+%%
+%%  18:00
+%% Mo
+18:00 \fibabstand &	&
+% Di 
+    & 
+% Mi	
+	&
 % Do
-\\ \hline
+	\multirow{3}{0.8\fibprogrammcw}[-0.8mm]{%
+		\textbf{Spieleabend}\fibnlx
+		Brettspiele, Kartenspiele, Pen~\&~Paper und mehr!\fibnl
+		\hspace*{\fill}
+		\textit{Raum wird auf der Website bekannt gegeben}
+	} &
+% Fr
+%% Horizontal Lines 
+\\ \cline{1-1}\cline{3-3}
+
+%%
+%%  19:00
+%%
+19:00 \fibabstand &	&
+% Di 
+\textbf{Kneipenabend}\fibnl
+		\hspace*{\fill}
+		\textit{in der Palma Bar}
+& 
+% Mi 
+& 
+% Do 
+& 
+% Fr 
+%% Horizontal Lines
+\\ \hline 
+
 \end{tabular}
 
 \smallskip
 
 % XXX Jedes Jahr Astroseminar-Termin aktualisieren!
-\textbf{\GEINS: Gruppe "Montag/Dienstag", \GZWEI: Gruppe "Mittwoch/Donnerstag". Solange nicht anders beschriftet, finden Veranstaltungen sowohl in den Hörsälen als auch online statt. Mehr Infos zu den Orten gibt es in der Online-Reservierungsbestätigung.}
-\vfill
+\textbf{Das aktuellste Programm und kurzfristige Raumankündigungen findet ihr unter \url{https://www.uni-muenster.de/Physik.FSPHYS/studieren/erstis/woche/}.} \\ 
+
+\textbf{%
+    Du findest Astrophysik spannend?
+	Dann schau beim jährlichen \textit{Astroseminar} vorbei! Es findet dieses Jahr am Fr.\ und Sa., den 15.10. \& 16.10.2021 über ZOOM statt. Eintritt frei. ZOOM-Daten sowie weitere Infos unter \url{https://www.uni-muenster.de/Astroseminar}. 
+	}
+	
 \end{landscape}
