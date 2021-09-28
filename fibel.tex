@@ -32,9 +32,7 @@
 \pagestyle{scrheadings}
 
 % Text links/rechts an den Seitenrändern auf jeder Seite
-\AddEverypageHook{
-	% Seitenrand-Text nur für Seitenstil „scrheadings“ anzeigen
-	\Ifstr{\currentpagestyle}{scrheadings}{
+\AddToHook {shipout/after}{
 		\Ifthispageodd{
 			% ungerade Seiten
 			\begin{tikzpicture}[remember picture, overlay]
@@ -48,7 +46,6 @@
 				{\fibelmargin};
 			\end{tikzpicture}
 		}
-	}{}
 }
 
 % Inhalt (Artikel etc.)
