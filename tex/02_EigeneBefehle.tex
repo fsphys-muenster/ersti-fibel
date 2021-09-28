@@ -126,7 +126,7 @@
 		\global\let\CROP@user@a\fibfpcontent%
 		\gdef\CROP@user@b{\global\let\CROP@user@a\relax}
 	}{%
-		\AddThispageHook{\fibfpcontent}
+		\AddToHookNext{shipout/background}{\fibfpcontent}
 	}%
 }
 \makeatother
