@@ -31,11 +31,9 @@
 % Ab hier mit Kopf- und Fußzeile
 \pagestyle{scrheadings}
 
-% Text links/rechts an den Seitenrändern auf jeder Seite
-\AddEverypageHook{
-	% Seitenrand-Text nur für Seitenstil „scrheadings“ anzeigen
+\def\fibelprintmargin{
 	\Ifstr{\currentpagestyle}{scrheadings}{
-		\Ifthispageodd{
+    	\Ifthispageodd{
 			% ungerade Seiten
 			\begin{tikzpicture}[remember picture, overlay]
 				\node[rotate=270] at ($(current page.center) + (9.9cm, -10.9cm)$)
@@ -49,6 +47,13 @@
 			\end{tikzpicture}
 		}
 	}{}
+}
+
+\def\fibelprintmarginifneeded{\fibelprintmargin} % Workaround für https://sourceforge.net/p/koma-script/tickets/15/
+
+% Text links/rechts an den Seitenrändern auf jeder Seite
+\AddToHook {shipout/background}{
+		\fibelprintmarginifneeded
 }
 
 % Inhalt (Artikel etc.)
