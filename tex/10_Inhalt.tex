@@ -4,8 +4,10 @@
 
 %%% Inhalt.tex
 \thispagestyle{empty}
+\def\fibelprintmarginifneeded{}
 \mbox{}% U2 leer
 \clearpage
+\def\fibelprintmarginifneeded{\fibelprintmargin}
 
 % -- Impressum
 \input{tex/04_Impressum.tex}
@@ -133,4 +135,5 @@
 \clearpage
 
 \thispagestyle{empty}
+\def\fibelprintmarginifneeded{}
 \input{tex/artikel/O-Woche_Programm.tex}
