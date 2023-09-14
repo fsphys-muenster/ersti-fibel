@@ -32,7 +32,7 @@ jobs:
           git clone https://oauth2:$GITLAB_PRIVATE_ACCESS@zivgitlab.uni-muenster.de/s_may006/ersti-fibel_private.git private
       - name: Run pdflatex
         run: |
-          docker run --rm -t -v $GITHUB_WORKSPACE:/mounted -w /mounted texlive/texlive:latest latexmk -pdf -halt-on-error fibel.tex
+          docker run --rm -t -v $GITHUB_WORKSPACE:/mounted -w /mounted texlive/texlive:TL2021-historic latexmk -pdf -halt-on-error fibel.tex
         
       - name: Install Ghostscript
         run: |
