@@ -49,7 +49,7 @@ jobs:
         run: |
           for f in *.pdf;
           do
-            /usr/bin/curl -u $SCIEBO_SHARELINK_ID: -X PUT -T ./$f https://uni-muenster.sciebo.de/public.php/webdav/$(basename $f .pdf)-${GITHUB_SHA}.pdf
+            /usr/bin/curl -u $SCIEBO_SHARELINK_ID: -X PUT -T ./$f https://uni-muenster.sciebo.de/public.php/webdav/$(basename $f .pdf)-${CI_COMMIT_BRANCH}-${GITHUB_SHA}.pdf
           done
       
       - name: Log comment
