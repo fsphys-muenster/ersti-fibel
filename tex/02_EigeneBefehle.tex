@@ -1,10 +1,17 @@
+
 % Variablen für Titelseite/Seitenvorlage
 % Jahr und Semester gegebenenfalls ändern!
-\newcommand{\fibeltitel}{Erstsemester-Informationszeitung des Fachbereichs Physik der Westfälischen Wilhelms-Universität Münster}
+\newcommand{\UniMuenster}{Universität Münster}
+\newcommand{\fibeltitel}{Erstsemester-Informationszeitung des Fachbereichs Physik der \UniMuenster{}}
 % XXX Jedes Jahr aktualisieren!
-\newcommand{\fibeljahr}{2022/2023}
+\newcommand{\fibeljahr}{2023/2024}
 \newcommand{\fibelsemester}{Wintersemester}
-\newcommand{\fibelautor}{Fachschaft Physik der WWU Münster; Hannah Neuwirth, Benedikt Bieringer, Moritz Wehmeier, Marius Willer}
+\newcommand{\authorA}{Benedikt Bieringer}
+\newcommand{\authorB}{Alexander Puck Neuwirth}
+\newcommand{\authorC}{Alexander Marco Tiekötter}
+\newcommand{\authorD}{Marius Willer}
+\newcommand{\fibelautor}{Fachschaft Physik der \UniMuenster{} ; \authorA, \authorB, \authorC, \authorD}
+\newcommand{\redaktionsleitung}{\authorA\\ \authorB\\ \authorC\\ \authorD}
 
 % Befehl \email: E-Mail-Adresse mit mailto-Link (anklickbar in der PDF-Datei)
 % 	Parameter #1: Gewünschte E-Mail-Adresse
@@ -18,6 +25,9 @@
 % Befehl \fibelsig: Für Unterschriften unter Artikeln
 % 	Parameter #1: Name des Autors
 \newcommand{\fibelsig}[1]{\par\hfill(#1)\par}
+
+
+
 
 % Befehl \fibelimgtext: Bild mit zusätzlichem Text (z.B. Quellen-URL)
 % 	Parameter #1 (optional): Position/Ausrichtung des Textes
