@@ -3,7 +3,7 @@ Die Ersti-Φbel ist die Erstsemester-Informationszeitschrift des Fachbereichs Ph
 Die vollständige Version der Ersti-Φbel ist für Physik-Studierende der WWU (Nutzergruppe `p0stud`) [auf der Homepage der Fachschaft Physik als PDF-Datei verfügbar](https://sso.uni-muenster.de/Physik.FSPHYS/intern/physiker/erstifibel/).
 
 ## Hinweis zum Submodul [`private`](private/)
-Um Zugriff auf das Submodul in zivgitlab zu erhalten muss man sich an einen Admin der Fachschaft wenden.
+Um Zugriff auf das Submodul in zivgitlab zu erhalten, muss man sich an einen Admin der Fachschaft wenden.
 In diesem Submodul sind alle Dateien enthalten, die aus rechtlichen (Urheberrecht) oder anderen Gründen nicht öffentlich verteilt werden können/sollen.
 Im Wesentlichen handelt es sich dabei um Binärdateien wie Bilder und interne Informationen (z. B. zu *möglichen Sponsoren/Werbekunden* und *Lösungen zu Rätseln* 😉).
 
