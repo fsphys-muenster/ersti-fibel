@@ -44,7 +44,7 @@ jobs:
       - name: Add SHORT_SHA env property with commit short sha
         run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
       - name: Add PR_NAME env property with commit short sha
-        run: echo "PR_NAME=`echo ${GITHUB_REF_NAME} | sed 's/[^a-zA-Z0-9]//g'`" >> $GITHUB_ENV
+        run: echo "PR_NAME=`echo ${GITHUB_HEAD_REF}${GITHUB_REF_NAME} | sed 's/[^a-zA-Z0-9]//g'`" >> $GITHUB_ENV
 
       # SCIEBO_SHARELINK_ID: Part in shared link after .de/s/
       - name: Upload result
