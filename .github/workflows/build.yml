@@ -55,12 +55,12 @@ jobs:
         run: |
           for f in *.pdf;
           do
-            /usr/bin/curl -u $SCIEBO_SHARELINK_ID: -X PUT -T ./$f https://uni-muenster.sciebo.de/public.php/webdav/$(basename $f .pdf)-${REF_NAME}-${HEAD_NAME}-${SHORT_SHA}.pdf
+            /usr/bin/curl -u $SCIEBO_SHARELINK_ID: -X PUT -T ./$f https://uni-muenster.sciebo.de/public.php/webdav/$(basename $f .pdf)-${HEAD_NAME}-${REF_NAME}-${SHORT_SHA}.pdf
           done
       
       - name: Log comment
         run: |
           echo Files successfully compiled
-          echo REF: ${REF_NAME}
           echo HEAD: ${HEAD_NAME}
+          echo REF: ${REF_NAME}
           echo SHA: ${SHORT_SHA}
