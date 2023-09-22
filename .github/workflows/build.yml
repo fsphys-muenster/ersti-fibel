@@ -41,6 +41,12 @@ jobs:
       
       - name: Post-process tex file
         run: ./create_print_version.sh && ./create_web_version.sh
+      - name: Add SHORT_SHA env property with commit short sha
+        run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+      - name: Add REF_NAME env property with commit short sha
+        run: echo "REF_NAME=`echo ${GITHUB_REF_NAME} | sed 's/[^a-zA-Z0-9]//g'`" >> $GITHUB_ENV
+      - name: Add HEAD_NAME env property with commit short sha
+        run: echo "HEAD_NAME=`echo ${GITHUB_HEAD_REF} | sed 's/[^a-zA-Z0-9]//g'`" >> $GITHUB_ENV
 
       # SCIEBO_SHARELINK_ID: Part in shared link after .de/s/
       - name: Upload result
@@ -49,9 +55,12 @@ jobs:
         run: |
           for f in *.pdf;
           do
-            /usr/bin/curl -u $SCIEBO_SHARELINK_ID: -X PUT -T ./$f https://uni-muenster.sciebo.de/public.php/webdav/$(basename $f .pdf)-${GITHUB_SHA}.pdf
+            /usr/bin/curl -u $SCIEBO_SHARELINK_ID: -X PUT -T ./$f https://uni-muenster.sciebo.de/public.php/webdav/$(basename $f .pdf)-${HEAD_NAME}-${REF_NAME}-${SHORT_SHA}.pdf
           done
       
       - name: Log comment
         run: |
-          echo Files successfully compiled - SHA: $GITHUB_SHA
+          echo Files successfully compiled
+          echo HEAD: ${HEAD_NAME}
+          echo REF: ${REF_NAME}
+          echo SHA: ${SHORT_SHA}
