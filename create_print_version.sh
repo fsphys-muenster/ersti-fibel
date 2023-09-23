@@ -21,7 +21,7 @@ gs                                                                            \
   ${COMMENT- output as PDF}                                                   \
   -sDEVICE=pdfwrite                                                           \
   -dEmbedAllFonts  \
-  -dAutoRotatePages=/None
+  -dAutoRotatePages=/None \
   ${COMMENT- convert to grayscale}                                            \
   -sProcessColorModel=DeviceGray -sColorConversionStrategy=Gray               \
   ${COMMENT- don’t downsample images}                                         \
