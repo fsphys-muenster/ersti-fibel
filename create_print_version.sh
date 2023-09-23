@@ -20,7 +20,8 @@ gs                                                                            \
   -q -dSAFER                                                                  \
   ${COMMENT- output as PDF}                                                   \
   -sDEVICE=pdfwrite                                                           \
-  -dEmbedAllFonts                                                             \
+  -dEmbedAllFonts  \
+  -dAutoRotatePages=/None
   ${COMMENT- convert to grayscale}                                            \
   -sProcessColorModel=DeviceGray -sColorConversionStrategy=Gray               \
   ${COMMENT- don’t downsample images}                                         \
